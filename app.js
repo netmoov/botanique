@@ -358,7 +358,7 @@ function renderQuickFacts(plant, expanded=false) {
   if (id.couleurs?.length) facts.push(["Couleurs", id.couleurs.join(", ")]);
   if (id.saisonDisponibilite) facts.push(["Saison", id.saisonDisponibilite]);
   if (expanded && tc.dureeTenue) facts.push(["Tenue", tc.dureeTenue]);
-  if (!facts.length) return '<p class="no-details">Informations détaillées non documentées dans les sources retenues.</p>';
+  if (!facts.length) return '<p class="no-details">Les informations de conservation et de préparation détaillées ne sont pas documentées dans les sources retenues.</p>';
   return `<div class="detail-grid">${facts.slice(0, expanded ? 4 : 3).map(([k,v]) => `<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div>`;
 }
 
@@ -421,7 +421,17 @@ function buildDetailsHtml(plant) {
   else if (plant.horsReferentiel) sections.push('<section class="detail-section"><h3>Référentiel IFAPME</h3><p class="no-details">Fiche complémentaire hors référentiel. Elle est exclue des sessions par défaut.</p></section>');
 
   if (plant.resumePedagogique?.length) sections.push(`<section class="detail-section"><h3>À retenir</h3><ul class="retain-list">${plant.resumePedagogique.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
-  if (plant.niveauInformation === "referentiel_uniquement") sections.push('<section class="detail-section"><h3>Données détaillées</h3><p class="no-details">Informations détaillées non documentées dans les sources retenues. Cette carte reste utilisable pour la reconnaissance visuelle et l’apprentissage des noms.</p></section>');
+  if (plant.sources?.length) {
+    const sourceLabels = [...new Set(
+      plant.sources
+        .map(source => [source.document, source.ficheOuPage].filter(Boolean).join(" — "))
+        .filter(Boolean)
+    )];
+    if (sourceLabels.length) {
+      sections.push(`<section class="detail-section"><h3>Sources documentaires</h3><ul class="retain-list">${sourceLabels.map(label=>`<li>${escapeHtml(label)}</li>`).join("")}</ul></section>`);
+    }
+  }
+  if (plant.niveauInformation === "referentiel_uniquement") sections.push('<section class="detail-section"><h3>Données détaillées</h3><p class="no-details">Les informations de conservation et de préparation détaillées ne sont pas documentées dans les sources retenues. Les données d’identification disponibles restent affichées ci-dessus.</p></section>');
 
   if (plant.image?.sourceUrl) {
     sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="photo-source-detail"><a href="${escapeAttr(plant.image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source et licence Wikimedia Commons ↗</a>${plant.image.author ? `<br><small>Auteur : ${escapeHtml(plant.image.author)}</small>` : ""}${plant.image.license ? `<br><small>Licence : ${escapeHtml(plant.image.license)}</small>` : ""}</p></section>`);
