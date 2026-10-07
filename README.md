@@ -71,3 +71,13 @@ https://netmoov.github.io/table-et-vaisselle/botanique/
 ```
 
 Cela permet de conserver l'application actuelle à la racine sans l'écraser.
+
+
+## Refonte visuelle
+
+La V2 utilise une palette rose/corail et une ergonomie de cartes inspirée des applications de rencontre modernes, tout en conservant une identité botanique propre et sans reprendre de logo tiers.
+
+
+## Photographies — V4
+
+Cette version ajoute **61 photographies Wikimedia Commons** aux fiches détaillées. Les images sont chargées depuis Wikimedia Commons en largeur optimisée et chaque photo comporte un lien vers sa page source. Voir `image-sources.md` pour l'inventaire. `Eucalyptus populus` reste volontairement en placeholder faute de correspondance Commons suffisamment fiable avec le nom fourni dans le référentiel.

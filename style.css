@@ -643,3 +643,23 @@ h1 {
   .plant-card { border-radius:28px; }
   .swipe-actions { position:sticky; bottom:.65rem; z-index:20; padding:.6rem; background:rgba(246,247,251,.82); backdrop-filter:blur(16px); border-radius:999px; }
 }
+
+.photo-credit {
+  position: absolute;
+  right: .7rem;
+  bottom: .7rem;
+  z-index: 3;
+  max-width: calc(100% - 1.4rem);
+  padding: .38rem .62rem;
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: 999px;
+  background: rgba(15,15,18,.66);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: .68rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+.photo-credit:hover, .photo-credit:focus-visible { background: rgba(15,15,18,.86); color: #fff; }

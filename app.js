@@ -256,7 +256,10 @@ function renderImage(plant) {
   const container = $("#plant-image");
   const name = displayName(plant);
   if (plant.image?.url) {
-    container.innerHTML = `<img src="${escapeAttr(plant.image.url)}" alt="${escapeAttr(plant.image.texteAlternatif || name)}" loading="eager"><div class="placeholder" aria-hidden="true"></div>`;
+    const sourceLink = plant.image.sourceUrl
+      ? `<a class="photo-credit" href="${escapeAttr(plant.image.sourceUrl)}" target="_blank" rel="noopener noreferrer" title="Voir la source et la licence de cette photographie">Photo · ${escapeHtml(plant.image.source || "source")}</a>`
+      : "";
+    container.innerHTML = `<img src="${escapeAttr(plant.image.url)}" alt="${escapeAttr(plant.image.texteAlternatif || name)}" loading="eager" referrerpolicy="no-referrer">${sourceLink}`;
     const img = container.querySelector("img");
     img.addEventListener("error", () => { container.innerHTML = placeholderHtml(name); }, { once: true });
   } else {

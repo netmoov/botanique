@@ -85,3 +85,13 @@ Les rapprochements suivants ont été appliqués parce que le taxon R35 est expl
 ## Images
 
 La V1 technique utilise des placeholders lorsqu'aucune image n'a encore été validée. Le champ `image` est prévu dans la structure de données. L'ajout d'images doit faire l'objet d'un passage séparé de vérification : identité du végétal, URL exploitable, source enregistrée et droit/licence compatible avec la publication.
+
+
+## Images — passe Wikimedia Commons V4
+
+- Fiches détaillées détectées : **62**.
+- Fiches détaillées avec photographie Wikimedia Commons intégrée : **61**.
+- Fiches détaillées conservées avec placeholder : **1**.
+- La source exacte de chaque image est enregistrée dans `image.sourceUrl` et récapitulée dans `image-sources.md`.
+- Pour les entrées définies seulement au niveau du genre, la photo peut représenter une espèce explicitement citée dans la fiche détaillée ; le taxon photographié est conservé dans `image.taxonPhotographie`.
+- **Eucalyptus populus** : aucune correspondance Commons suffisamment fiable n'a été retenue ; aucune correction taxonomique n'a été inventée.

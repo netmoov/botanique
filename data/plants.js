@@ -145,7 +145,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 2"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alchemilla%20mollis.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alchemilla%20mollis.jpg",
+      "fichierCommons": "Alchemilla mollis.jpg",
+      "taxonPhotographie": "Alchemilla mollis",
+      "texteAlternatif": "Alchemilla mollis — Alchémille"
+    }
   },
   {
     "id": "alstroemeria",
@@ -216,7 +224,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 3"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alstroemeria.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alstroemeria.jpg",
+      "fichierCommons": "Alstroemeria.jpg",
+      "taxonPhotographie": "Alstroemeria",
+      "texteAlternatif": "Alstroemeria — Alstroémère"
+    }
   },
   {
     "id": "amaranthus",
@@ -290,7 +306,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Amaranthus caudatus / Amaranthus cruentus »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranthus%20caudatus.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amaranthus%20caudatus.jpg",
+      "fichierCommons": "Amaranthus caudatus.jpg",
+      "taxonPhotographie": "Amaranthus caudatus",
+      "texteAlternatif": "Amaranthus — Amarante"
+    }
   },
   {
     "id": "physalis",
@@ -438,7 +462,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 7"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ascelpias%20tuberosa%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ascelpias%20tuberosa%20flower.jpg",
+      "fichierCommons": "Ascelpias tuberosa flower.jpg",
+      "taxonPhotographie": "Asclepias tuberosa",
+      "texteAlternatif": "Asclepias — Asclépiade"
+    }
   },
   {
     "id": "densiflorus-asparagus-densiflorus",
@@ -590,7 +622,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 8"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Astrantia%20major%20A.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astrantia%20major%20A.jpg",
+      "fichierCommons": "Astrantia major A.jpg",
+      "taxonPhotographie": "Astrantia major",
+      "texteAlternatif": "Astrantia major — Astrance"
+    }
   },
   {
     "id": "bambusa-phyllostachys",
@@ -687,7 +727,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Banksia (plusieurs espèces) »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Banksia%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banksia%20flower.jpg",
+      "fichierCommons": "Banksia flower.jpg",
+      "taxonPhotographie": "Banksia (représentant du genre)",
+      "texteAlternatif": "Banksia — Banksia"
+    }
   },
   {
     "id": "xerophyllum-tenax-beargrass",
@@ -781,7 +829,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 10"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Starr-110307-2344-Bouvardia%20ternifolia-flowers-Kula%20Botanical%20Garden-Maui%20%2824959834002%29.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-110307-2344-Bouvardia%20ternifolia-flowers-Kula%20Botanical%20Garden-Maui%20%2824959834002%29.jpg",
+      "fichierCommons": "Starr-110307-2344-Bouvardia ternifolia-flowers-Kula Botanical Garden-Maui (24959834002).jpg",
+      "taxonPhotographie": "Bouvardia ternifolia",
+      "texteAlternatif": "Bouvardia — Bouvardia"
+    }
   },
   {
     "id": "zantedeschia",
@@ -858,7 +914,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Zantedeschia (Calla / Arum) ».",
       "La fiche 6 est utilisée pour l'entrée générique R05 Zantedeschia ; la fiche 59, plus spécifique, est réservée à Zantedeschia aethiopica (R35)."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zantedeschia%20aethiopica%20con%20fiori.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia%20aethiopica%20con%20fiori.jpg",
+      "fichierCommons": "Zantedeschia aethiopica con fiori.jpg",
+      "taxonPhotographie": "Zantedeschia aethiopica",
+      "texteAlternatif": "Zantedeschia — Calla"
+    }
   },
   {
     "id": "celosia",
@@ -984,7 +1048,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 13"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chrysanthemum%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysanthemum%20flower.jpg",
+      "fichierCommons": "Chrysanthemum flower.jpg",
+      "taxonPhotographie": "Chrysanthemum",
+      "texteAlternatif": "Chrysanthemum — Chrysanthème"
+    }
   },
   {
     "id": "cordyline-australis",
@@ -1112,7 +1184,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 15"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Craspedia%20globosa.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craspedia%20globosa.jpg",
+      "fichierCommons": "Craspedia globosa.jpg",
+      "taxonPhotographie": "Craspedia globosa",
+      "texteAlternatif": "Craspedia globosa — Craspédia"
+    }
   },
   {
     "id": "cycas-revoluta",
@@ -1203,7 +1283,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 18"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dahlia%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahlia%20flower.jpg",
+      "fichierCommons": "Dahlia flower.jpg",
+      "taxonPhotographie": "Dahlia",
+      "texteAlternatif": "Dahlia — Dahlia"
+    }
   },
   {
     "id": "ornithogalum",
@@ -1274,7 +1362,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Ornithogalum thyrsoides / arabicum »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ornithogalum%20thyrsoides.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ornithogalum%20thyrsoides.jpg",
+      "fichierCommons": "Ornithogalum thyrsoides.jpg",
+      "taxonPhotographie": "Ornithogalum thyrsoides",
+      "texteAlternatif": "Ornithogalum — Étoile de Bethléem"
+    }
   },
   {
     "id": "eucalyptus",
@@ -1363,7 +1459,15 @@ window.BOTANIC_PLANTS = [
       "Cette entrée figure dans plusieurs catégories du référentiel source ; les catégories d'origine sont conservées.",
       "Nom latin dans la fiche détaillée : « Eucalyptus (cinerea, populus, parvifolia…) ».",
       "Eucalyptus apparaît dans le R05 à la fois dans « Fleurs & plantes » et dans « Verdures » ; les deux occurrences sont conservées."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eucalyptus%20cinerea%2001.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus%20cinerea%2001.jpg",
+      "fichierCommons": "Eucalyptus cinerea 01.jpg",
+      "taxonPhotographie": "Eucalyptus cinerea",
+      "texteAlternatif": "Eucalyptus — Eucalyptus"
+    }
   },
   {
     "id": "euphorbia",
@@ -1437,7 +1541,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Euphorbia fulgens / Euphorbia spinosa (variétés déco) »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Euphorbia%20fulgens%20red.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Euphorbia%20fulgens%20red.jpg",
+      "fichierCommons": "Euphorbia fulgens red.jpg",
+      "taxonPhotographie": "Euphorbia fulgens",
+      "texteAlternatif": "Euphorbia — Euphorbe"
+    }
   },
   {
     "id": "euphorbia-rameaux-decoratifs",
@@ -1673,7 +1785,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Forsythia intermedia »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/-%20Forsythia%20intermedia%2001%20-.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-%20Forsythia%20intermedia%2001%20-.jpg",
+      "fichierCommons": "- Forsythia intermedia 01 -.jpg",
+      "taxonPhotographie": "Forsythia × intermedia",
+      "texteAlternatif": "Forsythia — Forsythia"
+    }
   },
   {
     "id": "tree-fern-dicksonia-cyathea",
@@ -1797,7 +1917,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Freesia hybrida »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Freesia%20hybrid%20flower1%20%2815245867962%29.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freesia%20hybrid%20flower1%20%2815245867962%29.jpg",
+      "fichierCommons": "Freesia hybrid flower1 (15245867962).jpg",
+      "taxonPhotographie": "Freesia hybride",
+      "texteAlternatif": "Freesia — Freesia"
+    }
   },
   {
     "id": "galactica-leucadendron-galactica",
@@ -1888,7 +2016,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 28"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gentiana%20flowers.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gentiana%20flowers.jpg",
+      "fichierCommons": "Gentiana flowers.jpg",
+      "taxonPhotographie": "Gentiana",
+      "texteAlternatif": "Gentiana — Gentiane"
+    }
   },
   {
     "id": "gerbera",
@@ -1958,7 +2094,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Gerbera jamesonii »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerbera%20jamesonii.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerbera%20jamesonii.jpg",
+      "fichierCommons": "Gerbera jamesonii.jpg",
+      "taxonPhotographie": "Gerbera jamesonii",
+      "texteAlternatif": "Gerbera — Gerbéra"
+    }
   },
   {
     "id": "gypsophila",
@@ -2031,7 +2175,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Gypsophila paniculata »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gypsophila%20paniculata.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gypsophila%20paniculata.jpg",
+      "fichierCommons": "Gypsophila paniculata.jpg",
+      "taxonPhotographie": "Gypsophila paniculata",
+      "texteAlternatif": "Gypsophila — Gypsophile"
+    }
   },
   {
     "id": "haemanthus",
@@ -2107,7 +2259,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Haemanthus / Scadoxus »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Haemanthus%20montanus%20flower%20-%20HNT.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemanthus%20montanus%20flower%20-%20HNT.jpg",
+      "fichierCommons": "Haemanthus montanus flower - HNT.jpg",
+      "taxonPhotographie": "Haemanthus montanus",
+      "texteAlternatif": "Haemanthus — Haemanthus"
+    }
   },
   {
     "id": "heliconia",
@@ -2181,7 +2341,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Heliconia rostrata / variétés »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Starr-120522-6112-Heliconia%20rostrata-flowers-Iao%20Tropical%20Gardens%20of%20Maui-Maui%20%2824516319253%29.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-120522-6112-Heliconia%20rostrata-flowers-Iao%20Tropical%20Gardens%20of%20Maui-Maui%20%2824516319253%29.jpg",
+      "fichierCommons": "Starr-120522-6112-Heliconia rostrata-flowers-Iao Tropical Gardens of Maui-Maui (24516319253).jpg",
+      "taxonPhotographie": "Heliconia rostrata",
+      "texteAlternatif": "Heliconia — Héliconia"
+    }
   },
   {
     "id": "helleborus",
@@ -2256,7 +2424,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Helleborus niger / orientalis »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helleborus%20niger%20sl25.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helleborus%20niger%20sl25.jpg",
+      "fichierCommons": "Helleborus niger sl25.jpg",
+      "taxonPhotographie": "Helleborus niger",
+      "texteAlternatif": "Helleborus — Hellébore"
+    }
   },
   {
     "id": "miscanthus-sinensis",
@@ -2358,7 +2534,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Hydrangea macrophylla / paniculata »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%28MHNT%29%20Hydrangea%20macrophylla%20-%20inflorescence.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%28MHNT%29%20Hydrangea%20macrophylla%20-%20inflorescence.jpg",
+      "fichierCommons": "(MHNT) Hydrangea macrophylla - inflorescence.jpg",
+      "taxonPhotographie": "Hydrangea macrophylla",
+      "texteAlternatif": "Hydrangea — Hortensia"
+    }
   },
   {
     "id": "ilex",
@@ -2432,7 +2616,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Ilex verticillata / Ilex aquifolium »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ilex%20verticillata%20fruit.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ilex%20verticillata%20fruit.jpg",
+      "fichierCommons": "Ilex verticillata fruit.jpg",
+      "taxonPhotographie": "Ilex verticillata",
+      "texteAlternatif": "Ilex — Houx"
+    }
   },
   {
     "id": "ixia",
@@ -2499,7 +2691,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 38"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ixia%20paniculata%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ixia%20paniculata%20flower.jpg",
+      "fichierCommons": "Ixia paniculata flower.jpg",
+      "taxonPhotographie": "Ixia paniculata",
+      "texteAlternatif": "Ixia — Ixia"
+    }
   },
   {
     "id": "butomus-umbellatus",
@@ -2678,7 +2878,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 41"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lilium%20Flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lilium%20Flower.jpg",
+      "fichierCommons": "Lilium Flower.jpg",
+      "taxonPhotographie": "Lilium",
+      "texteAlternatif": "Lilium — Lis"
+    }
   },
   {
     "id": "tricyrtis",
@@ -2748,7 +2956,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Tricyrtis hirta »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tricyrtis%20hirta%20%28flower%29.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tricyrtis%20hirta%20%28flower%29.jpg",
+      "fichierCommons": "Tricyrtis hirta (flower).jpg",
+      "taxonPhotographie": "Tricyrtis hirta",
+      "texteAlternatif": "Tricyrtis — Lis crapaud"
+    }
   },
   {
     "id": "eucharis",
@@ -2821,7 +3037,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Eucharis grandiflora »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/EucharisGrandiflora.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:EucharisGrandiflora.jpg",
+      "fichierCommons": "EucharisGrandiflora.jpg",
+      "taxonPhotographie": "Eucharis grandiflora",
+      "texteAlternatif": "Eucharis — Lis d’Amazonie"
+    }
   },
   {
     "id": "gloriosa",
@@ -2894,7 +3118,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Gloriosa superba »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gloriosa%20superba%20Flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gloriosa%20superba%20Flower.jpg",
+      "fichierCommons": "Gloriosa superba Flower.jpg",
+      "taxonPhotographie": "Gloriosa superba",
+      "texteAlternatif": "Gloriosa — Lis glorieux"
+    }
   },
   {
     "id": "eustoma",
@@ -2964,7 +3196,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Eustoma grandiflorum »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eustoma%20grandiflorum%20%287554694282%29.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eustoma%20grandiflorum%20%287554694282%29.jpg",
+      "fichierCommons": "Eustoma grandiflorum (7554694282).jpg",
+      "taxonPhotographie": "Eustoma grandiflorum",
+      "texteAlternatif": "Eustoma — Lisianthus"
+    }
   },
   {
     "id": "typha-latifolia",
@@ -3098,7 +3338,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Molucella laevis ».",
       "Correspondance conservée malgré une variante orthographique entre le référentiel (« Moluccella ») et la fiche détaillée (« Molucella »)."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Moluccella%20laevis%20flower.JPG?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moluccella%20laevis%20flower.JPG",
+      "fichierCommons": "Moluccella laevis flower.JPG",
+      "taxonPhotographie": "Moluccella laevis",
+      "texteAlternatif": "Moluccella laevis — Moluccelle"
+    }
   },
   {
     "id": "lunaria-annua",
@@ -3165,7 +3413,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 43"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lunaria%20annua.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lunaria%20annua.jpg",
+      "fichierCommons": "Lunaria annua.jpg",
+      "taxonPhotographie": "Lunaria annua",
+      "texteAlternatif": "Lunaria annua — Monnaie du pape"
+    }
   },
   {
     "id": "crocosmia",
@@ -3229,7 +3485,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 16"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocosmia.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crocosmia.jpg",
+      "fichierCommons": "Crocosmia.jpg",
+      "taxonPhotographie": "Crocosmia",
+      "texteAlternatif": "Crocosmia — Montbrétia"
+    }
   },
   {
     "id": "convallaria-majalis",
@@ -3293,7 +3557,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 14"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Convallaria%20majalis%20-%20flowers.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convallaria%20majalis%20-%20flowers.jpg",
+      "fichierCommons": "Convallaria majalis - flowers.jpg",
+      "taxonPhotographie": "Convallaria majalis",
+      "texteAlternatif": "Convallaria majalis — Muguet"
+    }
   },
   {
     "id": "myrtus-communis",
@@ -3421,7 +3693,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Dianthus caryophyllus / variétés »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dianthus%20Caryophyllus.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dianthus%20Caryophyllus.jpg",
+      "fichierCommons": "Dianthus Caryophyllus.jpg",
+      "taxonPhotographie": "Dianthus caryophyllus",
+      "texteAlternatif": "Dianthus — Oeillet"
+    }
   },
   {
     "id": "strelitzia",
@@ -3491,7 +3771,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Strelitzia reginae »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Strelitzia%20reginae%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strelitzia%20reginae%20flower.jpg",
+      "fichierCommons": "Strelitzia reginae flower.jpg",
+      "taxonPhotographie": "Strelitzia reginae",
+      "texteAlternatif": "Strelitzia — Oiseau de paradis"
+    }
   },
   {
     "id": "cymbidium",
@@ -3555,7 +3843,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 17"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cymbidium%20orchid%20flowers.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cymbidium%20orchid%20flowers.jpg",
+      "fichierCommons": "Cymbidium orchid flowers.jpg",
+      "taxonPhotographie": "Cymbidium",
+      "texteAlternatif": "Cymbidium — Orchidée Cymbidium"
+    }
   },
   {
     "id": "dendrobium",
@@ -3619,7 +3915,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 20"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dendrobium%20orchid1.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendrobium%20orchid1.jpg",
+      "fichierCommons": "Dendrobium orchid1.jpg",
+      "taxonPhotographie": "Dendrobium",
+      "texteAlternatif": "Dendrobium — Orchidée Dendrobium"
+    }
   },
   {
     "id": "oncidium",
@@ -3688,7 +3992,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 45"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Orchid%C3%A9e%20Oncidium.JPG?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orchid%C3%A9e%20Oncidium.JPG",
+      "fichierCommons": "Orchidée Oncidium.JPG",
+      "taxonPhotographie": "Oncidium",
+      "texteAlternatif": "Oncidium — Orchidée Oncidium"
+    }
   },
   {
     "id": "phalaenopsis",
@@ -3752,7 +4064,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 49"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Phalaenopsis%20Orchid%20Flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalaenopsis%20Orchid%20Flower.jpg",
+      "fichierCommons": "Phalaenopsis Orchid Flower.jpg",
+      "taxonPhotographie": "Phalaenopsis",
+      "texteAlternatif": "Phalaenopsis — Orchidée papillon"
+    }
   },
   {
     "id": "vanda",
@@ -3816,7 +4136,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 57"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vanda%20orchid%201001%20Orchids%20n01.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanda%20orchid%201001%20Orchids%20n01.jpg",
+      "fichierCommons": "Vanda orchid 1001 Orchids n01.jpg",
+      "taxonPhotographie": "Vanda",
+      "texteAlternatif": "Vanda — Orchidée Vanda"
+    }
   },
   {
     "id": "stachys-byzantina",
@@ -3914,7 +4242,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Sedum spectabile / Hylotelephium »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hylotelephium%20spectabile.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hylotelephium%20spectabile.jpg",
+      "fichierCommons": "Hylotelephium spectabile.jpg",
+      "taxonPhotographie": "Hylotelephium spectabile",
+      "texteAlternatif": "Sedum / Hylotelephium — Orpin"
+    }
   },
   {
     "id": "cortaderia-selloana",
@@ -4097,7 +4433,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 5"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Anigozanthos.JPG?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anigozanthos.JPG",
+      "fichierCommons": "Anigozanthos.JPG",
+      "taxonPhotographie": "Anigozanthos",
+      "texteAlternatif": "Anigozanthos — Patte de kangourou"
+    }
   },
   {
     "id": "papaver",
@@ -4167,7 +4511,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Papaver nudicaule (pavot d’Islande) »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Papaver%20nudicaule%20%28Hort%29.png?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papaver%20nudicaule%20%28Hort%29.png",
+      "fichierCommons": "Papaver nudicaule (Hort).png",
+      "taxonPhotographie": "Papaver nudicaule",
+      "texteAlternatif": "Papaver — Pavot"
+    }
   },
   {
     "id": "delphinium",
@@ -4231,7 +4583,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 19"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blue%20Delphinium%20Flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue%20Delphinium%20Flower.jpg",
+      "fichierCommons": "Blue Delphinium Flower.jpg",
+      "taxonPhotographie": "Delphinium",
+      "texteAlternatif": "Delphinium — Pied-d’alouette"
+    }
   },
   {
     "id": "pittosporum-tenuifolium",
@@ -4328,7 +4688,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Paeonia lactiflora »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paeonia%20lactiflora%202025.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia%20lactiflora%202025.jpg",
+      "fichierCommons": "Paeonia lactiflora 2025.jpg",
+      "taxonPhotographie": "Paeonia lactiflora",
+      "texteAlternatif": "Paeonia — Pivoine"
+    }
   },
   {
     "id": "asparagus-plumosus",
@@ -4419,7 +4787,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 40"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/P1000299%20Lathyrus%20odoratus%20%28Prince%20Edward%20of%20York%29%20%28Leguminosae%29%20Flower.JPG?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P1000299%20Lathyrus%20odoratus%20%28Prince%20Edward%20of%20York%29%20%28Leguminosae%29%20Flower.JPG",
+      "fichierCommons": "P1000299 Lathyrus odoratus (Prince Edward of York) (Leguminosae) Flower.JPG",
+      "taxonPhotographie": "Lathyrus odoratus",
+      "texteAlternatif": "Lathyrus odoratus — Pois de senteur"
+    }
   },
   {
     "id": "equisetum",
@@ -4517,7 +4893,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Protea cynaroides / repens (différentes espèces) »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Protea%20cynaroides%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea%20cynaroides%20flower.jpg",
+      "fichierCommons": "Protea cynaroides flower.jpg",
+      "taxonPhotographie": "Protea cynaroides",
+      "texteAlternatif": "Protea — Protée"
+    }
   },
   {
     "id": "prunus",
@@ -4595,7 +4979,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Prunus serrulata / P. avium / P. domestica »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Prunus%20serrulata%20-%20flowers%20close-up.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prunus%20serrulata%20-%20flowers%20close-up.jpg",
+      "fichierCommons": "Prunus serrulata - flowers close-up.jpg",
+      "taxonPhotographie": "Prunus serrulata",
+      "texteAlternatif": "Prunus — Prunier"
+    }
   },
   {
     "id": "rhapis-excelsa",
@@ -4947,7 +5339,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Limonium sinuatum »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Limonium%20sinuatum%20190725.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limonium%20sinuatum%20190725.jpg",
+      "fichierCommons": "Limonium sinuatum 190725.jpg",
+      "taxonPhotographie": "Limonium sinuatum",
+      "texteAlternatif": "Limonium — Statice"
+    }
   },
   {
     "id": "chico-teepee-xanthorrhoea-australis",
@@ -5079,7 +5479,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Helianthus annuus »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helianthus%20annuus%20inflorescence.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helianthus%20annuus%20inflorescence.jpg",
+      "fichierCommons": "Helianthus annuus inflorescence.jpg",
+      "taxonPhotographie": "Helianthus annuus",
+      "texteAlternatif": "Helianthus — Tournesol"
+    }
   },
   {
     "id": "kniphofia",
@@ -5153,7 +5561,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Kniphofia uvaria »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kniphofia%20uvaria%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kniphofia%20uvaria%20flower.jpg",
+      "fichierCommons": "Kniphofia uvaria flower.jpg",
+      "taxonPhotographie": "Kniphofia uvaria",
+      "texteAlternatif": "Kniphofia — Tritoma"
+    }
   },
   {
     "id": "tulipa",
@@ -5217,7 +5633,15 @@ window.BOTANIC_PLANTS = [
         "document": "Fiches Frans",
         "ficheOuPage": "Fiche 56"
       }
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tulipa%20%28Liliaceae%29%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulipa%20%28Liliaceae%29%20flower.jpg",
+      "fichierCommons": "Tulipa (Liliaceae) flower.jpg",
+      "taxonPhotographie": "Tulipa",
+      "texteAlternatif": "Tulipa — Tulipe"
+    }
   },
   {
     "id": "solidago",
@@ -5287,7 +5711,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Solidago canadensis »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solidago%20canadensis%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidago%20canadensis%20flower.jpg",
+      "fichierCommons": "Solidago canadensis flower.jpg",
+      "taxonPhotographie": "Solidago canadensis",
+      "texteAlternatif": "Solidago — Verge d’or"
+    }
   },
   {
     "id": "viburnum",
@@ -5361,7 +5793,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Viburnum opulus / Viburnum macrocephalum »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Viburnum%20opulus%20flowers%20Linnerberg1.JPG?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viburnum%20opulus%20flowers%20Linnerberg1.JPG",
+      "fichierCommons": "Viburnum opulus flowers Linnerberg1.JPG",
+      "taxonPhotographie": "Viburnum opulus",
+      "texteAlternatif": "Viburnum — Viorne"
+    }
   },
   {
     "id": "chamelaucium",
@@ -5431,7 +5871,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Chamelaucium uncinatum »."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chamelaucium%20uncinatum%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chamelaucium%20uncinatum%20flower.jpg",
+      "fichierCommons": "Chamelaucium uncinatum flower.jpg",
+      "taxonPhotographie": "Chamelaucium uncinatum",
+      "texteAlternatif": "Chamelaucium — Waxflower"
+    }
   },
   {
     "id": "philodendron-xanadu",
@@ -5827,7 +6275,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Zantedeschia aethiopica / hybrides ».",
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zantedeschia%20aethiopica%20con%20fiori.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia%20aethiopica%20con%20fiori.jpg",
+      "fichierCommons": "Zantedeschia aethiopica con fiori.jpg",
+      "taxonPhotographie": "Zantedeschia aethiopica",
+      "texteAlternatif": "Zantedeschia aethiopica — calla"
+    }
   },
   {
     "id": "cocculus-laurifolius",
@@ -6093,7 +6549,8 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Eucalyptus (cinerea, populus, parvifolia…) ».",
-      "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
+      "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée.",
+      "Image non attribuée automatiquement : aucune correspondance Wikimedia Commons suffisamment fiable n'a été retenue pour le nom source « Eucalyptus populus ». Le placeholder est conservé plutôt que d'associer une espèce différente."
     ]
   },
   {
@@ -6239,7 +6696,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Hydrangea macrophylla / paniculata ».",
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hydrangea%20paniculata%20fleurs.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydrangea%20paniculata%20fleurs.jpg",
+      "fichierCommons": "Hydrangea paniculata fleurs.jpg",
+      "taxonPhotographie": "Hydrangea paniculata",
+      "texteAlternatif": "Hydrangea paniculata — hortensia"
+    }
   },
   {
     "id": "lilium-hybrides-orientaux",
@@ -6590,7 +7055,15 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paeonia%20lactiflora%202025.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia%20lactiflora%202025.jpg",
+      "fichierCommons": "Paeonia lactiflora 2025.jpg",
+      "taxonPhotographie": "Paeonia lactiflora",
+      "texteAlternatif": "Paeonia lactiflora — pivoine"
+    }
   },
   {
     "id": "protea-cynaroides",
@@ -6658,7 +7131,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Nom latin dans la fiche détaillée : « Protea cynaroides / repens (différentes espèces) ».",
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Protea%20cynaroides%20flower.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea%20cynaroides%20flower.jpg",
+      "fichierCommons": "Protea cynaroides flower.jpg",
+      "taxonPhotographie": "Protea cynaroides",
+      "texteAlternatif": "Protea cynaroides"
+    }
   },
   {
     "id": "ranunculus-asiaticus",
@@ -6881,6 +7362,14 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Fiche complémentaire hors référentiel : aucune entrée correspondante n'a été trouvée dans les tableaux R05/R35."
-    ]
+    ],
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Acacia%20dealbata%20flowers.jpg?width=1200",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acacia%20dealbata%20flowers.jpg",
+      "fichierCommons": "Acacia dealbata flowers.jpg",
+      "taxonPhotographie": "Acacia dealbata",
+      "texteAlternatif": "Acacia dealbata — Mimosa"
+    }
   }
 ];

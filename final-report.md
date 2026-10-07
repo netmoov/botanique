@@ -32,3 +32,10 @@
 - Réinitialisation de progression
 - Fiches détaillées structurées
 - Placeholders d'images tant qu'une image sourcée n'est pas validée
+
+
+## V4 — photographies
+
+- 61 photographies Wikimedia Commons intégrées sur 62 fiches détaillées.
+- 1 cas laissé volontairement sans photographie automatique : `Eucalyptus populus`.
+- Liens de source visibles dans l'interface et inventaire complet dans `image-sources.md`.
