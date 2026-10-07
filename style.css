@@ -229,3 +229,396 @@ select { width:100%; min-height:48px; padding:.65rem .75rem; border:1px solid #c
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; }
 }
+
+/* =========================================================
+   Refonte visuelle 2026 — inspiration "dating app" moderne
+   Palette rose/corail + surfaces blanches + actions swipe.
+   Aucun logo ni élément de marque tiers n'est reproduit.
+   ========================================================= */
+:root {
+  --bg: #f7f7f8;
+  --paper: #ffffff;
+  --paper-2: #f3f4f6;
+  --ink: #21262e;
+  --muted: #6b7280;
+
+  /* Couleur principale : gradient rose -> corail */
+  --green: #fd267a;
+  --green-2: #ff4458;
+  --green-soft: #fff0f5;
+  --sage: #ff8a65;
+  --cream: #fff3eb;
+  --gold: #f6a623;
+
+  /* Actions de swipe */
+  --rose: #ff4458;
+  --rose-soft: #fff0f1;
+  --like: #21d07a;
+  --like-soft: #e9fbf2;
+  --super: #38a9ff;
+
+  --line: #e7e9ed;
+  --shadow: 0 16px 45px rgba(33, 38, 46, .12);
+  --shadow-hover: 0 22px 60px rgba(33, 38, 46, .17);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --focus: 0 0 0 4px rgba(253, 38, 122, .18);
+  --brand-gradient: linear-gradient(135deg, #fd267a 0%, #ff4458 48%, #ff6036 100%);
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 4%, rgba(253,38,122,.09), transparent 26%),
+    radial-gradient(circle at 94% 10%, rgba(255,96,54,.10), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f7f7f8 36%, #f3f4f6 100%);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.topbar {
+  background: rgba(255,255,255,.83);
+  border-bottom: 1px solid rgba(33,38,46,.07);
+  box-shadow: 0 5px 24px rgba(33,38,46,.04);
+}
+
+.brand__mark {
+  border-radius: 50% 50% 46% 54%;
+  background: var(--brand-gradient);
+  box-shadow: 0 8px 20px rgba(253,38,122,.28);
+}
+
+.nav__button.is-active,
+.nav__button:hover {
+  background: #fff0f5;
+  color: #e61e66;
+}
+
+.eyebrow {
+  color: #e61e66;
+  letter-spacing: .13em;
+}
+
+h1, h2 {
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 900;
+  letter-spacing: -.045em;
+}
+
+h1 {
+  line-height: .96;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(620px, 75vw);
+  aspect-ratio: 1;
+  top: -15%;
+  left: -18%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253,38,122,.14), rgba(255,96,54,.04) 48%, transparent 72%);
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.hero__lead {
+  color: #626a76;
+}
+
+.hero__panel,
+.setup-card,
+.list-card,
+.finish-card,
+.mode-card,
+.source-counter,
+.progress-stat {
+  background: rgba(255,255,255,.94);
+  border-color: rgba(33,38,46,.08);
+  box-shadow: var(--shadow);
+}
+
+.hero__panel {
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+}
+
+.hero__panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: var(--brand-gradient);
+}
+
+.mastery-ring {
+  background: conic-gradient(#fd267a 0 var(--progress), #f0f1f3 0);
+  box-shadow: 0 10px 34px rgba(253,38,122,.12);
+}
+
+.mastery-ring::before {
+  background: #fff;
+}
+
+.mini-stats div,
+.detail-item,
+.plant-list-item,
+.finish-stat,
+.check-card {
+  background: #f7f7f8;
+}
+
+.button {
+  min-height: 50px;
+  letter-spacing: -.01em;
+}
+
+.button--primary {
+  background: var(--brand-gradient);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(253,38,122,.28);
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, #ec1f70 0%, #f43d50 48%, #f3542f 100%);
+  box-shadow: 0 14px 30px rgba(253,38,122,.34);
+}
+
+.button--ghost {
+  border-color: #d9dce1;
+  background: rgba(255,255,255,.74);
+  color: #3f4650;
+}
+
+.button--ghost:hover {
+  border-color: #fd267a;
+  color: #e61e66;
+}
+
+.button--soft {
+  background: #fff0f5;
+  color: #e61e66;
+}
+
+.back-link,
+.icon-text-button,
+.details-toggle,
+.answer-block .latin {
+  color: #e61e66;
+}
+
+.mode-card {
+  min-height: 155px;
+  border-color: rgba(33,38,46,.08);
+  box-shadow: 0 9px 26px rgba(33,38,46,.07);
+}
+
+.mode-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(253,38,122,.35);
+  box-shadow: var(--shadow-hover);
+}
+
+.mode-card__icon {
+  background: linear-gradient(145deg, #fff0f5, #fff3ed);
+  color: #e61e66;
+  box-shadow: inset 0 0 0 1px rgba(253,38,122,.08);
+}
+
+.mode-card--review .mode-card__icon {
+  background: #fff0f1;
+  color: #ff4458;
+}
+
+.segmented button[aria-pressed="true"] {
+  background: var(--brand-gradient);
+  border-color: transparent;
+  box-shadow: 0 7px 18px rgba(253,38,122,.20);
+}
+
+.check-card input {
+  accent-color: #fd267a;
+}
+
+.setup-summary {
+  background: linear-gradient(135deg, #fff0f5, #fff5ef);
+  color: #b91657;
+  border: 1px solid rgba(253,38,122,.09);
+}
+
+.session-view {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(253,38,122,.07), transparent 32%),
+    transparent;
+}
+
+.session-progress > div,
+.progress-bar-large {
+  background: #eceef1;
+}
+
+.session-progress > div span,
+.progress-bar-large span {
+  background: var(--brand-gradient);
+}
+
+.streak-chip {
+  background: #fff3eb;
+  color: #b85a23;
+  border: 1px solid #ffe2cf;
+}
+
+.plant-card {
+  background: #fff;
+  border-color: rgba(33,38,46,.08);
+  border-radius: 30px;
+  box-shadow: 0 18px 52px rgba(33,38,46,.16);
+}
+
+.plant-image {
+  background:
+    radial-gradient(circle at 32% 24%, rgba(255,255,255,.66), transparent 19%),
+    linear-gradient(145deg, #ffe5ef 0%, #fff0ea 47%, #f0f2f4 100%);
+}
+
+.placeholder {
+  color: #e61e66;
+}
+
+.placeholder__leaf {
+  filter: none;
+  text-shadow: 0 8px 25px rgba(253,38,122,.16);
+}
+
+.badge {
+  background: #fff0f5;
+  color: #d91e63;
+}
+
+.badge--rose {
+  background: #fff0f1;
+  color: #e32f43;
+}
+
+.badge--gold {
+  background: #fff4df;
+  color: #9b6816;
+}
+
+.detail-section h3 {
+  color: #d91e63;
+}
+
+.no-details {
+  background: #f5f5f6;
+}
+
+.swipe-stamp {
+  border-width: 5px;
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(8px);
+}
+
+.swipe-stamp--review {
+  color: #ff4458;
+}
+
+.swipe-stamp--known {
+  color: #21b86c;
+}
+
+.swipe-actions {
+  gap: 1rem;
+}
+
+.action-button {
+  min-height: 60px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(33,38,46,.11);
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.action-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(33,38,46,.16);
+}
+
+.action-button--review {
+  background: #fff;
+  color: #ff4458;
+  border: 2px solid #ffe1e5;
+}
+
+.action-button--known {
+  background: #fff;
+  color: #18a963;
+  border: 2px solid #d9f7e8;
+}
+
+.action-button--review span,
+.action-button--known span {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.action-button--review span {
+  background: #fff0f1;
+}
+
+.action-button--known span {
+  background: #e9fbf2;
+}
+
+.finish-icon {
+  background: var(--brand-gradient);
+  box-shadow: 0 10px 24px rgba(253,38,122,.27);
+}
+
+.list-card__head span {
+  background: #fff0f5;
+  color: #d91e63;
+}
+
+.toast {
+  background: #21262e;
+  box-shadow: 0 16px 36px rgba(33,38,46,.30);
+}
+
+@media (max-width: 650px) {
+  .topbar {
+    background: rgba(255,255,255,.90);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .hero__panel {
+    border-radius: 24px;
+  }
+
+  .plant-card {
+    border-radius: 26px;
+  }
+
+  .swipe-actions {
+    position: sticky;
+    bottom: max(.55rem, env(safe-area-inset-bottom));
+    z-index: 12;
+    padding: .45rem;
+    border-radius: 999px;
+    background: rgba(247,247,248,.78);
+    backdrop-filter: blur(14px);
+  }
+}
