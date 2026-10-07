@@ -202,7 +202,14 @@ function bindSession() {
     state.session = null;
     showView("home");
   });
-  $("#reveal-answer").addEventListener("click", revealAnswer);
+  $("#reveal-answer").addEventListener("pointerdown", event => {
+    event.stopPropagation();
+  });
+  $("#reveal-answer").addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+    revealAnswer();
+  });
   $("#toggle-details").addEventListener("click", toggleDetails);
   $("#mark-review").addEventListener("click", () => answerCurrent("review"));
   $("#mark-known").addEventListener("click", () => answerCurrent("known"));
@@ -536,6 +543,14 @@ function finishSession() {
 
 function onPointerDown(event) {
   if (!state.session || event.pointerType === "mouse" && event.button !== 0) return;
+
+  // Ne jamais capturer le pointeur lorsqu'un élément interactif est cliqué.
+  // Sinon la carte de swipe vole le clic au bouton « Afficher la réponse ».
+  if (event.target.closest("button, a, input, select, textarea, label, [role='button']")) {
+    state.pointer = null;
+    return;
+  }
+
   state.pointer={id:event.pointerId,startX:event.clientX,currentX:event.clientX};
   event.currentTarget.setPointerCapture?.(event.pointerId);
   event.currentTarget.classList.add("is-dragging");
