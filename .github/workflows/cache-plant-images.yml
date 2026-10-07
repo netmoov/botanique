@@ -1,0 +1,54 @@
+name: Télécharger les photos botaniques
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/plants.json'
+      - 'tools/fetch_wikimedia_images.py'
+      - '.github/workflows/cache-plant-images.yml'
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  cache-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dépendances
+        run: pip install requests pillow
+
+      - name: Télécharger et optimiser les 158 photos
+        run: python tools/fetch_wikimedia_images.py
+
+      - name: Enregistrer les photos dans le dépôt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images data/plants.json data/plants.js image-sources.md photo-coverage-report.md
+          if git diff --cached --quiet; then
+            echo "Aucun changement à enregistrer."
+            exit 0
+          fi
+          git commit -m "Cache local des photos botaniques"
+          git push
+
+      - name: Demander le redéploiement GitHub Pages
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
