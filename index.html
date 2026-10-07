@@ -150,8 +150,7 @@
               <div id="question-block" class="question-block"></div>
               <button id="reveal-answer" class="button button--soft button--wide" type="button" hidden>Afficher la réponse</button>
               <div id="answer-block" class="answer-block"></div>
-              <button id="toggle-details" class="details-toggle" type="button" aria-expanded="false">Voir la fiche complète <span>⌄</span></button>
-              <div id="plant-details" class="plant-details" hidden></div>
+              <button id="toggle-details" class="details-toggle" type="button">Voir la fiche complète <span>↗</span></button>
             </div>
           </article>
         </div>
@@ -199,7 +198,20 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="data/plants.js?v=5"></script>
-  <script src="app.js?v=5"></script>
+  <dialog id="plant-detail-dialog" class="plant-detail-dialog" aria-labelledby="plant-detail-title">
+    <div class="plant-detail-dialog__panel">
+      <header class="plant-detail-dialog__header">
+        <div>
+          <p class="eyebrow">Fiche végétale complète</p>
+          <h2 id="plant-detail-title">Détails</h2>
+        </div>
+        <button id="close-plant-detail" class="dialog-close" type="button" aria-label="Fermer la fiche">✕</button>
+      </header>
+      <div id="plant-detail-dialog-content" class="plant-detail-dialog__content"></div>
+    </div>
+  </dialog>
+
+  <script src="data/plants.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

@@ -204,6 +204,11 @@ function bindSession() {
   });
   $("#reveal-answer").addEventListener("click", revealAnswer);
   $("#toggle-details").addEventListener("click", toggleDetails);
+  $("#close-plant-detail").addEventListener("click", closePlantDetails);
+  $("#plant-detail-dialog").addEventListener("click", event => {
+    if (event.target === $("#plant-detail-dialog")) closePlantDetails();
+  });
+  $("#plant-detail-dialog").addEventListener("close", () => document.body.classList.remove("dialog-open"));
   $("#mark-review").addEventListener("click", () => answerCurrent("review"));
   $("#mark-known").addEventListener("click", () => answerCurrent("known"));
 
@@ -245,10 +250,7 @@ function renderCurrentCard() {
   renderImage(plant);
   renderBadges(plant);
   renderQuestionAndAnswer(plant);
-  renderDetails(plant);
-  $("#plant-details").hidden = true;
-  $("#toggle-details").setAttribute("aria-expanded", "false");
-  $("#toggle-details").innerHTML = 'Voir la fiche complète <span>⌄</span>';
+  $("#toggle-details").innerHTML = 'Voir la fiche complète <span>↗</span>';
   updateSessionHeader();
   syncAnswerButtons();
   card.focus({ preventScroll: true });
@@ -257,159 +259,24 @@ function renderCurrentCard() {
 function renderImage(plant) {
   const container = $("#plant-image");
   const name = displayName(plant);
-  const requestId = `${plant.id}-${Date.now()}`;
-  container.dataset.imageRequest = requestId;
-
-  if (plant.image?.url) {
-    showResolvedImage(container, plant.image, name, requestId);
-    prefetchNextImage();
+  const image = plant.image;
+  if (!image?.url || !String(image.url).startsWith("assets/images/")) {
+    container.innerHTML = placeholderHtml(name, "Photo locale en préparation");
     return;
   }
-
-  const cached = imageCache[plant.id];
-  if (cached?.url) {
-    showResolvedImage(container, cached, name, requestId);
-    prefetchNextImage();
-    return;
-  }
-
-  if (!plant.imageLookup?.query) {
-    container.innerHTML = placeholderHtml(name, "Aucune recherche d’image configurée.");
-    return;
-  }
-
-  container.innerHTML = `<div class="placeholder placeholder--loading"><span class="image-spinner" aria-hidden="true"></span><strong>Chargement de la photo…</strong><small>Recherche Wikimedia Commons : ${escapeHtml(plant.imageLookup.query)}</small></div>`;
-  resolveCommonsImage(plant).then(image => {
-    if (container.dataset.imageRequest !== requestId) return;
-    if (image?.url) {
-      imageCache[plant.id] = image;
-      saveJson(IMAGE_CACHE_KEY, imageCache);
-      showResolvedImage(container, image, name, requestId);
-    } else {
-      container.innerHTML = placeholderHtml(name, "Wikimedia Commons n’a pas renvoyé de photographie exploitable pour cette recherche.");
-    }
-    prefetchNextImage();
-  }).catch(() => {
-    if (container.dataset.imageRequest !== requestId) return;
-    container.innerHTML = placeholderHtml(name, "La photo Wikimedia n’a pas pu être chargée. Vérifie la connexion Internet puis réessaie.");
-  });
-}
-
-function showResolvedImage(container, image, name, requestId) {
   const sourceLink = image.sourceUrl
-    ? `<a class="photo-credit" href="${escapeAttr(image.sourceUrl)}" target="_blank" rel="noopener noreferrer" title="Voir la source et la licence de cette photographie">Photo · ${escapeHtml(image.source || "Wikimedia Commons")}</a>`
+    ? `<a class="photo-credit" href="${escapeAttr(image.sourceUrl)}" target="_blank" rel="noopener noreferrer" title="Voir la source et la licence">Photo · ${escapeHtml(image.source || "Wikimedia Commons")}</a>`
     : "";
   const matchNote = image.matchNote ? `<span class="photo-match-note">${escapeHtml(image.matchNote)}</span>` : "";
-  container.innerHTML = `<img src="${escapeAttr(image.url)}" alt="${escapeAttr(image.texteAlternatif || name)}" loading="eager" referrerpolicy="no-referrer">${sourceLink}${matchNote}`;
+  container.innerHTML = `<img src="${escapeAttr(image.url)}" alt="${escapeAttr(image.texteAlternatif || name)}" loading="eager">${sourceLink}${matchNote}`;
   const img = container.querySelector("img");
   img.addEventListener("error", () => {
-    if (container.dataset.imageRequest !== requestId) return;
-    delete imageCache[currentPlant()?.id || ""];
-    saveJson(IMAGE_CACHE_KEY, imageCache);
-    container.innerHTML = placeholderHtml(name, "La photographie distante n’est plus disponible.");
+    container.innerHTML = placeholderHtml(name, "Photo locale introuvable");
   }, { once: true });
 }
 
-async function resolveCommonsImage(plant) {
-  const lookup = plant.imageLookup || {};
-  const query = `${lookup.query} filetype:bitmap`;
-  const endpoint = new URL("https://commons.wikimedia.org/w/api.php");
-  endpoint.search = new URLSearchParams({
-    action: "query",
-    generator: "search",
-    gsrsearch: query,
-    gsrnamespace: "6",
-    gsrlimit: "12",
-    prop: "imageinfo",
-    iiprop: "url|extmetadata",
-    iiurlwidth: "1200",
-    format: "json",
-    formatversion: "2",
-    origin: "*"
-  }).toString();
-
-  const response = await fetch(endpoint.toString(), { mode: "cors" });
-  if (!response.ok) throw new Error(`Wikimedia ${response.status}`);
-  const payload = await response.json();
-  const pages = Array.isArray(payload?.query?.pages) ? payload.query.pages : [];
-  const ranked = pages
-    .map(page => ({ page, score: scoreCommonsCandidate(page, lookup) }))
-    .filter(item => item.page?.imageinfo?.[0]?.thumburl || item.page?.imageinfo?.[0]?.url)
-    .sort((a,b) => b.score - a.score);
-  if (!ranked.length) return null;
-
-  const best = ranked[0].page;
-  const info = best.imageinfo[0];
-  const metadata = info.extmetadata || {};
-  const required = (lookup.requiredTokens || []).map(normalizeSearchText);
-  const titleNormalized = normalizeSearchText(best.title || "");
-  const exactTokens = required.length && required.every(token => titleNormalized.includes(token));
-  const matchNote = lookup.matchLevel === "exact" && exactTokens
-    ? "Correspondance taxonomique contrôlée"
-    : lookup.matchLevel === "cultivar"
-      ? "Illustration du taxon/cultivar recherché"
-      : lookup.matchLevel === "genre"
-        ? "Illustration représentative du genre"
-        : lookup.matchLevel === "hybride"
-          ? "Illustration représentative de l’hybride/groupe"
-          : lookup.matchLevel === "representatif"
-            ? "Illustration représentative d’un taxon cité dans le référentiel"
-            : "Illustration correspondant au terme du référentiel";
-
-  return {
-    url: info.thumburl || info.url,
-    source: "Wikimedia Commons",
-    sourceUrl: info.descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(best.title || "")}`,
-    texteAlternatif: lookup.texteAlternatif || displayName(plant),
-    matchNote,
-    license: stripHtml(metadata.LicenseShortName?.value || ""),
-    author: stripHtml(metadata.Artist?.value || "")
-  };
-}
-
-function scoreCommonsCandidate(page, lookup) {
-  const title = normalizeSearchText(page?.title || "");
-  let score = 0;
-  const required = (lookup.requiredTokens || []).map(normalizeSearchText).filter(Boolean);
-  required.forEach(token => { score += title.includes(token) ? 12 : -8; });
-  const queryTokens = normalizeSearchText(lookup.query || "").split(" ").filter(token => token.length > 3);
-  queryTokens.forEach(token => { if (title.includes(token)) score += 2; });
-  if (/flower|fleur|leaf|leaves|foliage|plant|fruit|berries|branch|branches/.test(title)) score += 2;
-  if (/map|range|distribution|logo|herbarium|illustration|drawing|diagram|seed|seeds|fruit only/.test(title)) score -= 5;
-  if (/\.svg$|\.pdf$/.test(title)) score -= 30;
-  return score;
-}
-
-function normalizeSearchText(value) {
-  return String(value || "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/^file:/, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
-function stripHtml(value) {
-  const div = document.createElement("div");
-  div.innerHTML = String(value || "");
-  return div.textContent || div.innerText || "";
-}
-
-function prefetchNextImage() {
-  const session = state.session;
-  if (!session) return;
-  const next = session.queue[session.index + 1];
-  if (!next || next.image?.url || imageCache[next.id]?.url || !next.imageLookup?.query) return;
-  resolveCommonsImage(next).then(image => {
-    if (!image?.url) return;
-    imageCache[next.id] = image;
-    saveJson(IMAGE_CACHE_KEY, imageCache);
-  }).catch(() => {});
-}
-
 function placeholderHtml(name, reason = "Image indisponible") {
-  return `<div class="placeholder"><span class="placeholder__leaf" aria-hidden="true">❧</span><strong>${escapeHtml(reason)}</strong><small>${escapeHtml(name)} · aucune photographie n’est inventée.</small></div>`;
+  return `<div class="placeholder"><span class="placeholder__leaf" aria-hidden="true">❧</span><strong>${escapeHtml(reason)}</strong><small>${escapeHtml(name)}</small></div>`;
 }
 
 function renderBadges(plant) {
@@ -502,7 +369,7 @@ function renderConservationSummary(plant) {
   return facts.length ? `<div class="detail-grid">${facts.map(([k,v])=>`<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div>` : '<p class="no-details">Informations de conservation non disponibles.</p>';
 }
 
-function renderDetails(plant) {
+function buildDetailsHtml(plant) {
   const id=plant.identification || {};
   const tc=plant.tenueConservation || {};
   const pp=plant.preparationPrecautions || {};
@@ -550,18 +417,11 @@ function renderDetails(plant) {
   if (plant.resumePedagogique?.length) sections.push(`<section class="detail-section"><h3>À retenir</h3><ul class="retain-list">${plant.resumePedagogique.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
   if (plant.niveauInformation === "referentiel_uniquement") sections.push('<section class="detail-section"><h3>Données détaillées</h3><p class="no-details">Informations détaillées non disponibles dans les documents fournis. Cette carte reste utilisable pour la reconnaissance visuelle et l’apprentissage des noms.</p></section>');
 
-  const cachedImage = plant.image || imageCache[plant.id];
-  const imageSourceUrl = cachedImage?.sourceUrl;
-  if (imageSourceUrl) {
-    sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="photo-source-detail"><a href="${escapeAttr(imageSourceUrl)}" target="_blank" rel="noopener noreferrer">Voir la source et la licence sur Wikimedia Commons ↗</a>${cachedImage.matchNote ? `<br><small>${escapeHtml(cachedImage.matchNote)}</small>` : ""}</p></section>`);
-  } else if (plant.imageLookup?.query) {
-    sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="no-details">La photographie est recherchée automatiquement dans Wikimedia Commons à partir de « ${escapeHtml(plant.imageLookup.query)} » lors de l’affichage.</p></section>`);
+  if (plant.image?.sourceUrl) {
+    sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="photo-source-detail"><a href="${escapeAttr(plant.image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source et licence Wikimedia Commons ↗</a>${plant.image.author ? `<br><small>Auteur : ${escapeHtml(plant.image.author)}</small>` : ""}${plant.image.license ? `<br><small>Licence : ${escapeHtml(plant.image.license)}</small>` : ""}</p></section>`);
   }
-
   if (plant.sourceNotes?.length) sections.push(`<section class="detail-section"><h3>Notes source</h3><ul class="retain-list">${plant.sourceNotes.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
-
-  const details=$("#plant-details");
-  details.innerHTML=sections.join("") || '<p class="no-details">Aucune information disponible pour cette fiche.</p>';
+  return sections.join("") || '<p class="no-details">Aucune information disponible pour cette fiche.</p>';
 }
 
 function addDetail(items,label,value) { if (value !== undefined && value !== null && String(value).trim() !== "") items.push([label,String(value)]); }
@@ -570,20 +430,21 @@ function detailSection(title,items) {
 }
 
 function toggleDetails() {
-  if (!state.session) return;
-  if (MODES[state.session.mode].reveal && !state.session.revealed && state.session.mode === "conservation") {
-    showToast("Affiche d’abord la réponse en mode Conservation.");
-    return;
-  }
-  const details=$("#plant-details");
-  const card=$("#plant-card");
-  if (!details.innerHTML.trim()) renderDetails(currentPlant());
-  const opening=details.hidden;
-  details.hidden=!opening;
-  card.classList.toggle("details-open", opening);
-  $("#toggle-details").setAttribute("aria-expanded",String(opening));
-  $("#toggle-details").innerHTML=opening ? 'Masquer la fiche complète <span>⌃</span>' : 'Voir la fiche complète <span>⌄</span>';
-  if (opening) window.setTimeout(() => details.scrollIntoView({ behavior:"smooth", block:"nearest" }), 40);
+  const plant = currentPlant();
+  if (!plant) return;
+  const dialog = $("#plant-detail-dialog");
+  $("#plant-detail-title").textContent = `${displayName(plant)} · ${plant.nomLatinPrincipal || ""}`;
+  $("#plant-detail-dialog-content").innerHTML = buildDetailsHtml(plant);
+  document.body.classList.add("dialog-open");
+  if (typeof dialog.showModal === "function") dialog.showModal();
+  else dialog.setAttribute("open", "");
+}
+
+function closePlantDetails() {
+  const dialog = $("#plant-detail-dialog");
+  document.body.classList.remove("dialog-open");
+  if (typeof dialog.close === "function" && dialog.open) dialog.close();
+  else dialog.removeAttribute("open");
 }
 
 function syncAnswerButtons() {
