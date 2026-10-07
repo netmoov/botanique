@@ -800,3 +800,24 @@ body.dialog-open { overflow: hidden; }
   .inline-details-content { padding: 0 .9rem .9rem; }
   .inline-details-content .detail-grid { grid-template-columns: 1fr; }
 }
+
+
+/* V6.3 — reconnaissance : nom latin prioritaire */
+.recognition-latin {
+  margin-bottom: .25rem;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.02;
+  color: var(--ink);
+}
+.recognition-latin strong { font-weight: 950; }
+.recognition-common {
+  margin: 0 0 .35rem;
+  font-size: clamp(1.18rem, 3vw, 1.5rem);
+  font-weight: 800;
+  color: var(--muted);
+}
+.recognition-aliases {
+  margin: 0 0 .8rem;
+  color: var(--muted);
+  font-size: .9rem;
+}

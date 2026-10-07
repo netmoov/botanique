@@ -330,7 +330,7 @@ function revealAnswer() {
   const latin=plant.nomLatinPrincipal || "Nom latin non indiqué";
   let html="";
   if (mode === "identification") {
-    html=`<p class="eyebrow">Réponse</p><h2>${escapeHtml(common)}</h2><p class="latin"><em>${escapeHtml(latin)}</em></p>${renderQuickFacts(plant,true)}`;
+    html=`<p class="eyebrow">Réponse</p><h2 class="recognition-latin"><strong><em>${escapeHtml(latin)}</em></strong></h2><p class="recognition-common">${escapeHtml(common)}</p>${plant.autresNomsCommuns?.length ? `<p class="recognition-aliases">${escapeHtml(plant.autresNomsCommuns.join(" · "))}</p>` : ""}${renderQuickFacts(plant,true)}`;
   } else if (mode === "latin") {
     html=`<p class="eyebrow">Réponse</p><h2><em>${escapeHtml(latin)}</em></h2>${plant.autresNomsCommuns?.length ? `<p>${escapeHtml(plant.autresNomsCommuns.join(" · "))}</p>` : ""}`;
   } else if (mode === "common") {
@@ -351,7 +351,7 @@ function renderQuickFacts(plant, expanded=false) {
   if (id.couleurs?.length) facts.push(["Couleurs", id.couleurs.join(", ")]);
   if (id.saisonDisponibilite) facts.push(["Saison", id.saisonDisponibilite]);
   if (expanded && tc.dureeTenue) facts.push(["Tenue", tc.dureeTenue]);
-  if (!facts.length) return '<p class="no-details">Informations détaillées non disponibles dans les documents fournis.</p>';
+  if (!facts.length) return '<p class="no-details">Informations détaillées non documentées dans les sources retenues.</p>';
   return `<div class="detail-grid">${facts.slice(0, expanded ? 4 : 3).map(([k,v]) => `<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div>`;
 }
 
@@ -365,7 +365,7 @@ function renderConservationSummary(plant) {
   if (tc.sensibiliteEthylene) facts.push(["Éthylène",tc.sensibiliteEthylene]);
   if (pp.temperatureStockage) facts.push(["Stockage",pp.temperatureStockage]);
   if (pp.manipulation) facts.push(["Précaution",pp.manipulation]);
-  return facts.length ? `<div class="detail-grid">${facts.map(([k,v])=>`<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div>` : '<p class="no-details">Informations de conservation non disponibles.</p>';
+  return facts.length ? `<div class="detail-grid">${facts.map(([k,v])=>`<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div>` : '<p class="no-details">Informations de conservation non documentées dans les sources retenues.</p>';
 }
 
 function buildDetailsHtml(plant) {
@@ -414,7 +414,7 @@ function buildDetailsHtml(plant) {
   else if (plant.horsReferentiel) sections.push('<section class="detail-section"><h3>Référentiel IFAPME</h3><p class="no-details">Fiche complémentaire hors référentiel. Elle est exclue des sessions par défaut.</p></section>');
 
   if (plant.resumePedagogique?.length) sections.push(`<section class="detail-section"><h3>À retenir</h3><ul class="retain-list">${plant.resumePedagogique.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
-  if (plant.niveauInformation === "referentiel_uniquement") sections.push('<section class="detail-section"><h3>Données détaillées</h3><p class="no-details">Informations détaillées non disponibles dans les documents fournis. Cette carte reste utilisable pour la reconnaissance visuelle et l’apprentissage des noms.</p></section>');
+  if (plant.niveauInformation === "referentiel_uniquement") sections.push('<section class="detail-section"><h3>Données détaillées</h3><p class="no-details">Informations détaillées non documentées dans les sources retenues. Cette carte reste utilisable pour la reconnaissance visuelle et l’apprentissage des noms.</p></section>');
 
   if (plant.image?.sourceUrl) {
     sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="photo-source-detail"><a href="${escapeAttr(plant.image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source et licence Wikimedia Commons ↗</a>${plant.image.author ? `<br><small>Auteur : ${escapeHtml(plant.image.author)}</small>` : ""}${plant.image.license ? `<br><small>Licence : ${escapeHtml(plant.image.license)}</small>` : ""}</p></section>`);
