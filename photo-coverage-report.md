@@ -1,8 +1,7 @@
-# Rapport couverture photos V5
+# Couverture des photos
 
-- Total cartes : 158
-- Photos Wikimedia épinglées : 61
-- Photos Wikimedia résolues automatiquement : 97
-- Cartes sans mécanisme photo : 0
+- Végétaux dans la base : **158**
+- Photos locales présentes : **158**
+- Photos manquantes : **0**
 
-**Couverture configurée : 158/158.**
+Toutes les cartes disposent d’une photographie locale.
