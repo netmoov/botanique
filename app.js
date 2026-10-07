@@ -204,13 +204,6 @@ function bindSession() {
   });
   $("#reveal-answer").addEventListener("click", revealAnswer);
   $("#toggle-details").addEventListener("click", toggleDetails);
-  $("#close-plant-detail").addEventListener("click", closePlantDetails);
-  $("#plant-detail-dialog").addEventListener("click", event => {
-    if (event.target === $("#plant-detail-dialog")) closePlantDetails();
-  });
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape" && !$("#plant-detail-dialog").hidden) closePlantDetails();
-  });
   $("#mark-review").addEventListener("click", () => answerCurrent("review"));
   $("#mark-known").addEventListener("click", () => answerCurrent("known"));
 
@@ -252,7 +245,11 @@ function renderCurrentCard() {
   renderImage(plant);
   renderBadges(plant);
   renderQuestionAndAnswer(plant);
-  $("#toggle-details").innerHTML = 'Voir la fiche complète <span>↗</span>';
+  renderInlineDetails(plant);
+  const detailsButton = $("#toggle-details");
+  detailsButton.setAttribute("aria-expanded", "false");
+  detailsButton.innerHTML = 'Voir la fiche complète <span aria-hidden="true">⌄</span>';
+  $("#plant-details").hidden = true;
   updateSessionHeader();
   syncAnswerButtons();
   card.focus({ preventScroll: true });
@@ -431,26 +428,32 @@ function detailSection(title,items) {
   return `<section class="detail-section"><h3>${escapeHtml(title)}</h3><div class="detail-grid">${items.map(([k,v])=>`<div class="detail-item"><strong>${escapeHtml(k)}</strong><span>${escapeHtml(v)}</span></div>`).join("")}</div></section>`;
 }
 
-function toggleDetails() {
-  const plant = currentPlant();
-  if (!plant) return;
-  const overlay = $("#plant-detail-dialog");
-  const content = $("#plant-detail-dialog-content");
-  $("#plant-detail-title").textContent = `${displayName(plant)} · ${plant.nomLatinPrincipal || ""}`;
+function renderInlineDetails(plant) {
+  const content = $("#plant-details");
+  if (!content || !plant) return;
   content.innerHTML = buildDetailsHtml(plant);
-  overlay.hidden = false;
-  overlay.classList.add("is-open");
-  document.body.classList.add("dialog-open");
-  content.scrollTop = 0;
-  requestAnimationFrame(() => $("#close-plant-detail")?.focus());
 }
 
-function closePlantDetails() {
-  const overlay = $("#plant-detail-dialog");
-  overlay.classList.remove("is-open");
-  overlay.hidden = true;
-  document.body.classList.remove("dialog-open");
-  $("#toggle-details")?.focus({ preventScroll: true });
+function toggleDetails() {
+  const plant = currentPlant();
+  const content = $("#plant-details");
+  const button = $("#toggle-details");
+  if (!plant || !content || !button) return;
+
+  if (!content.innerHTML.trim()) renderInlineDetails(plant);
+
+  const opening = content.hidden;
+  content.hidden = !opening;
+  button.setAttribute("aria-expanded", String(opening));
+  button.innerHTML = opening
+    ? 'Masquer la fiche complète <span aria-hidden="true">⌃</span>'
+    : 'Voir la fiche complète <span aria-hidden="true">⌄</span>';
+
+  if (opening) {
+    requestAnimationFrame(() => {
+      content.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 }
 
 function syncAnswerButtons() {

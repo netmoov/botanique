@@ -6,7 +6,7 @@
   <meta name="description" content="Compagnon de révision botanique IFAPME pour fleuristes : identification, noms latins, conservation et progression.">
   <meta name="theme-color" content="#FD267A">
   <title>Botanique BOF · Révision IFAPME</title>
-  <link rel="stylesheet" href="style.css?v=61?v=5">
+  <link rel="stylesheet" href="style.css?v=62?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -150,7 +150,6 @@
               <div id="question-block" class="question-block"></div>
               <button id="reveal-answer" class="button button--soft button--wide" type="button" hidden>Afficher la réponse</button>
               <div id="answer-block" class="answer-block"></div>
-              <button id="toggle-details" class="details-toggle" type="button">Voir la fiche complète <span>↗</span></button>
             </div>
           </article>
         </div>
@@ -159,6 +158,14 @@
           <button id="mark-review" class="action-button action-button--review" type="button"><span>↻</span>À revoir</button>
           <button id="mark-known" class="action-button action-button--known" type="button"><span>✓</span>Je connais</button>
         </div>
+
+        <section class="inline-details-panel" aria-label="Fiche végétale détaillée">
+          <button id="toggle-details" class="details-toggle details-toggle--below-actions" type="button" aria-expanded="false" aria-controls="plant-details">
+            Voir la fiche complète <span aria-hidden="true">⌄</span>
+          </button>
+          <div id="plant-details" class="plant-details inline-details-content" hidden></div>
+        </section>
+
         <p class="swipe-help">Sur mobile : glisser la carte à gauche ou à droite. Sur ordinateur : boutons ou touches ← / →.</p>
       </div>
     </section>
@@ -198,20 +205,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <div id="plant-detail-dialog" class="plant-detail-overlay" role="dialog" aria-modal="true" aria-labelledby="plant-detail-title" hidden>
-    <div class="plant-detail-dialog__panel">
-      <header class="plant-detail-dialog__header">
-        <div>
-          <p class="eyebrow">Fiche végétale complète</p>
-          <h2 id="plant-detail-title">Détails</h2>
-        </div>
-        <button id="close-plant-detail" class="dialog-close" type="button" aria-label="Fermer la fiche">✕</button>
-      </header>
-      <div id="plant-detail-dialog-content" class="plant-detail-dialog__content"></div>
-    </div>
-  </div>
-
-  <script src="data/plants.js?v=61"></script>
-  <script src="app.js?v=61"></script>
+  <script src="data/plants.js?v=62"></script>
+  <script src="app.js?v=62"></script>
 </body>
 </html>
