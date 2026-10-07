@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Compagnon de révision botanique IFAPME pour fleuristes : identification, noms latins, conservation et progression.">
+  <meta name="theme-color" content="#214b3a">
+  <title>Botanique BOF · Révision IFAPME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Botanique BOF - Accueil">
+      <span class="brand__mark" aria-hidden="true">❧</span>
+      <span><strong>Botanique BOF</strong><small>Révision fleuriste · IFAPME</small></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav__button is-active" type="button" data-view-target="home">Accueil</button>
+      <button class="nav__button" type="button" data-view-target="progress">Progression</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="view-home" class="view is-active" data-view="home">
+      <div class="hero shell">
+        <div class="hero__copy">
+          <p class="eyebrow">Je vois · j’identifie · je vérifie · je swipe · je progresse</p>
+          <h1>Réviser les végétaux sans transformer le cours en catalogue.</h1>
+          <p class="hero__lead">Une carte à la fois, avec les référentiels R05/R35, les fiches de conservation disponibles et une répétition plus fréquente des végétaux difficiles.</p>
+          <div class="hero__actions">
+            <button id="quick-start" class="button button--primary" type="button">Commencer une session</button>
+            <button class="button button--ghost" type="button" data-view-target="progress">Voir ma progression</button>
+          </div>
+        </div>
+        <aside class="hero__panel" aria-label="Résumé de progression">
+          <p class="eyebrow">Progression locale</p>
+          <div class="mastery-ring" id="home-mastery-ring"><span id="home-mastery">0%</span></div>
+          <div class="mini-stats">
+            <div><strong id="home-known">0</strong><span>connues</span></div>
+            <div><strong id="home-review">0</strong><span>à revoir</span></div>
+            <div><strong id="home-seen">0</strong><span>vues</span></div>
+          </div>
+          <p class="privacy-note">La progression reste dans ce navigateur. Aucun compte n’est nécessaire.</p>
+        </aside>
+      </div>
+
+      <section class="shell section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Choisir comment réviser</p>
+            <h2>Modes de révision</h2>
+          </div>
+        </div>
+        <div class="mode-grid" id="mode-grid">
+          <button class="mode-card" type="button" data-mode="discovery">
+            <span class="mode-card__icon">🌿</span><strong>Découverte</strong><span>Voir les noms et les informations dès le départ.</span>
+          </button>
+          <button class="mode-card" type="button" data-mode="identification">
+            <span class="mode-card__icon">👁</span><strong>Identification</strong><span>Voir l’image d’abord, puis révéler la réponse.</span>
+          </button>
+          <button class="mode-card" type="button" data-mode="latin">
+            <span class="mode-card__icon">Aa</span><strong>Noms latins</strong><span>Retrouver le nom latin à partir du végétal.</span>
+          </button>
+          <button class="mode-card" type="button" data-mode="common">
+            <span class="mode-card__icon">Ab</span><strong>Noms communs</strong><span>Retrouver le nom courant à partir du nom latin.</span>
+          </button>
+          <button class="mode-card" type="button" data-mode="conservation">
+            <span class="mode-card__icon">💧</span><strong>Conservation</strong><span>Réviser eau, tenue, chaleur, éthylène et précautions.</span>
+          </button>
+          <button class="mode-card mode-card--review" type="button" data-mode="review">
+            <span class="mode-card__icon">↻</span><strong>À revoir</strong><span>Travailler uniquement les végétaux déjà signalés comme difficiles.</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="shell section source-summary">
+        <div>
+          <p class="eyebrow">Base intégrée</p>
+          <h2>Référentiels et fiches détaillées</h2>
+          <p>La base conserve les noms et statuts des documents fournis. Les fiches sans informations détaillées restent utilisables pour les modes de reconnaissance et de noms.</p>
+        </div>
+        <div class="source-counters" id="source-counters"></div>
+      </section>
+    </section>
+
+    <section id="view-setup" class="view" data-view="setup">
+      <div class="shell narrow section">
+        <button class="back-link" type="button" data-view-target="home">← Retour</button>
+        <div class="section-heading">
+          <div><p class="eyebrow">Préparer la session</p><h1 id="setup-title">Nouvelle session</h1></div>
+        </div>
+        <form id="session-form" class="setup-card">
+          <fieldset>
+            <legend>Mode</legend>
+            <div id="setup-mode-options" class="segmented"></div>
+          </fieldset>
+          <div class="setup-grid">
+            <label>Référentiel
+              <select id="filter-reference">
+                <option value="all">Tous les végétaux</option>
+                <option value="R05">R05 uniquement</option>
+                <option value="R35">R35 uniquement</option>
+                <option value="R35-obligatoire">R35 obligatoires uniquement</option>
+                <option value="R35-facultatif">R35 facultatifs uniquement</option>
+              </select>
+            </label>
+            <label>Catégorie
+              <select id="filter-category">
+                <option value="all">Toutes les catégories</option>
+                <option value="fleur_plante">Fleurs et plantes</option>
+                <option value="verdure">Verdures</option>
+              </select>
+            </label>
+            <label>Nombre de cartes
+              <select id="session-size">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="30">30</option>
+                <option value="all">Toutes</option>
+              </select>
+            </label>
+          </div>
+          <div class="check-row">
+            <label class="check-card"><input id="filter-detailed" type="checkbox"><span><strong>Fiches détaillées seulement</strong><small>Utile pour le mode Conservation.</small></span></label>
+            <label class="check-card"><input id="filter-complementary" type="checkbox"><span><strong>Inclure les fiches hors référentiel</strong><small>Désactivé par défaut.</small></span></label>
+          </div>
+          <div class="setup-summary" id="setup-summary" aria-live="polite"></div>
+          <button class="button button--primary button--wide" type="submit">Lancer la session</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="view-session" class="view session-view" data-view="session">
+      <div class="session-shell">
+        <header class="session-header">
+          <button id="exit-session" class="icon-text-button" type="button">✕ Quitter</button>
+          <div class="session-progress"><span id="session-label">Session</span><div><span id="session-progress-bar"></span></div><small id="session-counter">0 / 0</small></div>
+          <span id="session-streak" class="streak-chip">0 série</span>
+        </header>
+
+        <div class="swipe-stage">
+          <article id="plant-card" class="plant-card" tabindex="0" aria-live="polite">
+            <div class="swipe-stamp swipe-stamp--review" aria-hidden="true">À REVOIR</div>
+            <div class="swipe-stamp swipe-stamp--known" aria-hidden="true">JE CONNAIS</div>
+            <div id="plant-image" class="plant-image"></div>
+            <div class="plant-card__body">
+              <div id="plant-badges" class="badges"></div>
+              <div id="question-block" class="question-block"></div>
+              <button id="reveal-answer" class="button button--soft button--wide" type="button" hidden>Afficher la réponse</button>
+              <div id="answer-block" class="answer-block"></div>
+              <button id="toggle-details" class="details-toggle" type="button" aria-expanded="false">Voir la fiche complète <span>⌄</span></button>
+              <div id="plant-details" class="plant-details" hidden></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="swipe-actions" aria-label="Réponse">
+          <button id="mark-review" class="action-button action-button--review" type="button"><span>↻</span>À revoir</button>
+          <button id="mark-known" class="action-button action-button--known" type="button"><span>✓</span>Je connais</button>
+        </div>
+        <p class="swipe-help">Sur mobile : glisser la carte à gauche ou à droite. Sur ordinateur : boutons ou touches ← / →.</p>
+      </div>
+    </section>
+
+    <section id="view-finish" class="view" data-view="finish">
+      <div class="shell narrow finish-card">
+        <span class="finish-icon">✓</span>
+        <p class="eyebrow">Session terminée</p>
+        <h1>Bien. Maintenant, on consolide.</h1>
+        <div class="finish-stats" id="finish-stats"></div>
+        <div class="finish-actions">
+          <button id="finish-review" class="button button--primary" type="button">Refaire les plantes à revoir</button>
+          <button id="finish-again" class="button button--soft" type="button">Continuer la révision</button>
+          <button class="button button--ghost" type="button" data-view-target="home">Retourner à l’accueil</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-progress" class="view" data-view="progress">
+      <div class="shell section">
+        <div class="section-heading progress-heading">
+          <div><p class="eyebrow">Suivi personnel</p><h1>Progression</h1><p>Les données sont enregistrées uniquement dans ce navigateur.</p></div>
+          <button id="reset-progress" class="button button--danger-ghost" type="button">Réinitialiser ma progression</button>
+        </div>
+        <div id="progress-stats" class="progress-stats"></div>
+        <div class="progress-bar-large"><span id="progress-bar-large"></span></div>
+        <div class="progress-actions">
+          <button id="progress-review-start" class="button button--primary" type="button">Réviser uniquement « À revoir »</button>
+        </div>
+        <div class="progress-columns">
+          <section class="list-card"><div class="list-card__head"><h2>À revoir</h2><span id="review-count-badge"></span></div><div id="review-list" class="plant-list"></div></section>
+          <section class="list-card"><div class="list-card__head"><h2>Connues</h2><span id="known-count-badge"></span></div><div id="known-list" class="plant-list"></div></section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/plants.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
