@@ -25,15 +25,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/agapanthus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agapanthus_Flower_and_Leaves.JPG",
-      "fichierCommons": "Agapanthus Flower and Leaves.JPG",
-      "texteAlternatif": "Agapanthe — Agapanthus",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "Edoddridge"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Agapanthus flower",
+      "requiredTokens": [
+        "agapanthus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Agapanthe — Agapanthus"
     }
   },
   {
@@ -62,15 +61,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/agave.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agave_americana_%27Medio-Picta%27_Plant_3264px.jpg",
-      "fichierCommons": "Agave americana 'Medio-Picta' Plant 3264px.jpg",
-      "texteAlternatif": "Agave — Agave",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man ). Co-attribution must be given to the Chanticleer Garden."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Agave americana",
+      "requiredTokens": [
+        "agave"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Agave — Agave"
     }
   },
   {
@@ -99,15 +97,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/allium.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ornamental_Onion_Allium_%27Gladiator%27_Flower_Head_2691px.jpg",
-      "fichierCommons": "Ornamental Onion Allium 'Gladiator' Flower Head 2691px.jpg",
-      "texteAlternatif": "Ail d’ornement — Allium",
-      "matchNote": "Illustration représentative du genre",
-      "license": "GFDL 1.2",
-      "author": "Photo by and (c)2007 Derek Ramsey ( Ram-Man )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "ornamental Allium flower",
+      "requiredTokens": [
+        "allium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Ail d’ornement — Allium"
     }
   },
   {
@@ -177,14 +174,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/alchemilla-mollis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alchemilla%20mollis.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alchemilla_mollis.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alchemilla%20mollis.jpg",
       "fichierCommons": "Alchemilla mollis.jpg",
-      "texteAlternatif": "Alchemilla mollis — Alchémille",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 3.0",
-      "author": "A. Barra"
+      "taxonPhotographie": "Alchemilla mollis",
+      "texteAlternatif": "Alchemilla mollis — Alchémille"
     }
   },
   {
@@ -258,14 +253,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/alstroemeria.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alstroemeria.jpg?width=1200",
       "source": "Wikimedia Commons",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alstroemeria.jpg",
       "fichierCommons": "Alstroemeria.jpg",
-      "texteAlternatif": "Alstroemeria — Alstroémère",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "GFDL 1.2",
-      "author": "Muhammad Mahdi Karim"
+      "taxonPhotographie": "Alstroemeria",
+      "texteAlternatif": "Alstroemeria — Alstroémère"
     }
   },
   {
@@ -342,14 +335,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Amaranthus caudatus / Amaranthus cruentus »."
     ],
     "image": {
-      "url": "assets/images/amaranthus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amaranthus%20caudatus.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amaranthus_caudatus.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amaranthus%20caudatus.jpg",
       "fichierCommons": "Amaranthus caudatus.jpg",
-      "texteAlternatif": "Amaranthus — Amarante",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "FreCha"
+      "taxonPhotographie": "Amaranthus caudatus",
+      "texteAlternatif": "Amaranthus — Amarante"
     }
   },
   {
@@ -378,15 +369,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/physalis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Lantern_Plant_(Physalis_alkekengi).jpg",
-      "fichierCommons": "Chinese Lantern Plant (Physalis alkekengi).jpg",
-      "texteAlternatif": "Amour-en-cage — Physalis",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 4.0",
-      "author": "Armineaghayan"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Physalis alkekengi",
+      "requiredTokens": [
+        "physalis"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Amour-en-cage — Physalis"
     }
   },
   {
@@ -415,15 +405,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cotinus-coggygria.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cotinus_coggygria_%27Ancot%27_(Golden_Spirit)_Leaves_3008px.JPG",
-      "fichierCommons": "Cotinus coggygria 'Ancot' (Golden Spirit) Leaves 3008px.JPG",
-      "texteAlternatif": "Arbre à perruque — Cotinus coggygria",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man ). Location credit to the Chanticleer Garden."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cotinus coggygria",
+      "requiredTokens": [
+        "cotinus",
+        "coggygria"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Arbre à perruque — Cotinus coggygria"
     }
   },
   {
@@ -452,15 +442,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/chrysalidocarpus-lutescens-dypsis-lutescens.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens_(Family_Arecaceae)_-_leaves_close-up.jpg",
-      "fichierCommons": "Dypsis lutescens (Family Arecaceae) - leaves close-up.jpg",
-      "texteAlternatif": "Areca — Chrysalidocarpus lutescens  (Dypsis lutescens)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Juan Carlos Fonseca Mata"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dypsis lutescens",
+      "requiredTokens": [
+        "dypsis",
+        "lutescens"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Areca — Chrysalidocarpus lutescens  (Dypsis lutescens)"
     }
   },
   {
@@ -530,14 +520,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/asclepias.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ascelpias%20tuberosa%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ascelpias_tuberosa_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ascelpias%20tuberosa%20flower.jpg",
       "fichierCommons": "Ascelpias tuberosa flower.jpg",
-      "texteAlternatif": "Asclepias — Asclépiade",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": ""
+      "taxonPhotographie": "Asclepias tuberosa",
+      "texteAlternatif": "Asclepias — Asclépiade"
     }
   },
   {
@@ -570,15 +558,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/densiflorus-asparagus-densiflorus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asparagus_densiflorus_04a.jpg",
-      "fichierCommons": "Asparagus densiflorus 04a.jpg",
-      "texteAlternatif": "Asparagus densiflorus — Densiflorus (Asparagus densiflorus)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Frank Vincentz"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus densiflorus",
+      "requiredTokens": [
+        "asparagus",
+        "densiflorus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Asparagus densiflorus — Densiflorus (Asparagus densiflorus)"
     }
   },
   {
@@ -607,15 +595,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/aspidistra-elatior.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspidistra_elatior,_flowers_and_flower_buds_on_soil.jpg",
-      "fichierCommons": "Aspidistra elatior, flowers and flower buds on soil.jpg",
-      "texteAlternatif": "Aspidistra — Aspidistra elatior",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Boervos"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aspidistra elatior",
+      "requiredTokens": [
+        "aspidistra",
+        "elatior"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Aspidistra — Aspidistra elatior"
     }
   },
   {
@@ -644,15 +632,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/astilbe.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astilbe_flowers_spectral_comparison_Vis_UV_IR.jpg",
-      "fichierCommons": "Astilbe flowers spectral comparison Vis UV IR.jpg",
-      "texteAlternatif": "Astilbe — Astilbe",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "Dave Kennard"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Astilbe flower",
+      "requiredTokens": [
+        "astilbe"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Astilbe — Astilbe"
     }
   },
   {
@@ -722,14 +709,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/astrantia-major.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Astrantia%20major%20A.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astrantia_major_A.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astrantia%20major%20A.jpg",
       "fichierCommons": "Astrantia major A.jpg",
-      "texteAlternatif": "Astrantia major — Astrance",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Wouter Hagens"
+      "taxonPhotographie": "Astrantia major",
+      "texteAlternatif": "Astrantia major — Astrance"
     }
   },
   {
@@ -758,15 +743,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/bambusa-phyllostachys.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_flower_of_bamboo(Phyllostachys_bambusoides)_20230429_03.jpg",
-      "fichierCommons": "The flower of bamboo(Phyllostachys bambusoides) 20230429 03.jpg",
-      "texteAlternatif": "Bambou — Bambusa / Phyllostachys",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC0",
-      "author": "先従隗始"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phyllostachys bamboo",
+      "requiredTokens": [
+        "phyllostachys"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Bambou — Bambusa / Phyllostachys"
     }
   },
   {
@@ -839,14 +823,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Banksia (plusieurs espèces) »."
     ],
     "image": {
-      "url": "assets/images/banksia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Banksia%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banksia_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banksia%20flower.jpg",
       "fichierCommons": "Banksia flower.jpg",
-      "texteAlternatif": "Banksia — Banksia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "GFDL 1.2",
-      "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Tamron 28-75mm f/2.8"
+      "taxonPhotographie": "Banksia (représentant du genre)",
+      "texteAlternatif": "Banksia — Banksia"
     }
   },
   {
@@ -875,15 +857,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/xerophyllum-tenax-beargrass.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xerophyllum_tenax_-_Glacier_National_Park.jpg",
-      "fichierCommons": "Xerophyllum tenax - Glacier National Park.jpg",
-      "texteAlternatif": "Beargrass — Xerophyllum tenax (Beargrass)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "NPS Photo"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Xerophyllum tenax",
+      "requiredTokens": [
+        "xerophyllum",
+        "tenax"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Beargrass — Xerophyllum tenax (Beargrass)"
     }
   },
   {
@@ -953,14 +935,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/bouvardia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Starr-110307-2344-Bouvardia%20ternifolia-flowers-Kula%20Botanical%20Garden-Maui%20%2824959834002%29.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-110307-2344-Bouvardia_ternifolia-flowers-Kula_Botanical_Garden-Maui_(24959834002).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-110307-2344-Bouvardia%20ternifolia-flowers-Kula%20Botanical%20Garden-Maui%20%2824959834002%29.jpg",
       "fichierCommons": "Starr-110307-2344-Bouvardia ternifolia-flowers-Kula Botanical Garden-Maui (24959834002).jpg",
-      "texteAlternatif": "Bouvardia — Bouvardia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+      "taxonPhotographie": "Bouvardia ternifolia",
+      "texteAlternatif": "Bouvardia — Bouvardia"
     }
   },
   {
@@ -1040,14 +1020,12 @@ window.BOTANIC_PLANTS = [
       "La fiche 6 est utilisée pour l'entrée générique R05 Zantedeschia ; la fiche 59, plus spécifique, est réservée à Zantedeschia aethiopica (R35)."
     ],
     "image": {
-      "url": "assets/images/zantedeschia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zantedeschia%20aethiopica%20con%20fiori.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_con_fiori.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia%20aethiopica%20con%20fiori.jpg",
       "fichierCommons": "Zantedeschia aethiopica con fiori.jpg",
-      "texteAlternatif": "Zantedeschia — Calla",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Anna.Massini"
+      "taxonPhotographie": "Zantedeschia aethiopica",
+      "texteAlternatif": "Zantedeschia — Calla"
     }
   },
   {
@@ -1080,15 +1058,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/celosia.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cockscomb_(Celosia_cristata)_flower_2.jpg",
-      "fichierCommons": "Cockscomb (Celosia cristata) flower 2.jpg",
-      "texteAlternatif": "Célosie — Celosia",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 4.0",
-      "author": "Sara Nabih"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Celosia cristata flower",
+      "requiredTokens": [
+        "celosia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Célosie — Celosia"
     }
   },
   {
@@ -1121,15 +1098,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/chamaerops-humilis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chamaerops_humilis_(fruits).jpg",
-      "fichierCommons": "Chamaerops humilis (fruits).jpg",
-      "texteAlternatif": "Chamaerops — Chamaerops humilis",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Hans Hillewaert"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Chamaerops humilis",
+      "requiredTokens": [
+        "chamaerops",
+        "humilis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Chamaerops — Chamaerops humilis"
     }
   },
   {
@@ -1196,14 +1173,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/chrysanthemum.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chrysanthemum%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysanthemum%20flower.jpg",
       "fichierCommons": "Chrysanthemum flower.jpg",
-      "texteAlternatif": "Chrysanthemum — Chrysanthème",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Jon Sullivan"
+      "taxonPhotographie": "Chrysanthemum",
+      "texteAlternatif": "Chrysanthemum — Chrysanthème"
     }
   },
   {
@@ -1232,15 +1207,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cordyline-australis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cordyline_australis_%27Red_Sensation%27_Plant_1900px.jpg",
-      "fichierCommons": "Cordyline australis 'Red Sensation' Plant 1900px.jpg",
-      "texteAlternatif": "Cordyline — Cordyline australis",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man ). Location credit to the Chanticleer Garden."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cordyline australis",
+      "requiredTokens": [
+        "cordyline",
+        "australis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cordyline — Cordyline australis"
     }
   },
   {
@@ -1273,15 +1248,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cornus-alba-cornus-sanguinea.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cornus_alba_Hessei_(19909853499).jpg",
-      "fichierCommons": "Cornus alba Hessei (19909853499).jpg",
-      "texteAlternatif": "Cornouille — Cornus Alba / Cornus sanguinea",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC BY-SA 2.0",
-      "author": "peganum from Small Dole, England"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cornus alba foliage",
+      "requiredTokens": [
+        "cornus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Cornouille — Cornus Alba / Cornus sanguinea"
     }
   },
   {
@@ -1354,14 +1328,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/craspedia-globosa.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Craspedia%20globosa.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craspedia_globosa.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craspedia%20globosa.jpg",
       "fichierCommons": "Craspedia globosa.jpg",
-      "texteAlternatif": "Craspedia globosa — Craspédia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Hnsjrgnweis"
+      "taxonPhotographie": "Craspedia globosa",
+      "texteAlternatif": "Craspedia globosa — Craspédia"
     }
   },
   {
@@ -1390,15 +1362,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cycas-revoluta.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cycas_revoluta1327A.JPG",
-      "fichierCommons": "Cycas revoluta1327A.JPG",
-      "texteAlternatif": "Cycas — Cycas revoluta",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 2.5",
-      "author": "Esculapio"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cycas revoluta",
+      "requiredTokens": [
+        "cycas",
+        "revoluta"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cycas — Cycas revoluta"
     }
   },
   {
@@ -1465,14 +1437,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/dahlia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dahlia%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahlia_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahlia%20flower.jpg",
       "fichierCommons": "Dahlia flower.jpg",
-      "texteAlternatif": "Dahlia — Dahlia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Magnetic Rahim"
+      "taxonPhotographie": "Dahlia",
+      "texteAlternatif": "Dahlia — Dahlia"
     }
   },
   {
@@ -1546,14 +1516,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Ornithogalum thyrsoides / arabicum »."
     ],
     "image": {
-      "url": "assets/images/ornithogalum.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ornithogalum%20thyrsoides.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ornithogalum_thyrsoides.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ornithogalum%20thyrsoides.jpg",
       "fichierCommons": "Ornithogalum thyrsoides.jpg",
-      "texteAlternatif": "Ornithogalum — Étoile de Bethléem",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "author": "Peter Baker from Cape Town, South Africa"
+      "taxonPhotographie": "Ornithogalum thyrsoides",
+      "texteAlternatif": "Ornithogalum — Étoile de Bethléem"
     }
   },
   {
@@ -1645,14 +1613,12 @@ window.BOTANIC_PLANTS = [
       "Eucalyptus apparaît dans le R05 à la fois dans « Fleurs & plantes » et dans « Verdures » ; les deux occurrences sont conservées."
     ],
     "image": {
-      "url": "assets/images/eucalyptus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eucalyptus%20cinerea%2001.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_cinerea_01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus%20cinerea%2001.jpg",
       "fichierCommons": "Eucalyptus cinerea 01.jpg",
-      "texteAlternatif": "Eucalyptus — Eucalyptus",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Krzysztof Golik"
+      "taxonPhotographie": "Eucalyptus cinerea",
+      "texteAlternatif": "Eucalyptus — Eucalyptus"
     }
   },
   {
@@ -1729,14 +1695,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Euphorbia fulgens / Euphorbia spinosa (variétés déco) »."
     ],
     "image": {
-      "url": "assets/images/euphorbia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Euphorbia%20fulgens%20red.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Euphorbia_fulgens_red.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Euphorbia%20fulgens%20red.jpg",
       "fichierCommons": "Euphorbia fulgens red.jpg",
-      "texteAlternatif": "Euphorbia — Euphorbe",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Sesamehoneytart"
+      "taxonPhotographie": "Euphorbia fulgens",
+      "texteAlternatif": "Euphorbia — Euphorbe"
     }
   },
   {
@@ -1765,15 +1729,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/euphorbia-rameaux-decoratifs.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Euphorbia_on_Tenerife_Island,_Canary_Islands)_-_DPLA_-_3b3f8d15e85193ff99927b6376600d27.jpg",
-      "fichierCommons": "(Euphorbia on Tenerife Island, Canary Islands) - DPLA - 3b3f8d15e85193ff99927b6376600d27.jpg",
-      "texteAlternatif": "Euphorbe — Euphorbia (rameaux décoratifs)",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY 4.0",
-      "author": "Carlquist, Sherwin John, 1930-2021"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Euphorbia branches foliage",
+      "requiredTokens": [
+        "euphorbia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Euphorbe — Euphorbia (rameaux décoratifs)"
     }
   },
   {
@@ -1802,15 +1765,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/anthurium-feuillage-anthurium-andraeanum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-070906-8760-Anthurium_andraeanum-flower_and_leaf-Kula_Ace_Hardware_and_Nursery-Maui_(24263812764).jpg",
-      "fichierCommons": "Starr-070906-8760-Anthurium andraeanum-flower and leaf-Kula Ace Hardware and Nursery-Maui (24263812764).jpg",
-      "texteAlternatif": "Feuille d’anthurium — Anthurium  (feuillage : Anthurium andraeanum)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anthurium andraeanum leaf",
+      "requiredTokens": [
+        "anthurium",
+        "andraeanum"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Feuille d’anthurium — Anthurium  (feuillage : Anthurium andraeanum)"
     }
   },
   {
@@ -1839,15 +1802,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/quercus-feuilles.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sawtooth_Oak_Quercus_acutissima_Dried_Leaves_2100px.jpg",
-      "fichierCommons": "Sawtooth Oak Quercus acutissima Dried Leaves 2100px.jpg",
-      "texteAlternatif": "Feuille de chêne — Quercus (feuilles)",
-      "matchNote": "Illustration représentative du genre",
-      "license": "GFDL 1.2",
-      "author": "Photo (c)2007 Derek Ramsey ( Ram-Man )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Quercus leaves",
+      "requiredTokens": [
+        "quercus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Feuille de chêne — Quercus (feuilles)"
     }
   },
   {
@@ -1876,15 +1838,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cocos-nucifera-feuille.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-170913-0130-Cocos_nucifera-CRB_round_chew_holes_and_cuts_on_leaves-CTAHR_Urban_Garden_Center_Pearl_City-Oahu_-_Flickr_-_Starr_Environmental.jpg",
-      "fichierCommons": "Starr-170913-0130-Cocos nucifera-CRB round chew holes and cuts on leaves-CTAHR Urban Garden Center Pearl City-Oahu - Flickr - Starr Environmental.jpg",
-      "texteAlternatif": "Feuille de cocotier — Cocos nucifera (feuille)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 2.0",
-      "author": "Forest and Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cocos nucifera leaves",
+      "requiredTokens": [
+        "cocos",
+        "nucifera"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Feuille de cocotier — Cocos nucifera (feuille)"
     }
   },
   {
@@ -1913,15 +1875,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/flexi-grass-chlorophytum-laxum-ornamental-grass.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_of_Spider_plant_(Chlorophytum_laxum).jpg",
-      "fichierCommons": "Flower of Spider plant (Chlorophytum laxum).jpg",
-      "texteAlternatif": "Flexigrass — Flexi grass  (Chlorophytum laxum / Ornamental grass)",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 4.0",
-      "author": "Gitartha.bordoloi"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Chlorophytum laxum",
+      "requiredTokens": [
+        "chlorophytum"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Flexigrass — Flexi grass  (Chlorophytum laxum / Ornamental grass)"
     }
   },
   {
@@ -1954,15 +1915,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/phormium-tenax.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leaf_tip,_New_Zealand_flax_(Phormium_tenax),_backlit_by_evening_sun.jpg",
-      "fichierCommons": "Leaf tip, New Zealand flax (Phormium tenax), backlit by evening sun.jpg",
-      "texteAlternatif": "Formium — Phormium tenax",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Avenue"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phormium tenax",
+      "requiredTokens": [
+        "phormium",
+        "tenax"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Formium — Phormium tenax"
     }
   },
   {
@@ -2035,14 +1996,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Forsythia intermedia »."
     ],
     "image": {
-      "url": "assets/images/forsythia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/-%20Forsythia%20intermedia%2001%20-.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-_Forsythia_intermedia_01_-.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:-%20Forsythia%20intermedia%2001%20-.jpg",
       "fichierCommons": "- Forsythia intermedia 01 -.jpg",
-      "texteAlternatif": "Forsythia — Forsythia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.5",
-      "author": "User:Nino Barbieri"
+      "taxonPhotographie": "Forsythia × intermedia",
+      "texteAlternatif": "Forsythia — Forsythia"
     }
   },
   {
@@ -2071,15 +2030,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/tree-fern-dicksonia-cyathea.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:304_Tasmanian_Tree_Fern_Dicksonia_antarctica_LEAF_epidermis_print.jpg",
-      "fichierCommons": "304 Tasmanian Tree Fern Dicksonia antarctica LEAF epidermis print.jpg",
-      "texteAlternatif": "Fougère arborescente — Tree Fern (Dicksonia / Cyathea)",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC BY-SA 4.0",
-      "author": "ChrisInMilton"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dicksonia antarctica tree fern",
+      "requiredTokens": [
+        "dicksonia"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Fougère arborescente — Tree Fern (Dicksonia / Cyathea)"
     }
   },
   {
@@ -2108,15 +2066,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/rumohra-adiantiformis-lederwaere.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_070906-8744_Rumohra_adiantiformis.jpg",
-      "fichierCommons": "Starr 070906-8744 Rumohra adiantiformis.jpg",
-      "texteAlternatif": "Fougère cuir — Rumohra adiantiformis (Lederwaere)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 3.0",
-      "author": "Forest & Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rumohra adiantiformis",
+      "requiredTokens": [
+        "rumohra",
+        "adiantiformis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Fougère cuir — Rumohra adiantiformis (Lederwaere)"
     }
   },
   {
@@ -2189,14 +2147,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Freesia hybrida »."
     ],
     "image": {
-      "url": "assets/images/freesia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Freesia%20hybrid%20flower1%20%2815245867962%29.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freesia_hybrid_flower1_(15245867962).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Freesia%20hybrid%20flower1%20%2815245867962%29.jpg",
       "fichierCommons": "Freesia hybrid flower1 (15245867962).jpg",
-      "texteAlternatif": "Freesia — Freesia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "author": "Harry Rose from South West Rocks, Australia"
+      "taxonPhotographie": "Freesia hybride",
+      "texteAlternatif": "Freesia — Freesia"
     }
   },
   {
@@ -2225,15 +2181,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/galactica-leucadendron-galactica.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buds_and_flowers_of_Leucadendron_Plumosum_in_a_black_bucket.jpg",
-      "fichierCommons": "Buds and flowers of Leucadendron Plumosum in a black bucket.jpg",
-      "texteAlternatif": "Galactica — Galactica (Leucadendron ‘Galactica’)",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY-SA 4.0",
-      "author": "Leo219"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Galactica",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Galactica — Galactica (Leucadendron ‘Galactica’)"
     }
   },
   {
@@ -2300,14 +2255,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/gentiana.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gentiana%20flowers.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gentiana_flowers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gentiana%20flowers.jpg",
       "fichierCommons": "Gentiana flowers.jpg",
-      "texteAlternatif": "Gentiana — Gentiane",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Tiia Monto"
+      "taxonPhotographie": "Gentiana",
+      "texteAlternatif": "Gentiana — Gentiane"
     }
   },
   {
@@ -2380,14 +2333,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Gerbera jamesonii »."
     ],
     "image": {
-      "url": "assets/images/gerbera.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gerbera%20jamesonii.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerbera_jamesonii.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerbera%20jamesonii.jpg",
       "fichierCommons": "Gerbera jamesonii.jpg",
-      "texteAlternatif": "Gerbera — Gerbéra",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Adeep309"
+      "taxonPhotographie": "Gerbera jamesonii",
+      "texteAlternatif": "Gerbera — Gerbéra"
     }
   },
   {
@@ -2463,14 +2414,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Gypsophila paniculata »."
     ],
     "image": {
-      "url": "assets/images/gypsophila.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gypsophila%20paniculata.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gypsophila_paniculata.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gypsophila%20paniculata.jpg",
       "fichierCommons": "Gypsophila paniculata.jpg",
-      "texteAlternatif": "Gypsophila — Gypsophile",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "PiPi"
+      "taxonPhotographie": "Gypsophila paniculata",
+      "texteAlternatif": "Gypsophila — Gypsophile"
     }
   },
   {
@@ -2549,14 +2498,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Haemanthus / Scadoxus »."
     ],
     "image": {
-      "url": "assets/images/haemanthus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Haemanthus%20montanus%20flower%20-%20HNT.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unidentified_Solanaceae_flowers_-_HNT.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemanthus%20montanus%20flower%20-%20HNT.jpg",
       "fichierCommons": "Haemanthus montanus flower - HNT.jpg",
-      "texteAlternatif": "Haemanthus — Haemanthus",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Eric Polk"
+      "taxonPhotographie": "Haemanthus montanus",
+      "texteAlternatif": "Haemanthus — Haemanthus"
     }
   },
   {
@@ -2633,14 +2580,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Heliconia rostrata / variétés »."
     ],
     "image": {
-      "url": "assets/images/heliconia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Starr-120522-6112-Heliconia%20rostrata-flowers-Iao%20Tropical%20Gardens%20of%20Maui-Maui%20%2824516319253%29.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-120522-6112-Heliconia_rostrata-flowers-Iao_Tropical_Gardens_of_Maui-Maui_(24516319253).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-120522-6112-Heliconia%20rostrata-flowers-Iao%20Tropical%20Gardens%20of%20Maui-Maui%20%2824516319253%29.jpg",
       "fichierCommons": "Starr-120522-6112-Heliconia rostrata-flowers-Iao Tropical Gardens of Maui-Maui (24516319253).jpg",
-      "texteAlternatif": "Heliconia — Héliconia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+      "taxonPhotographie": "Heliconia rostrata",
+      "texteAlternatif": "Heliconia — Héliconia"
     }
   },
   {
@@ -2718,14 +2663,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Helleborus niger / orientalis »."
     ],
     "image": {
-      "url": "assets/images/helleborus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helleborus%20niger%20sl25.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helleborus_niger_sl25.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helleborus%20niger%20sl25.jpg",
       "fichierCommons": "Helleborus niger sl25.jpg",
-      "texteAlternatif": "Helleborus — Hellébore",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Stefan.lefnaer"
+      "taxonPhotographie": "Helleborus niger",
+      "texteAlternatif": "Helleborus — Hellébore"
     }
   },
   {
@@ -2758,15 +2701,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/miscanthus-sinensis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miscanthus_sinensis_Strictus_0zz.jpg",
-      "fichierCommons": "Miscanthus sinensis Strictus 0zz.jpg",
-      "texteAlternatif": "Herbe de Chine — Miscanthus sinensis",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Photo by David J. Stang"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Miscanthus sinensis",
+      "requiredTokens": [
+        "miscanthus",
+        "sinensis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Herbe de Chine — Miscanthus sinensis"
     }
   },
   {
@@ -2840,14 +2783,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Hydrangea macrophylla / paniculata »."
     ],
     "image": {
-      "url": "assets/images/hydrangea.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%28MHNT%29%20Hydrangea%20macrophylla%20-%20inflorescence.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(MHNT)_Hydrangea_macrophylla_-_inflorescence.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%28MHNT%29%20Hydrangea%20macrophylla%20-%20inflorescence.jpg",
       "fichierCommons": "(MHNT) Hydrangea macrophylla - inflorescence.jpg",
-      "texteAlternatif": "Hydrangea — Hortensia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Didier Descouens"
+      "taxonPhotographie": "Hydrangea macrophylla",
+      "texteAlternatif": "Hydrangea — Hortensia"
     }
   },
   {
@@ -2924,14 +2865,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Ilex verticillata / Ilex aquifolium »."
     ],
     "image": {
-      "url": "assets/images/ilex.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ilex%20verticillata%20fruit.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ilex_verticillata_fruit.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ilex%20verticillata%20fruit.jpg",
       "fichierCommons": "Ilex verticillata fruit.jpg",
-      "texteAlternatif": "Ilex — Houx",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Willow Coville"
+      "taxonPhotographie": "Ilex verticillata",
+      "texteAlternatif": "Ilex — Houx"
     }
   },
   {
@@ -3001,14 +2940,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/ixia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ixia%20paniculata%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ixia_paniculata_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ixia%20paniculata%20flower.jpg",
       "fichierCommons": "Ixia paniculata flower.jpg",
-      "texteAlternatif": "Ixia — Ixia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Andrew massyn"
+      "taxonPhotographie": "Ixia paniculata",
+      "texteAlternatif": "Ixia — Ixia"
     }
   },
   {
@@ -3041,15 +2978,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/butomus-umbellatus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ButomusUmbellatus3.jpg",
-      "fichierCommons": "ButomusUmbellatus3.jpg",
-      "texteAlternatif": "Jonc fleuri — Butomus umbellatus",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Christian Fischer"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Butomus umbellatus",
+      "requiredTokens": [
+        "butomus",
+        "umbellatus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Jonc fleuri — Butomus umbellatus"
     }
   },
   {
@@ -3078,15 +3015,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/leucadendron-kikerblad.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buds_and_flowers_of_Leucadendron_Plumosum_in_a_black_bucket.jpg",
-      "fichierCommons": "Buds and flowers of Leucadendron Plumosum in a black bucket.jpg",
-      "texteAlternatif": "Kikerblad — Leucadendron ‘Kikerblad’",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY-SA 4.0",
-      "author": "Leo219"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Kikerblad",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Kikerblad — Leucadendron ‘Kikerblad’"
     }
   },
   {
@@ -3115,15 +3051,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/leucospermum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_Leucospermum_erubescens.JPG",
-      "fichierCommons": "Flower Leucospermum erubescens.JPG",
-      "texteAlternatif": "Leucospermum  (type Protéacée décorative) — Leucospermum",
-      "matchNote": "Illustration représentative du genre",
-      "license": "Public domain",
-      "author": "No machine-readable author provided. Andrew massyn~commonswiki assumed (based on copyright claims)."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucospermum flower",
+      "requiredTokens": [
+        "leucospermum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Leucospermum  (type Protéacée décorative) — Leucospermum"
     }
   },
   {
@@ -3152,15 +3087,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/hedera-helix.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hedera_helix_Leaves_3008px.jpg",
-      "fichierCommons": "Hedera helix Leaves 3008px.jpg",
-      "texteAlternatif": "Lierre — Hedera helix",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man ). Location credit to the Chanticleer Garden."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Hedera helix foliage",
+      "requiredTokens": [
+        "hedera",
+        "helix"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Lierre — Hedera helix"
     }
   },
   {
@@ -3230,14 +3165,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/lilium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lilium%20Flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lilium_Flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lilium%20Flower.jpg",
       "fichierCommons": "Lilium Flower.jpg",
-      "texteAlternatif": "Lilium — Lis",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Peroli Udhayakumar"
+      "taxonPhotographie": "Lilium",
+      "texteAlternatif": "Lilium — Lis"
     }
   },
   {
@@ -3310,14 +3243,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Tricyrtis hirta »."
     ],
     "image": {
-      "url": "assets/images/tricyrtis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tricyrtis%20hirta%20%28flower%29.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tricyrtis_hirta_(flower).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tricyrtis%20hirta%20%28flower%29.jpg",
       "fichierCommons": "Tricyrtis hirta (flower).jpg",
-      "texteAlternatif": "Tricyrtis — Lis crapaud",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Alpsdake"
+      "taxonPhotographie": "Tricyrtis hirta",
+      "texteAlternatif": "Tricyrtis — Lis crapaud"
     }
   },
   {
@@ -3393,14 +3324,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Eucharis grandiflora »."
     ],
     "image": {
-      "url": "assets/images/eucharis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/EucharisGrandiflora.jpg?width=1200",
       "source": "Wikimedia Commons",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:EucharisGrandiflora.jpg",
       "fichierCommons": "EucharisGrandiflora.jpg",
-      "texteAlternatif": "Eucharis — Lis d’Amazonie",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Chhe"
+      "taxonPhotographie": "Eucharis grandiflora",
+      "texteAlternatif": "Eucharis — Lis d’Amazonie"
     }
   },
   {
@@ -3476,14 +3405,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Gloriosa superba »."
     ],
     "image": {
-      "url": "assets/images/gloriosa.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gloriosa%20superba%20Flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gloriosa_superba_Flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gloriosa%20superba%20Flower.jpg",
       "fichierCommons": "Gloriosa superba Flower.jpg",
-      "texteAlternatif": "Gloriosa — Lis glorieux",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "K. Murugesan"
+      "taxonPhotographie": "Gloriosa superba",
+      "texteAlternatif": "Gloriosa — Lis glorieux"
     }
   },
   {
@@ -3556,14 +3483,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Eustoma grandiflorum »."
     ],
     "image": {
-      "url": "assets/images/eustoma.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eustoma%20grandiflorum%20%287554694282%29.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eustoma_grandiflorum_(7554694282).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eustoma%20grandiflorum%20%287554694282%29.jpg",
       "fichierCommons": "Eustoma grandiflorum (7554694282).jpg",
-      "texteAlternatif": "Eustoma — Lisianthus",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "author": "Tyrrhium"
+      "taxonPhotographie": "Eustoma grandiflorum",
+      "texteAlternatif": "Eustoma — Lisianthus"
     }
   },
   {
@@ -3596,15 +3521,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/typha-latifolia.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Typha_latifolia_Finland.jpg",
-      "fichierCommons": "Typha latifolia Finland.jpg",
-      "texteAlternatif": "Massette — Typha latifolia",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Petritap"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Typha latifolia",
+      "requiredTokens": [
+        "typha",
+        "latifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Massette — Typha latifolia"
     }
   },
   {
@@ -3633,15 +3558,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/hypericum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tutsan_berries_(Hypericum_androsaemum)_-_Flickr_-_S._Rae.jpg",
-      "fichierCommons": "Tutsan berries (Hypericum androsaemum) - Flickr - S. Rae.jpg",
-      "texteAlternatif": "Millepertuis (baies décoratives) — Hypericum",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY 2.0",
-      "author": "S. Rae from Scotland, UK"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Hypericum berries",
+      "requiredTokens": [
+        "hypericum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Millepertuis (baies décoratives) — Hypericum"
     }
   },
   {
@@ -3720,14 +3644,12 @@ window.BOTANIC_PLANTS = [
       "Correspondance conservée malgré une variante orthographique entre le référentiel (« Moluccella ») et la fiche détaillée (« Molucella »)."
     ],
     "image": {
-      "url": "assets/images/moluccella-laevis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Moluccella%20laevis%20flower.JPG?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moluccella_laevis_flower.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moluccella%20laevis%20flower.JPG",
       "fichierCommons": "Moluccella laevis flower.JPG",
-      "texteAlternatif": "Moluccella laevis — Moluccelle",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Boronian"
+      "taxonPhotographie": "Moluccella laevis",
+      "texteAlternatif": "Moluccella laevis — Moluccelle"
     }
   },
   {
@@ -3797,14 +3719,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/lunaria-annua.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lunaria%20annua.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lunaria_annua.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lunaria%20annua.jpg",
       "fichierCommons": "Lunaria annua.jpg",
-      "texteAlternatif": "Lunaria annua — Monnaie du pape",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": ""
+      "taxonPhotographie": "Lunaria annua",
+      "texteAlternatif": "Lunaria annua — Monnaie du pape"
     }
   },
   {
@@ -3871,14 +3791,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/crocosmia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crocosmia.jpg?width=1200",
       "source": "Wikimedia Commons",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crocosmia.jpg",
       "fichierCommons": "Crocosmia.jpg",
-      "texteAlternatif": "Crocosmia — Montbrétia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Steven Pavlov"
+      "taxonPhotographie": "Crocosmia",
+      "texteAlternatif": "Crocosmia — Montbrétia"
     }
   },
   {
@@ -3945,14 +3863,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/convallaria-majalis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Convallaria%20majalis%20-%20flowers.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convallaria_majalis_-_flowers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convallaria%20majalis%20-%20flowers.jpg",
       "fichierCommons": "Convallaria majalis - flowers.jpg",
-      "texteAlternatif": "Convallaria majalis — Muguet",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Bartosz Cuber"
+      "taxonPhotographie": "Convallaria majalis",
+      "texteAlternatif": "Convallaria majalis — Muguet"
     }
   },
   {
@@ -3981,15 +3897,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/myrtus-communis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myrtus_communis.jpg",
-      "fichierCommons": "Myrtus communis.jpg",
-      "texteAlternatif": "Myrte — Myrtus communis",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": ""
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Myrtus communis foliage",
+      "requiredTokens": [
+        "myrtus",
+        "communis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Myrte — Myrtus communis"
     }
   },
   {
@@ -4018,15 +3934,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/vaccinium.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vaccinium_corymbosum_Beeren.jpg",
-      "fichierCommons": "Vaccinium corymbosum Beeren.jpg",
-      "texteAlternatif": "Myrtille (rameaux décoratifs) — Vaccinium",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 2.5",
-      "author": "Darkone ( talk · contribs )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Vaccinium branches foliage",
+      "requiredTokens": [
+        "vaccinium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Myrtille (rameaux décoratifs) — Vaccinium"
     }
   },
   {
@@ -4103,14 +4018,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Dianthus caryophyllus / variétés »."
     ],
     "image": {
-      "url": "assets/images/dianthus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dianthus%20Caryophyllus.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dianthus_Caryophyllus.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dianthus%20Caryophyllus.jpg",
       "fichierCommons": "Dianthus Caryophyllus.jpg",
-      "texteAlternatif": "Dianthus — Oeillet",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC0",
-      "author": "Aldrina A Manashe"
+      "taxonPhotographie": "Dianthus caryophyllus",
+      "texteAlternatif": "Dianthus — Oeillet"
     }
   },
   {
@@ -4183,14 +4096,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Strelitzia reginae »."
     ],
     "image": {
-      "url": "assets/images/strelitzia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Strelitzia%20reginae%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strelitzia_reginae_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strelitzia%20reginae%20flower.jpg",
       "fichierCommons": "Strelitzia reginae flower.jpg",
-      "texteAlternatif": "Strelitzia — Oiseau de paradis",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Brunk-Tan"
+      "taxonPhotographie": "Strelitzia reginae",
+      "texteAlternatif": "Strelitzia — Oiseau de paradis"
     }
   },
   {
@@ -4257,14 +4168,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/cymbidium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cymbidium%20orchid%20flowers.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cymbidium_orchid_flowers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cymbidium%20orchid%20flowers.jpg",
       "fichierCommons": "Cymbidium orchid flowers.jpg",
-      "texteAlternatif": "Cymbidium — Orchidée Cymbidium",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Sapturnus"
+      "taxonPhotographie": "Cymbidium",
+      "texteAlternatif": "Cymbidium — Orchidée Cymbidium"
     }
   },
   {
@@ -4331,14 +4240,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/dendrobium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dendrobium%20orchid1.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendrobium_orchid1.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendrobium%20orchid1.jpg",
       "fichierCommons": "Dendrobium orchid1.jpg",
-      "texteAlternatif": "Dendrobium — Orchidée Dendrobium",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Girish Mohan P K"
+      "taxonPhotographie": "Dendrobium",
+      "texteAlternatif": "Dendrobium — Orchidée Dendrobium"
     }
   },
   {
@@ -4410,14 +4317,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/oncidium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Orchid%C3%A9e%20Oncidium.JPG?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orchid%C3%A9e_Oncidium.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orchid%C3%A9e%20Oncidium.JPG",
       "fichierCommons": "Orchidée Oncidium.JPG",
-      "texteAlternatif": "Oncidium — Orchidée Oncidium",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Pascal3012"
+      "taxonPhotographie": "Oncidium",
+      "texteAlternatif": "Oncidium — Orchidée Oncidium"
     }
   },
   {
@@ -4484,14 +4389,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/phalaenopsis.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Phalaenopsis%20Orchid%20Flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalaenopsis_Orchid_Flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalaenopsis%20Orchid%20Flower.jpg",
       "fichierCommons": "Phalaenopsis Orchid Flower.jpg",
-      "texteAlternatif": "Phalaenopsis — Orchidée papillon",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Cristian V."
+      "taxonPhotographie": "Phalaenopsis",
+      "texteAlternatif": "Phalaenopsis — Orchidée papillon"
     }
   },
   {
@@ -4558,14 +4461,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/vanda.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Vanda%20orchid%201001%20Orchids%20n01.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanda_orchid_1001_Orchids_n01.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vanda%20orchid%201001%20Orchids%20n01.jpg",
       "fichierCommons": "Vanda orchid 1001 Orchids n01.jpg",
-      "texteAlternatif": "Vanda — Orchidée Vanda",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.5",
-      "author": "Marie-Lan Nguyen"
+      "taxonPhotographie": "Vanda",
+      "texteAlternatif": "Vanda — Orchidée Vanda"
     }
   },
   {
@@ -4594,15 +4495,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/stachys-byzantina.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamb%27s_Ear_Stachys_byzantina_Leaves_3264px.JPG",
-      "fichierCommons": "Lamb's Ear Stachys byzantina Leaves 3264px.JPG",
-      "texteAlternatif": "Oreille d’agneau — Stachys byzantina",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 2.5",
-      "author": "Photo (c)2006 Derek Ramsey ( Ram-Man )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Stachys byzantina leaves",
+      "requiredTokens": [
+        "stachys",
+        "byzantina"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Oreille d’agneau — Stachys byzantina"
     }
   },
   {
@@ -4676,14 +4577,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Sedum spectabile / Hylotelephium »."
     ],
     "image": {
-      "url": "assets/images/sedum-hylotelephium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hylotelephium%20spectabile.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hylotelephium_spectabile.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hylotelephium%20spectabile.jpg",
       "fichierCommons": "Hylotelephium spectabile.jpg",
-      "texteAlternatif": "Sedum / Hylotelephium — Orpin",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Laitche"
+      "taxonPhotographie": "Hylotelephium spectabile",
+      "texteAlternatif": "Sedum / Hylotelephium — Orpin"
     }
   },
   {
@@ -4716,15 +4615,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cortaderia-selloana.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cortaderia_selloana0.jpg",
-      "fichierCommons": "Cortaderia selloana0.jpg",
-      "texteAlternatif": "Pampa — Cortaderia selloana",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": ""
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cortaderia selloana",
+      "requiredTokens": [
+        "cortaderia",
+        "selloana"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pampa — Cortaderia selloana"
     }
   },
   {
@@ -4753,15 +4652,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/pandanus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pandanus_utilis_leaves_detail.jpg",
-      "fichierCommons": "Pandanus utilis leaves detail.jpg",
-      "texteAlternatif": "Pandanus — Pandanus",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "Eric Gaba ( Sting - fr:Sting )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pandanus leaves",
+      "requiredTokens": [
+        "pandanus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Pandanus — Pandanus"
     }
   },
   {
@@ -4794,15 +4692,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/panicum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panicum_capillare_plant_(18).jpg",
-      "fichierCommons": "Panicum capillare plant (18).jpg",
-      "texteAlternatif": "Panic — Panicum",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY 2.0",
-      "author": "Harry Rose"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Panicum grass",
+      "requiredTokens": [
+        "panicum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Panic — Panicum"
     }
   },
   {
@@ -4831,15 +4728,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cyperus-papyrus-cyperus-alternifolius.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyperus_papyrus6.jpg",
-      "fichierCommons": "Cyperus papyrus6.jpg",
-      "texteAlternatif": "Papyrus — Cyperus papyrus / Cyperus alternifolius",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC BY-SA 3.0",
-      "author": "Kurt Stüber [1]"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cyperus papyrus",
+      "requiredTokens": [
+        "cyperus",
+        "papyrus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Papyrus — Cyperus papyrus / Cyperus alternifolius"
     }
   },
   {
@@ -4909,14 +4806,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/anigozanthos.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Anigozanthos.JPG?width=1200",
       "source": "Wikimedia Commons",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anigozanthos.JPG",
       "fichierCommons": "Anigozanthos.JPG",
-      "texteAlternatif": "Anigozanthos — Patte de kangourou",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Error406"
+      "taxonPhotographie": "Anigozanthos",
+      "texteAlternatif": "Anigozanthos — Patte de kangourou"
     }
   },
   {
@@ -4989,14 +4884,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Papaver nudicaule (pavot d’Islande) »."
     ],
     "image": {
-      "url": "assets/images/papaver.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Papaver%20nudicaule%20%28Hort%29.png?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papaver_nudicaule_(Hort).png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papaver%20nudicaule%20%28Hort%29.png",
       "fichierCommons": "Papaver nudicaule (Hort).png",
-      "texteAlternatif": "Papaver — Pavot",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 2.5 au",
-      "author": "Jaypc"
+      "taxonPhotographie": "Papaver nudicaule",
+      "texteAlternatif": "Papaver — Pavot"
     }
   },
   {
@@ -5063,14 +4956,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/delphinium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blue%20Delphinium%20Flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Delphinium_Flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue%20Delphinium%20Flower.jpg",
       "fichierCommons": "Blue Delphinium Flower.jpg",
-      "texteAlternatif": "Delphinium — Pied-d’alouette",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "author": "Erick Gustafson"
+      "taxonPhotographie": "Delphinium",
+      "texteAlternatif": "Delphinium — Pied-d’alouette"
     }
   },
   {
@@ -5099,15 +4990,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/pittosporum-tenuifolium.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pittosporum_tenuifolium_foliage.jpg",
-      "fichierCommons": "Pittosporum tenuifolium foliage.jpg",
-      "texteAlternatif": "Pittosporum — Pittosporum tenuifolium",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Grapeman4"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pittosporum tenuifolium",
+      "requiredTokens": [
+        "pittosporum",
+        "tenuifolium"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pittosporum — Pittosporum tenuifolium"
     }
   },
   {
@@ -5180,14 +5071,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Paeonia lactiflora »."
     ],
     "image": {
-      "url": "assets/images/paeonia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paeonia%20lactiflora%202025.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia_lactiflora_2025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia%20lactiflora%202025.jpg",
       "fichierCommons": "Paeonia lactiflora 2025.jpg",
-      "texteAlternatif": "Paeonia — Pivoine",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC0",
-      "author": "Refriedbeans52"
+      "taxonPhotographie": "Paeonia lactiflora",
+      "texteAlternatif": "Paeonia — Pivoine"
     }
   },
   {
@@ -5216,15 +5105,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/asparagus-plumosus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_book_of_asparagus,_with_sections_also_on_celery,_salsify,_scorzonera_and_seakale_(1901)_(14776726485).jpg",
-      "fichierCommons": "The book of asparagus, with sections also on celery, salsify, scorzonera and seakale (1901) (14776726485).jpg",
-      "texteAlternatif": "Plumosus — Asparagus plumosus",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "No restrictions",
-      "author": "Internet Archive Book Images"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus setaceus foliage",
+      "requiredTokens": [
+        "asparagus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Plumosus — Asparagus plumosus"
     }
   },
   {
@@ -5291,14 +5179,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/lathyrus-odoratus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/P1000299%20Lathyrus%20odoratus%20%28Prince%20Edward%20of%20York%29%20%28Leguminosae%29%20Flower.JPG?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P1000299_Lathyrus_odoratus_(Prince_Edward_of_York)_(Leguminosae)_Flower.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P1000299%20Lathyrus%20odoratus%20%28Prince%20Edward%20of%20York%29%20%28Leguminosae%29%20Flower.JPG",
       "fichierCommons": "P1000299 Lathyrus odoratus (Prince Edward of York) (Leguminosae) Flower.JPG",
-      "texteAlternatif": "Lathyrus odoratus — Pois de senteur",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Magnus Manske"
+      "taxonPhotographie": "Lathyrus odoratus",
+      "texteAlternatif": "Lathyrus odoratus — Pois de senteur"
     }
   },
   {
@@ -5327,15 +5213,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/equisetum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equisetum_braunii_(stems),_Portland,_Oregon.jpg",
-      "fichierCommons": "Equisetum braunii (stems), Portland, Oregon.jpg",
-      "texteAlternatif": "Prêle — Equisetum",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "Eric Guinther ( Marshman )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Equisetum stems",
+      "requiredTokens": [
+        "equisetum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Prêle — Equisetum"
     }
   },
   {
@@ -5409,14 +5294,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Protea cynaroides / repens (différentes espèces) »."
     ],
     "image": {
-      "url": "assets/images/protea.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Protea%20cynaroides%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea_cynaroides_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea%20cynaroides%20flower.jpg",
       "fichierCommons": "Protea cynaroides flower.jpg",
-      "texteAlternatif": "Protea — Protée",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": ""
+      "taxonPhotographie": "Protea cynaroides",
+      "texteAlternatif": "Protea — Protée"
     }
   },
   {
@@ -5497,14 +5380,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Prunus serrulata / P. avium / P. domestica »."
     ],
     "image": {
-      "url": "assets/images/prunus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Prunus%20serrulata%20-%20flowers%20close-up.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prunus_serrulata_-_flowers_close-up.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prunus%20serrulata%20-%20flowers%20close-up.jpg",
       "fichierCommons": "Prunus serrulata - flowers close-up.jpg",
-      "texteAlternatif": "Prunus — Prunier",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Dodek"
+      "taxonPhotographie": "Prunus serrulata",
+      "texteAlternatif": "Prunus — Prunier"
     }
   },
   {
@@ -5537,15 +5418,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/rhapis-excelsa.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhapis_excelsa.jpg",
-      "fichierCommons": "Rhapis excelsa.jpg",
-      "texteAlternatif": "Rapsis — Rhapis excelsa",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Eric in SF"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rhapis excelsa",
+      "requiredTokens": [
+        "rhapis",
+        "excelsa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Rapsis — Rhapis excelsa"
     }
   },
   {
@@ -5574,15 +5455,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/polygonum-persicaria.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Persicaria_griffithii_(21390038869).jpg",
-      "fichierCommons": "Persicaria griffithii (21390038869).jpg",
-      "texteAlternatif": "Renouée — Polygonum (Persicaria)",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC BY-SA 2.0",
-      "author": "peganum from Small Dole, England"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Persicaria foliage",
+      "requiredTokens": [
+        "persicaria"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Renouée — Polygonum (Persicaria)"
     }
   },
   {
@@ -5611,15 +5491,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/rosa.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_%27Aspirin_Rose%27_(actm)_01.jpg",
-      "fichierCommons": "Rosa 'Aspirin Rose' (actm) 01.jpg",
-      "texteAlternatif": "Rose — Rosa",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 4.0",
-      "author": "Agnes Monkelbaan"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rosa rose flower",
+      "requiredTokens": [
+        "rosa"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Rose — Rosa"
     }
   },
   {
@@ -5652,15 +5531,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/ruscus-hypophyllum-ruscus-aculeatus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruscus_aculeatus,_Ladispoli,_Italia_(16315456018).jpg",
-      "fichierCommons": "Ruscus aculeatus, Ladispoli, Italia (16315456018).jpg",
-      "texteAlternatif": "Ruscus — Ruscus hypophyllum / Ruscus aculeatus",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC0",
-      "author": "fotokoci"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ruscus aculeatus foliage",
+      "requiredTokens": [
+        "ruscus",
+        "aculeatus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Ruscus — Ruscus hypophyllum / Ruscus aculeatus"
     }
   },
   {
@@ -5689,15 +5568,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/cypripedium.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cypripedium_candidum_flower_in_Ohio.jpg",
-      "fichierCommons": "Cypripedium candidum flower in Ohio.jpg",
-      "texteAlternatif": "Sabot de Vénus — Cypripedium",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 4.0",
-      "author": "Allefant"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cypripedium flower",
+      "requiredTokens": [
+        "cypripedium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Sabot de Vénus — Cypripedium"
     }
   },
   {
@@ -5726,15 +5604,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/leucadendron-safari-sunset.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-110307-2473-Leucadendron_sp-cv_Safari_Sunset_habit-Kula_Botanical_Garden-Maui_(24710483329).jpg",
-      "fichierCommons": "Starr-110307-2473-Leucadendron sp-cv Safari Sunset habit-Kula Botanical Garden-Maui (24710483329).jpg",
-      "texteAlternatif": "Safari — Leucadendron ‘Safari Sunset’",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Safari Sunset",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Safari — Leucadendron ‘Safari Sunset’"
     }
   },
   {
@@ -5763,15 +5640,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/gaultheria-shallon.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salal_(Gaultheria_shallon)_Leaf_and_Flowers.jpg",
-      "fichierCommons": "Salal (Gaultheria shallon) Leaf and Flowers.jpg",
-      "texteAlternatif": "Sallal — Gaultheria shallon",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 2.5",
-      "author": "Wing-Chi Poon"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Gaultheria shallon foliage",
+      "requiredTokens": [
+        "gaultheria",
+        "shallon"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Sallal — Gaultheria shallon"
     }
   },
   {
@@ -5800,15 +5677,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/sanguisorba-officinalis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanguisorba_officinalis_ellywa.png",
-      "fichierCommons": "Sanguisorba officinalis ellywa.png",
-      "texteAlternatif": "Sanguisorbe — Sanguisorba officinalis",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 2.5",
-      "author": "No machine-readable author provided. Ellywa assumed (based on copyright claims)."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Sanguisorba officinalis",
+      "requiredTokens": [
+        "sanguisorba",
+        "officinalis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Sanguisorbe — Sanguisorba officinalis"
     }
   },
   {
@@ -5837,15 +5714,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/skimmia.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SkimmiaJaponica-berries.jpg",
-      "fichierCommons": "SkimmiaJaponica-berries.jpg",
-      "texteAlternatif": "Skimmia — Skimmia",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY-SA 3.0",
-      "author": "No machine-readable author provided. TeunSpaans assumed (based on copyright claims)."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Skimmia berries",
+      "requiredTokens": [
+        "skimmia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Skimmia — Skimmia"
     }
   },
   {
@@ -5874,15 +5750,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/asparagus-sprengeri.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-080607-7082-Asparagus_densiflorus-Sprengeri_flowers_and_fruit-Midway_House_Sand_Island-Midway_Atoll_(24915471675).jpg",
-      "fichierCommons": "Starr-080607-7082-Asparagus densiflorus-Sprengeri flowers and fruit-Midway House Sand Island-Midway Atoll (24915471675).jpg",
-      "texteAlternatif": "Sprengeri — Asparagus sprengeri",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus densiflorus sprengeri",
+      "requiredTokens": [
+        "asparagus"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Sprengeri — Asparagus sprengeri"
     }
   },
   {
@@ -5959,14 +5834,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Limonium sinuatum »."
     ],
     "image": {
-      "url": "assets/images/limonium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Limonium%20sinuatum%20190725.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limonium_sinuatum_190725.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limonium%20sinuatum%20190725.jpg",
       "fichierCommons": "Limonium sinuatum 190725.jpg",
-      "texteAlternatif": "Limonium — Statice",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Pjorquerae"
+      "taxonPhotographie": "Limonium sinuatum",
+      "texteAlternatif": "Limonium — Statice"
     }
   },
   {
@@ -5999,15 +5872,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/chico-teepee-xanthorrhoea-australis.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xanthorrhoea_australis_flowers_Port_Campbell_Vic_-_Flickr_-_Macleay_Grass_Man.jpg",
-      "fichierCommons": "Xanthorrhoea australis flowers Port Campbell Vic - Flickr - Macleay Grass Man.jpg",
-      "texteAlternatif": "Teepee — Chico / Teepee  (Xanthorrhoea australis)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 2.0",
-      "author": "Harry Rose from Dungog, Australia"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Xanthorrhoea australis",
+      "requiredTokens": [
+        "xanthorrhoea",
+        "australis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Teepee — Chico / Teepee  (Xanthorrhoea australis)"
     }
   },
   {
@@ -6040,15 +5913,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/thlaspi-iberis-thlaspi-green-bell.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thlaspi_arvense1_eF.jpg",
-      "fichierCommons": "Thlaspi arvense1 eF.jpg",
-      "texteAlternatif": "Thlaspi — Thlaspi (Iberis / Thlaspi green bell)",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 3.0",
-      "author": ""
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Thlaspi green bell floristry",
+      "requiredTokens": [
+        "thlaspi"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Thlaspi — Thlaspi (Iberis / Thlaspi green bell)"
     }
   },
   {
@@ -6121,14 +5993,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Helianthus annuus »."
     ],
     "image": {
-      "url": "assets/images/helianthus.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Helianthus%20annuus%20inflorescence.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helianthus_annuus_inflorescence.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helianthus%20annuus%20inflorescence.jpg",
       "fichierCommons": "Helianthus annuus inflorescence.jpg",
-      "texteAlternatif": "Helianthus — Tournesol",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "H. Zell"
+      "taxonPhotographie": "Helianthus annuus",
+      "texteAlternatif": "Helianthus — Tournesol"
     }
   },
   {
@@ -6205,14 +6075,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Kniphofia uvaria »."
     ],
     "image": {
-      "url": "assets/images/kniphofia.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kniphofia%20uvaria%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kniphofia_uvaria_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kniphofia%20uvaria%20flower.jpg",
       "fichierCommons": "Kniphofia uvaria flower.jpg",
-      "texteAlternatif": "Kniphofia — Tritoma",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": "Richard001"
+      "taxonPhotographie": "Kniphofia uvaria",
+      "texteAlternatif": "Kniphofia — Tritoma"
     }
   },
   {
@@ -6279,14 +6147,12 @@ window.BOTANIC_PLANTS = [
       }
     ],
     "image": {
-      "url": "assets/images/tulipa.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tulipa%20%28Liliaceae%29%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulipa_(Liliaceae)_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulipa%20%28Liliaceae%29%20flower.jpg",
       "fichierCommons": "Tulipa (Liliaceae) flower.jpg",
-      "texteAlternatif": "Tulipa — Tulipe",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Magnus Manske"
+      "taxonPhotographie": "Tulipa",
+      "texteAlternatif": "Tulipa — Tulipe"
     }
   },
   {
@@ -6359,14 +6225,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Solidago canadensis »."
     ],
     "image": {
-      "url": "assets/images/solidago.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solidago%20canadensis%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidago_canadensis_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidago%20canadensis%20flower.jpg",
       "fichierCommons": "Solidago canadensis flower.jpg",
-      "texteAlternatif": "Solidago — Verge d’or",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "Willow Coville"
+      "taxonPhotographie": "Solidago canadensis",
+      "texteAlternatif": "Solidago — Verge d’or"
     }
   },
   {
@@ -6443,14 +6307,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Viburnum opulus / Viburnum macrocephalum »."
     ],
     "image": {
-      "url": "assets/images/viburnum.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Viburnum%20opulus%20flowers%20Linnerberg1.JPG?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viburnum_opulus_flowers_Linnerberg1.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viburnum%20opulus%20flowers%20Linnerberg1.JPG",
       "fichierCommons": "Viburnum opulus flowers Linnerberg1.JPG",
-      "texteAlternatif": "Viburnum — Viorne",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "author": "MurielBendel"
+      "taxonPhotographie": "Viburnum opulus",
+      "texteAlternatif": "Viburnum — Viorne"
     }
   },
   {
@@ -6523,14 +6385,12 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Chamelaucium uncinatum »."
     ],
     "image": {
-      "url": "assets/images/chamelaucium.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chamelaucium%20uncinatum%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chamelaucium_uncinatum_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chamelaucium%20uncinatum%20flower.jpg",
       "fichierCommons": "Chamelaucium uncinatum flower.jpg",
-      "texteAlternatif": "Chamelaucium — Waxflower",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "author": "Col Ford and Natasha de Vere"
+      "taxonPhotographie": "Chamelaucium uncinatum",
+      "texteAlternatif": "Chamelaucium — Waxflower"
     }
   },
   {
@@ -6559,15 +6419,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R05 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/philodendron-xanadu.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philodendron_xanadu_AK1.jpg",
-      "fichierCommons": "Philodendron xanadu AK1.jpg",
-      "texteAlternatif": "Xanadou — Philodendron xanadu",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 4.0",
-      "author": "Piwaiwaka"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron xanadu foliage",
+      "requiredTokens": [
+        "xanadu"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Xanadou — Philodendron xanadu"
     }
   },
   {
@@ -6593,15 +6452,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/alocasia-amazonica.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alocasia_amazonica_Elephant%27s-Ear_Plant_%E1%83%90%E1%83%9A%E1%83%9D%E1%83%99%E1%83%90%E1%83%A1%E1%83%98%E1%83%90.JPG",
-      "fichierCommons": "Alocasia amazonica Elephant's-Ear Plant ალოკასია.JPG",
-      "texteAlternatif": "Alocasia amazonica — Alocasia amazonica",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 3.0",
-      "author": "Lazaregagnidze"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Alocasia amazonica",
+      "requiredTokens": [
+        "alocasia"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Alocasia amazonica — Alocasia amazonica"
     }
   },
   {
@@ -6627,15 +6485,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/alpinia-purpurata.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpinia_purpurata_(white_flower).jpg",
-      "fichierCommons": "Alpinia purpurata (white flower).jpg",
-      "texteAlternatif": "Alpinia purpurata — Alpinia purpurata",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Filo gèn'"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Alpinia purpurata flower",
+      "requiredTokens": [
+        "alpinia",
+        "purpurata"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Alpinia purpurata — Alpinia purpurata"
     }
   },
   {
@@ -6664,15 +6522,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "La fiche 4 décrit Amaranthus caudatus / A. cruentus ; elle n'est pas appliquée à A. hypochondriacus."
     ],
-    "image": {
-      "url": "assets/images/amaranthus-hypochondriacus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amaranthus_hypochondriacus_(Amaranthaceae)_flowers.JPG",
-      "fichierCommons": "Amaranthus hypochondriacus (Amaranthaceae) flowers.JPG",
-      "texteAlternatif": "Amaranthus hypochondriacus — Amaranthus hypochondriacus",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Magnus Manske"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Amaranthus hypochondriacus",
+      "requiredTokens": [
+        "amaranthus",
+        "hypochondriacus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Amaranthus hypochondriacus — Amaranthus hypochondriacus"
     }
   },
   {
@@ -6698,15 +6556,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/anemone-coronaria.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anemone_coronaria_flower_in_Turkey.jpg",
-      "fichierCommons": "Anemone coronaria flower in Turkey.jpg",
-      "texteAlternatif": "Anemone coronaria — Anemone coronaria",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Maurice Flesier"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anemone coronaria flower",
+      "requiredTokens": [
+        "anemone",
+        "coronaria"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Anemone coronaria — Anemone coronaria"
     }
   },
   {
@@ -6732,15 +6590,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/anthurium-andraeanum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthurium_andraeanum_from_Lalbagh_Flower_Show_August_2012_4626.JPG",
-      "fichierCommons": "Anthurium andraeanum from Lalbagh Flower Show August 2012 4626.JPG",
-      "texteAlternatif": "Anthurium andraeanum — Anthurium andraeanum",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Rameshng"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anthurium andraeanum flower",
+      "requiredTokens": [
+        "anthurium",
+        "andraeanum"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Anthurium andraeanum — Anthurium andraeanum"
     }
   },
   {
@@ -6766,15 +6624,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/aralia-sieboldii-aralia-japonica.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aralia_elata_en_fleur4081.jpg",
-      "fichierCommons": "Aralia elata en fleur4081.jpg",
-      "texteAlternatif": "Aralia sieboldii (Aralia japonica) — Aralia sieboldii (Aralia japonica)",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 3.0",
-      "author": "‘Uncle Carl’ (カールおじさん)."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aralia japonica foliage",
+      "requiredTokens": [
+        "aralia"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Aralia sieboldii (Aralia japonica) — Aralia sieboldii (Aralia japonica)"
     }
   },
   {
@@ -6800,15 +6657,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/areca-palm-dypsis-lutescens.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dypsis_lutescens_(Family_Arecaceae)_-_leaves_close-up.jpg",
-      "fichierCommons": "Dypsis lutescens (Family Arecaceae) - leaves close-up.jpg",
-      "texteAlternatif": "Areca palm – Dypsis lutescens — Areca palm – Dypsis lutescens",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Juan Carlos Fonseca Mata"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dypsis lutescens",
+      "requiredTokens": [
+        "dypsis",
+        "lutescens"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Areca palm – Dypsis lutescens — Areca palm – Dypsis lutescens"
     }
   },
   {
@@ -6837,15 +6694,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Le R05 contient plusieurs Asparagus (densiflorus, plumosus, sprengeri) ; aucune fusion n'est effectuée automatiquement."
     ],
-    "image": {
-      "url": "assets/images/asparagus-setaceus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asparagus_setaceus_flower.jpg",
-      "fichierCommons": "Asparagus setaceus flower.jpg",
-      "texteAlternatif": "Asparagus setaceus — Asparagus setaceus",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 2.0",
-      "author": "Cayobo from Key West, The Conch Republic"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus setaceus foliage",
+      "requiredTokens": [
+        "asparagus",
+        "setaceus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Asparagus setaceus — Asparagus setaceus"
     }
   },
   {
@@ -6874,15 +6731,14 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Le R05 contient Aspidistra elatior ; aucune fusion taxonomique n'est effectuée avec Aspidistra variegata."
     ],
-    "image": {
-      "url": "assets/images/aspidistra-variegata.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aspidistra-elatior-variegata.jpg",
-      "fichierCommons": "Aspidistra-elatior-variegata.jpg",
-      "texteAlternatif": "Aspidistra variegata — Aspidistra variegata",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "Public domain",
-      "author": "frau-doktor"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aspidistra elatior variegata",
+      "requiredTokens": [
+        "aspidistra"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Aspidistra variegata — Aspidistra variegata"
     }
   },
   {
@@ -6911,15 +6767,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "La fiche 9 indique « Banksia (plusieurs espèces) » sans citer B. speciosa ; association détaillée laissée à validation humaine."
     ],
-    "image": {
-      "url": "assets/images/banksia-speciosa.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-110307-2659-Banksia_speciosa-flowering_habit_with_Kim-Kula_Botanical_Garden-Maui_(25078496385).jpg",
-      "fichierCommons": "Starr-110307-2659-Banksia speciosa-flowering habit with Kim-Kula Botanical Garden-Maui (25078496385).jpg",
-      "texteAlternatif": "Banksia speciosa — Banksia speciosa",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 3.0 us",
-      "author": "Forest and Kim Starr"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Banksia speciosa",
+      "requiredTokens": [
+        "banksia",
+        "speciosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Banksia speciosa — Banksia speciosa"
     }
   },
   {
@@ -6945,15 +6801,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/caladium-bicolor.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caladium_bicolor_%27Florida_Sweetheart%27_Plant_2220px.jpg",
-      "fichierCommons": "Caladium bicolor 'Florida Sweetheart' Plant 2220px.jpg",
-      "texteAlternatif": "Caladium bicolor — Caladium bicolor",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "GFDL 1.2",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man )"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Caladium bicolor",
+      "requiredTokens": [
+        "caladium",
+        "bicolor"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Caladium bicolor — Caladium bicolor"
     }
   },
   {
@@ -6979,15 +6835,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/calathea-lutea-tiges-feuilles-structurelles.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calathea_lutea_2.jpg",
-      "fichierCommons": "Calathea lutea 2.jpg",
-      "texteAlternatif": "Calathea lutea (tiges & feuilles structurelles) — Calathea lutea (tiges & feuilles structurelles)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Franz Xaver"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Calathea lutea leaves",
+      "requiredTokens": [
+        "calathea",
+        "lutea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Calathea lutea (tiges & feuilles structurelles) — Calathea lutea (tiges & feuilles structurelles)"
     }
   },
   {
@@ -7059,14 +6915,12 @@ window.BOTANIC_PLANTS = [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
     ],
     "image": {
-      "url": "assets/images/zantedeschia-aethiopica.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zantedeschia%20aethiopica%20con%20fiori.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_con_fiori.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zantedeschia%20aethiopica%20con%20fiori.jpg",
       "fichierCommons": "Zantedeschia aethiopica con fiori.jpg",
-      "texteAlternatif": "Zantedeschia aethiopica — calla",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "author": "Anna.Massini"
+      "taxonPhotographie": "Zantedeschia aethiopica",
+      "texteAlternatif": "Zantedeschia aethiopica — calla"
     }
   },
   {
@@ -7092,15 +6946,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/cocculus-laurifolius.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cocculus_laurifolius.jpg",
-      "fichierCommons": "Cocculus laurifolius.jpg",
-      "texteAlternatif": "Cocculus laurifolius — Cocculus laurifolius",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Júlio Reis"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cocculus laurifolius",
+      "requiredTokens": [
+        "cocculus",
+        "laurifolius"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cocculus laurifolius — Cocculus laurifolius"
     }
   },
   {
@@ -7129,15 +6983,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Le R05 contient Cordyline australis ; les deux entrées restent séparées."
     ],
-    "image": {
-      "url": "assets/images/cordyline-fruticosa-red-sister.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ti_plant_(Cordyline_fruticosa).jpg",
-      "fichierCommons": "Ti plant (Cordyline fruticosa).jpg",
-      "texteAlternatif": "Cordyline fruticosa “Red Sister” — Cordyline fruticosa “Red Sister”",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY 2.0",
-      "author": "Cliff"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cordyline fruticosa Red Sister",
+      "requiredTokens": [
+        "cordyline",
+        "fruticosa"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Cordyline fruticosa “Red Sister” — Cordyline fruticosa “Red Sister”"
     }
   },
   {
@@ -7163,15 +7017,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/ctenanthe-setosa.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ctenanthe_setosa.jpg",
-      "fichierCommons": "Ctenanthe setosa.jpg",
-      "texteAlternatif": "Ctenanthe setosa — Ctenanthe setosa",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Tequila"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ctenanthe setosa",
+      "requiredTokens": [
+        "ctenanthe",
+        "setosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Ctenanthe setosa — Ctenanthe setosa"
     }
   },
   {
@@ -7197,15 +7051,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/curcuma-alismatifolia.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curcuma_alismatifolia_in_a_garden_centre_(flower).jpg",
-      "fichierCommons": "Curcuma alismatifolia in a garden centre (flower).jpg",
-      "texteAlternatif": "Curcuma alismatifolia — Curcuma alismatifolia",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "Tangopaso"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Curcuma alismatifolia flower",
+      "requiredTokens": [
+        "curcuma",
+        "alismatifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Curcuma alismatifolia — Curcuma alismatifolia"
     }
   },
   {
@@ -7231,15 +7085,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/dracaena-fragrans-massangeana.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dracaena_fragrans_Massangeana_flower.jpg",
-      "fichierCommons": "Dracaena fragrans Massangeana flower.jpg",
-      "texteAlternatif": "Dracaena fragrans “Massangeana” — Dracaena fragrans “Massangeana”",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "Public domain",
-      "author": "Josh Krup"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dracaena fragrans Massangeana",
+      "requiredTokens": [
+        "dracaena",
+        "fragrans"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Dracaena fragrans “Massangeana” — Dracaena fragrans “Massangeana”"
     }
   },
   {
@@ -7265,15 +7119,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/dracaena-reflexa-song-of-india.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dracaena_reflexaSong_of_India1.jpg",
-      "fichierCommons": "Dracaena reflexaSong of India1.jpg",
-      "texteAlternatif": "Dracaena reflexa “Song of India” — Dracaena reflexa “Song of India”",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY-SA 3.0",
-      "author": "KENPEI"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dracaena reflexa Song of India",
+      "requiredTokens": [
+        "dracaena",
+        "reflexa"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Dracaena reflexa “Song of India” — Dracaena reflexa “Song of India”"
     }
   },
   {
@@ -7302,15 +7156,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "La fiche 22 cite Eucalyptus cinerea, populus et parvifolia, mais pas E. gunnii."
     ],
-    "image": {
-      "url": "assets/images/eucalyptus-gunnii.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_gunnii.jpg",
-      "fichierCommons": "Eucalyptus gunnii.jpg",
-      "texteAlternatif": "Eucalyptus gunnii — Eucalyptus gunnii",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "HelloMojo at en.wikipedia"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Eucalyptus gunnii foliage",
+      "requiredTokens": [
+        "eucalyptus",
+        "gunnii"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Eucalyptus gunnii — Eucalyptus gunnii"
     }
   },
   {
@@ -7336,15 +7190,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/fatsia-japonica.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fatsia_japonica_flower;_2014.jpg",
-      "fichierCommons": "Fatsia japonica flower; 2014.jpg",
-      "texteAlternatif": "Fatsia japonica — Fatsia japonica",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC0",
-      "author": "Bernard Spragg. NZ from Christchurch, New Zealand"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Fatsia japonica foliage",
+      "requiredTokens": [
+        "fatsia",
+        "japonica"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Fatsia japonica — Fatsia japonica"
     }
   },
   {
@@ -7416,15 +7270,14 @@ window.BOTANIC_PLANTS = [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée.",
       "Image non attribuée automatiquement : aucune correspondance Wikimedia Commons suffisamment fiable n'a été retenue pour le nom source « Eucalyptus populus ». Le placeholder est conservé plutôt que d'associer une espèce différente."
     ],
-    "image": {
-      "url": "assets/images/eucalyptus-populus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_tereticornis_flowers,_capsules,_buds_and_foliage.jpeg",
-      "fichierCommons": "Eucalyptus tereticornis flowers, capsules, buds and foliage.jpeg",
-      "texteAlternatif": "feuillage coupé — Eucalyptus populus",
-      "matchNote": "Illustration représentative du genre",
-      "license": "CC BY 3.0",
-      "author": "Ethel Aardvark"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Eucalyptus foliage florist",
+      "requiredTokens": [
+        "eucalyptus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "feuillage coupé — Eucalyptus populus"
     }
   },
   {
@@ -7450,15 +7303,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/gladiolus-hortulanus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gladiolus_%C3%97_hortulanus.jpg",
-      "fichierCommons": "Gladiolus × hortulanus.jpg",
-      "texteAlternatif": "Gladiolus hortulanus — Gladiolus hortulanus",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC BY-SA 3.0",
-      "author": "Prenn"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Gladiolus hortulanus flower",
+      "requiredTokens": [
+        "gladiolus"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Gladiolus hortulanus — Gladiolus hortulanus"
     }
   },
   {
@@ -7484,15 +7336,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/grevillea-robusta.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grevillea_robusta_flowering_in_Gan_Shmuel01.jpg",
-      "fichierCommons": "Grevillea robusta flowering in Gan Shmuel01.jpg",
-      "texteAlternatif": "Grevillea robusta — Grevillea robusta",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY 2.5",
-      "author": "RickP 08:32, 14 April 2006 (UTC)"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Grevillea robusta foliage",
+      "requiredTokens": [
+        "grevillea",
+        "robusta"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Grevillea robusta — Grevillea robusta"
     }
   },
   {
@@ -7521,15 +7373,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "La fiche 34 décrit Heliconia rostrata / variétés ; elle n'est pas appliquée à H. wagneriana."
     ],
-    "image": {
-      "url": "assets/images/heliconia-wagneriana.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heliconia_wagneriana01.jpg",
-      "fichierCommons": "Heliconia wagneriana01.jpg",
-      "texteAlternatif": "Heliconia wagneriana — Heliconia wagneriana",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": ""
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Heliconia wagneriana",
+      "requiredTokens": [
+        "heliconia",
+        "wagneriana"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Heliconia wagneriana — Heliconia wagneriana"
     }
   },
   {
@@ -7602,14 +7454,12 @@ window.BOTANIC_PLANTS = [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
     ],
     "image": {
-      "url": "assets/images/hydrangea-paniculata.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hydrangea%20paniculata%20fleurs.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydrangea_paniculata_fleurs.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydrangea%20paniculata%20fleurs.jpg",
       "fichierCommons": "Hydrangea paniculata fleurs.jpg",
-      "texteAlternatif": "Hydrangea paniculata — hortensia",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "author": "Denis.prévôt"
+      "taxonPhotographie": "Hydrangea paniculata",
+      "texteAlternatif": "Hydrangea paniculata — hortensia"
     }
   },
   {
@@ -7638,15 +7488,14 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Fiche 41 « Lilium » disponible, mais l'entrée R35 vise spécifiquement les hybrides orientaux : association détaillée non appliquée automatiquement."
     ],
-    "image": {
-      "url": "assets/images/lilium-hybrides-orientaux.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%96%B9%E7%99%BE%E5%90%88_Lilium_Entertainer_-%E9%A6%99%E6%B8%AF%E8%8A%B1%E5%B1%95_Hong_Kong_Flower_Show-_(43799509241).jpg",
-      "fichierCommons": "東方百合 Lilium Entertainer -香港花展 Hong Kong Flower Show- (43799509241).jpg",
-      "texteAlternatif": "Lilium (hybrides orientaux) — Lilium (hybrides orientaux)",
-      "matchNote": "Illustration représentative de l’hybride/groupe",
-      "license": "CC BY-SA 2.0",
-      "author": "阿橋 HQ"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "oriental lily Lilium flower",
+      "requiredTokens": [
+        "lilium"
+      ],
+      "matchLevel": "hybride",
+      "texteAlternatif": "Lilium (hybrides orientaux) — Lilium (hybrides orientaux)"
     }
   },
   {
@@ -7672,15 +7521,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/magnolia-grandiflora-feuillage.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnolia_grandiflora_leaves_by_Line1.jpg",
-      "fichierCommons": "Magnolia grandiflora leaves by Line1.jpg",
-      "texteAlternatif": "Magnolia grandiflora (feuillage) — Magnolia grandiflora (feuillage)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Liné1"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Magnolia grandiflora leaves",
+      "requiredTokens": [
+        "magnolia",
+        "grandiflora"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Magnolia grandiflora (feuillage) — Magnolia grandiflora (feuillage)"
     }
   },
   {
@@ -7722,15 +7571,15 @@ window.BOTANIC_PLANTS = [
       "Cette entrée figure dans plusieurs catégories du référentiel source ; les catégories d'origine sont conservées.",
       "Monstera deliciosa apparaît dans le R35 à la fois comme fleur facultative et comme verdure obligatoire ; les deux occurrences sont conservées."
     ],
-    "image": {
-      "url": "assets/images/monstera-deliciosa.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_Leaf_2700px.jpg",
-      "fichierCommons": "Monstera deliciosa Leaf 2700px.jpg",
-      "texteAlternatif": "Monstera deliciosa — Monstera deliciosa",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Photo by and (c)2006 Derek Ramsey ( Ram-Man ). Location credit to the Chanticleer Garden."
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Monstera deliciosa leaf",
+      "requiredTokens": [
+        "monstera",
+        "deliciosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Monstera deliciosa — Monstera deliciosa"
     }
   },
   {
@@ -7756,15 +7605,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/nigella-damascena.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nigella_damascena_2012.jpg",
-      "fichierCommons": "Nigella damascena 2012.jpg",
-      "texteAlternatif": "Nigella damascena — Nigella damascena",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "JLPC"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Nigella damascena flower",
+      "requiredTokens": [
+        "nigella",
+        "damascena"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Nigella damascena — Nigella damascena"
     }
   },
   {
@@ -7790,15 +7639,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/olive-olea-europaea-feuillage.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Olea_europaea_FruitsandLeaves_2009December13_DehesaBoyaldePuertollano.jpg",
-      "fichierCommons": "Olea europaea FruitsandLeaves 2009December13 DehesaBoyaldePuertollano.jpg",
-      "texteAlternatif": "Olive – Olea europaea (feuillage) — Olive – Olea europaea (feuillage)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "Javier martin"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Olea europaea leaves",
+      "requiredTokens": [
+        "olea",
+        "europaea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Olive – Olea europaea (feuillage) — Olive – Olea europaea (feuillage)"
     }
   },
   {
@@ -7824,15 +7673,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/pandanus-variegatus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pandanus_utilis_fruit.JPG",
-      "fichierCommons": "Pandanus utilis fruit.JPG",
-      "texteAlternatif": "Pandanus variegatus — Pandanus variegatus",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY-SA 3.0",
-      "author": "B.navez"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pandanus variegatus leaves",
+      "requiredTokens": [
+        "pandanus"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Pandanus variegatus — Pandanus variegatus"
     }
   },
   {
@@ -7861,15 +7709,14 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Le référentiel contient aussi Philodendron xanadu / P. bipinnatifidum ; l'entrée « selloum » reste séparée faute de correspondance explicite."
     ],
-    "image": {
-      "url": "assets/images/philodendron-selloum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philodendron_Poss._Bacterial_leaf_blight_(Xanthomonas_campestris)_(25868012152).jpg",
-      "fichierCommons": "Philodendron Poss. Bacterial leaf blight (Xanthomonas campestris) (25868012152).jpg",
-      "texteAlternatif": "Philodendron selloum — Philodendron selloum",
-      "matchNote": "Illustration correspondant au terme du référentiel",
-      "license": "CC0",
-      "author": "Scot Nelson"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron selloum foliage",
+      "requiredTokens": [
+        "philodendron"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Philodendron selloum — Philodendron selloum"
     }
   },
   {
@@ -7895,15 +7742,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/philodendron-xanadu-philodendron-bipinnatifidum.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philodendron_bipinnatifidum_6zz.jpg",
-      "fichierCommons": "Philodendron bipinnatifidum 6zz.jpg",
-      "texteAlternatif": "Philodendron xanadu / Philodendron bipinnatifidum — Philodendron xanadu / Philodendron bipinnatifidum",
-      "matchNote": "Illustration représentative d’un taxon cité dans le référentiel",
-      "license": "CC BY-SA 4.0",
-      "author": "Photo by David J. Stang"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron bipinnatifidum foliage",
+      "requiredTokens": [
+        "philodendron",
+        "bipinnatifidum"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Philodendron xanadu / Philodendron bipinnatifidum — Philodendron xanadu / Philodendron bipinnatifidum"
     }
   },
   {
@@ -7929,15 +7776,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/phoenix-roebelenii.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Female_flowers_of_inflorescence_of_Phoenix_roebelenii.jpg",
-      "fichierCommons": "Female flowers of inflorescence of Phoenix roebelenii.jpg",
-      "texteAlternatif": "Phoenix roebelenii — Phoenix roebelenii",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "KATHERINE WAGNER-REISS"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phoenix roebelenii",
+      "requiredTokens": [
+        "phoenix",
+        "roebelenii"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Phoenix roebelenii — Phoenix roebelenii"
     }
   },
   {
@@ -7963,15 +7810,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/pilea-peperomioides.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilea_peperomioides_Chinese_money_plant.jpg",
-      "fichierCommons": "Pilea peperomioides Chinese money plant.jpg",
-      "texteAlternatif": "Pilea peperomioides — Pilea peperomioides",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC0",
-      "author": "Husky"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pilea peperomioides",
+      "requiredTokens": [
+        "pilea",
+        "peperomioides"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pilea peperomioides — Pilea peperomioides"
     }
   },
   {
@@ -7997,15 +7844,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/pittosporum-tenuifolium-irene-patterson.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pittosporum_tenuifolium_%27Irene_Paterson%27_IMG_1947.jpg",
-      "fichierCommons": "Pittosporum tenuifolium 'Irene Paterson' IMG 1947.jpg",
-      "texteAlternatif": "Pittosporum tenuifolium “Irene Patterson” — Pittosporum tenuifolium “Irene Patterson”",
-      "matchNote": "Illustration du taxon/cultivar recherché",
-      "license": "CC BY-SA 4.0",
-      "author": "Don McCulley"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pittosporum tenuifolium Irene Patterson",
+      "requiredTokens": [
+        "pittosporum",
+        "tenuifolium"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Pittosporum tenuifolium “Irene Patterson” — Pittosporum tenuifolium “Irene Patterson”"
     }
   },
   {
@@ -8073,14 +7920,12 @@ window.BOTANIC_PLANTS = [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
     ],
     "image": {
-      "url": "assets/images/paeonia-lactiflora.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Paeonia%20lactiflora%202025.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia_lactiflora_2025.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia%20lactiflora%202025.jpg",
       "fichierCommons": "Paeonia lactiflora 2025.jpg",
-      "texteAlternatif": "Paeonia lactiflora — pivoine",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC0",
-      "author": "Refriedbeans52"
+      "taxonPhotographie": "Paeonia lactiflora",
+      "texteAlternatif": "Paeonia lactiflora — pivoine"
     }
   },
   {
@@ -8151,14 +7996,12 @@ window.BOTANIC_PLANTS = [
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée."
     ],
     "image": {
-      "url": "assets/images/protea-cynaroides.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Protea%20cynaroides%20flower.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea_cynaroides_flower.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Protea%20cynaroides%20flower.jpg",
       "fichierCommons": "Protea cynaroides flower.jpg",
-      "texteAlternatif": "Protea cynaroides",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "Public domain",
-      "author": ""
+      "taxonPhotographie": "Protea cynaroides",
+      "texteAlternatif": "Protea cynaroides"
     }
   },
   {
@@ -8184,15 +8027,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/ranunculus-asiaticus.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ranunculus_asiaticus-Favourite_Flowers_Garden_Greenhouse-1-0030-6.png",
-      "fichierCommons": "Ranunculus asiaticus-Favourite Flowers Garden Greenhouse-1-0030-6.png",
-      "texteAlternatif": "Ranunculus asiaticus — Ranunculus asiaticus",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "Edward Step"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ranunculus asiaticus flower",
+      "requiredTokens": [
+        "ranunculus",
+        "asiaticus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Ranunculus asiaticus — Ranunculus asiaticus"
     }
   },
   {
@@ -8218,15 +8061,14 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/rosa-hybrida-garden-roses.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_hybrida,_Yellow,_Rosier_serie_Flower_Carpet,_Jardin_universitaire_Roger-Van_den_Hende_30.jpg",
-      "fichierCommons": "Rosa hybrida, Yellow, Rosier serie Flower Carpet, Jardin universitaire Roger-Van den Hende 30.jpg",
-      "texteAlternatif": "Rosa hybrida (garden roses) — Rosa hybrida (garden roses)",
-      "matchNote": "Illustration représentative de l’hybride/groupe",
-      "license": "CC0",
-      "author": "Wilfredor"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "garden rose Rosa hybrida flower",
+      "requiredTokens": [
+        "rosa"
+      ],
+      "matchLevel": "hybride",
+      "texteAlternatif": "Rosa hybrida (garden roses) — Rosa hybrida (garden roses)"
     }
   },
   {
@@ -8252,15 +8094,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/salix-caprea-feuillage-ou-rameaux-doux.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Branches_of_salix_caprea_in_G%C3%A5seberg.jpg",
-      "fichierCommons": "Branches of salix caprea in Gåseberg.jpg",
-      "texteAlternatif": "Salix caprea (feuillage ou rameaux doux) — Salix caprea (feuillage ou rameaux doux)",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC0",
-      "author": "W.carter"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Salix caprea branches",
+      "requiredTokens": [
+        "salix",
+        "caprea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Salix caprea (feuillage ou rameaux doux) — Salix caprea (feuillage ou rameaux doux)"
     }
   },
   {
@@ -8286,15 +8128,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
     ],
-    "image": {
-      "url": "assets/images/scabiosa-atropurpurea.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scabiosa_atropurpurea_Flower_Closeup_DehesaBoyalPuertollano.jpg",
-      "fichierCommons": "Scabiosa atropurpurea Flower Closeup DehesaBoyalPuertollano.jpg",
-      "texteAlternatif": "Scabiosa atropurpurea — Scabiosa atropurpurea",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "Public domain",
-      "author": "Javier martin"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Scabiosa atropurpurea flower",
+      "requiredTokens": [
+        "scabiosa",
+        "atropurpurea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Scabiosa atropurpurea — Scabiosa atropurpurea"
     }
   },
   {
@@ -8320,15 +8162,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/schefflera-arboricola.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwarf_umbrella_tree_(Schefflera_arboricola).jpg",
-      "fichierCommons": "Dwarf umbrella tree (Schefflera arboricola).jpg",
-      "texteAlternatif": "Schefflera arboricola — Schefflera arboricola",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 4.0",
-      "author": "Dandy1022"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Schefflera arboricola foliage",
+      "requiredTokens": [
+        "schefflera",
+        "arboricola"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Schefflera arboricola — Schefflera arboricola"
     }
   },
   {
@@ -8357,15 +8199,15 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "La fiche 54 décrit Strelitzia reginae ; elle n'est pas appliquée à Strelitzia nicolai."
     ],
-    "image": {
-      "url": "assets/images/strelitzia-nicolai.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strelitzia_nicolai_3.jpg",
-      "fichierCommons": "Strelitzia nicolai 3.jpg",
-      "texteAlternatif": "Strelitzia nicolai — Strelitzia nicolai",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC BY-SA 3.0",
-      "author": "Eric in SF"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Strelitzia nicolai",
+      "requiredTokens": [
+        "strelitzia",
+        "nicolai"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Strelitzia nicolai — Strelitzia nicolai"
     }
   },
   {
@@ -8391,15 +8233,15 @@ window.BOTANIC_PLANTS = [
         "ficheOuPage": "R35 — Verdures"
       }
     ],
-    "image": {
-      "url": "assets/images/zamioculcas-zamiifolia.webp",
-      "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Zamio_Mater%22_Zamioculcas_zamiifolia_communis_plant.jpg",
-      "fichierCommons": "\"Zamio Mater\" Zamioculcas zamiifolia communis plant.jpg",
-      "texteAlternatif": "Zamioculcas zamiifolia — Zamioculcas zamiifolia",
-      "matchNote": "Correspondance taxonomique contrôlée",
-      "license": "CC0",
-      "author": "O fungo azul"
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Zamioculcas zamiifolia",
+      "requiredTokens": [
+        "zamioculcas",
+        "zamiifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Zamioculcas zamiifolia — Zamioculcas zamiifolia"
     }
   },
   {
@@ -8454,14 +8296,12 @@ window.BOTANIC_PLANTS = [
       "Fiche complémentaire hors référentiel : aucune entrée correspondante n'a été trouvée dans les tableaux R05/R35."
     ],
     "image": {
-      "url": "assets/images/acacia-dealbata.webp",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Acacia%20dealbata%20flowers.jpg?width=1200",
       "source": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acacia_dealbata_flowers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acacia%20dealbata%20flowers.jpg",
       "fichierCommons": "Acacia dealbata flowers.jpg",
-      "texteAlternatif": "Acacia dealbata — Mimosa",
-      "matchNote": "Photographie Wikimedia Commons",
-      "license": "CC0",
-      "author": "Pavithra mallan"
+      "taxonPhotographie": "Acacia dealbata",
+      "texteAlternatif": "Acacia dealbata — Mimosa"
     }
   }
 ];

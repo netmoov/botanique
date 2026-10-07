@@ -208,7 +208,9 @@ function bindSession() {
   $("#plant-detail-dialog").addEventListener("click", event => {
     if (event.target === $("#plant-detail-dialog")) closePlantDetails();
   });
-  $("#plant-detail-dialog").addEventListener("close", () => document.body.classList.remove("dialog-open"));
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !$("#plant-detail-dialog").hidden) closePlantDetails();
+  });
   $("#mark-review").addEventListener("click", () => answerCurrent("review"));
   $("#mark-known").addEventListener("click", () => answerCurrent("known"));
 
@@ -432,19 +434,23 @@ function detailSection(title,items) {
 function toggleDetails() {
   const plant = currentPlant();
   if (!plant) return;
-  const dialog = $("#plant-detail-dialog");
+  const overlay = $("#plant-detail-dialog");
+  const content = $("#plant-detail-dialog-content");
   $("#plant-detail-title").textContent = `${displayName(plant)} · ${plant.nomLatinPrincipal || ""}`;
-  $("#plant-detail-dialog-content").innerHTML = buildDetailsHtml(plant);
+  content.innerHTML = buildDetailsHtml(plant);
+  overlay.hidden = false;
+  overlay.classList.add("is-open");
   document.body.classList.add("dialog-open");
-  if (typeof dialog.showModal === "function") dialog.showModal();
-  else dialog.setAttribute("open", "");
+  content.scrollTop = 0;
+  requestAnimationFrame(() => $("#close-plant-detail")?.focus());
 }
 
 function closePlantDetails() {
-  const dialog = $("#plant-detail-dialog");
+  const overlay = $("#plant-detail-dialog");
+  overlay.classList.remove("is-open");
+  overlay.hidden = true;
   document.body.classList.remove("dialog-open");
-  if (typeof dialog.close === "function" && dialog.open) dialog.close();
-  else dialog.removeAttribute("open");
+  $("#toggle-details")?.focus({ preventScroll: true });
 }
 
 function syncAnswerButtons() {
