@@ -24,7 +24,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Agapanthus flower",
+      "requiredTokens": [
+        "agapanthus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Agapanthe — Agapanthus"
+    }
   },
   {
     "id": "agave",
@@ -51,7 +60,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Agave americana",
+      "requiredTokens": [
+        "agave"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Agave — Agave"
+    }
   },
   {
     "id": "allium",
@@ -78,7 +96,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "ornamental Allium flower",
+      "requiredTokens": [
+        "allium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Ail d’ornement — Allium"
+    }
   },
   {
     "id": "alchemilla-mollis",
@@ -341,7 +368,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Physalis alkekengi",
+      "requiredTokens": [
+        "physalis"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Amour-en-cage — Physalis"
+    }
   },
   {
     "id": "cotinus-coggygria",
@@ -368,7 +404,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cotinus coggygria",
+      "requiredTokens": [
+        "cotinus",
+        "coggygria"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Arbre à perruque — Cotinus coggygria"
+    }
   },
   {
     "id": "chrysalidocarpus-lutescens-dypsis-lutescens",
@@ -395,7 +441,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dypsis lutescens",
+      "requiredTokens": [
+        "dypsis",
+        "lutescens"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Areca — Chrysalidocarpus lutescens  (Dypsis lutescens)"
+    }
   },
   {
     "id": "asclepias",
@@ -501,7 +557,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus densiflorus",
+      "requiredTokens": [
+        "asparagus",
+        "densiflorus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Asparagus densiflorus — Densiflorus (Asparagus densiflorus)"
+    }
   },
   {
     "id": "aspidistra-elatior",
@@ -528,7 +594,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aspidistra elatior",
+      "requiredTokens": [
+        "aspidistra",
+        "elatior"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Aspidistra — Aspidistra elatior"
+    }
   },
   {
     "id": "astilbe",
@@ -555,7 +631,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Astilbe flower",
+      "requiredTokens": [
+        "astilbe"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Astilbe — Astilbe"
+    }
   },
   {
     "id": "astrantia-major",
@@ -657,7 +742,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phyllostachys bamboo",
+      "requiredTokens": [
+        "phyllostachys"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Bambou — Bambusa / Phyllostachys"
+    }
   },
   {
     "id": "banksia",
@@ -762,7 +856,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Xerophyllum tenax",
+      "requiredTokens": [
+        "xerophyllum",
+        "tenax"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Beargrass — Xerophyllum tenax (Beargrass)"
+    }
   },
   {
     "id": "bouvardia",
@@ -953,7 +1057,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Celosia cristata flower",
+      "requiredTokens": [
+        "celosia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Célosie — Celosia"
+    }
   },
   {
     "id": "chamaerops-humilis",
@@ -984,7 +1097,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Chamaerops humilis",
+      "requiredTokens": [
+        "chamaerops",
+        "humilis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Chamaerops — Chamaerops humilis"
+    }
   },
   {
     "id": "chrysanthemum",
@@ -1083,7 +1206,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cordyline australis",
+      "requiredTokens": [
+        "cordyline",
+        "australis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cordyline — Cordyline australis"
+    }
   },
   {
     "id": "cornus-alba-cornus-sanguinea",
@@ -1114,7 +1247,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cornus alba foliage",
+      "requiredTokens": [
+        "cornus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Cornouille — Cornus Alba / Cornus sanguinea"
+    }
   },
   {
     "id": "craspedia-globosa",
@@ -1219,7 +1361,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cycas revoluta",
+      "requiredTokens": [
+        "cycas",
+        "revoluta"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cycas — Cycas revoluta"
+    }
   },
   {
     "id": "dahlia",
@@ -1576,7 +1728,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Euphorbia branches foliage",
+      "requiredTokens": [
+        "euphorbia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Euphorbe — Euphorbia (rameaux décoratifs)"
+    }
   },
   {
     "id": "anthurium-feuillage-anthurium-andraeanum",
@@ -1603,7 +1764,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anthurium andraeanum leaf",
+      "requiredTokens": [
+        "anthurium",
+        "andraeanum"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Feuille d’anthurium — Anthurium  (feuillage : Anthurium andraeanum)"
+    }
   },
   {
     "id": "quercus-feuilles",
@@ -1630,7 +1801,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Quercus leaves",
+      "requiredTokens": [
+        "quercus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Feuille de chêne — Quercus (feuilles)"
+    }
   },
   {
     "id": "cocos-nucifera-feuille",
@@ -1657,7 +1837,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cocos nucifera leaves",
+      "requiredTokens": [
+        "cocos",
+        "nucifera"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Feuille de cocotier — Cocos nucifera (feuille)"
+    }
   },
   {
     "id": "flexi-grass-chlorophytum-laxum-ornamental-grass",
@@ -1684,7 +1874,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Chlorophytum laxum",
+      "requiredTokens": [
+        "chlorophytum"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Flexigrass — Flexi grass  (Chlorophytum laxum / Ornamental grass)"
+    }
   },
   {
     "id": "phormium-tenax",
@@ -1715,7 +1914,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phormium tenax",
+      "requiredTokens": [
+        "phormium",
+        "tenax"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Formium — Phormium tenax"
+    }
   },
   {
     "id": "forsythia",
@@ -1820,7 +2029,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dicksonia antarctica tree fern",
+      "requiredTokens": [
+        "dicksonia"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Fougère arborescente — Tree Fern (Dicksonia / Cyathea)"
+    }
   },
   {
     "id": "rumohra-adiantiformis-lederwaere",
@@ -1847,7 +2065,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rumohra adiantiformis",
+      "requiredTokens": [
+        "rumohra",
+        "adiantiformis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Fougère cuir — Rumohra adiantiformis (Lederwaere)"
+    }
   },
   {
     "id": "freesia",
@@ -1952,7 +2180,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Galactica",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Galactica — Galactica (Leucadendron ‘Galactica’)"
+    }
   },
   {
     "id": "gentiana",
@@ -2463,7 +2700,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Miscanthus sinensis",
+      "requiredTokens": [
+        "miscanthus",
+        "sinensis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Herbe de Chine — Miscanthus sinensis"
+    }
   },
   {
     "id": "hydrangea",
@@ -2730,7 +2977,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Butomus umbellatus",
+      "requiredTokens": [
+        "butomus",
+        "umbellatus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Jonc fleuri — Butomus umbellatus"
+    }
   },
   {
     "id": "leucadendron-kikerblad",
@@ -2757,7 +3014,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Kikerblad",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Kikerblad — Leucadendron ‘Kikerblad’"
+    }
   },
   {
     "id": "leucospermum",
@@ -2784,7 +3050,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucospermum flower",
+      "requiredTokens": [
+        "leucospermum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Leucospermum  (type Protéacée décorative) — Leucospermum"
+    }
   },
   {
     "id": "hedera-helix",
@@ -2811,7 +3086,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Hedera helix foliage",
+      "requiredTokens": [
+        "hedera",
+        "helix"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Lierre — Hedera helix"
+    }
   },
   {
     "id": "lilium",
@@ -3235,7 +3520,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Typha latifolia",
+      "requiredTokens": [
+        "typha",
+        "latifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Massette — Typha latifolia"
+    }
   },
   {
     "id": "hypericum",
@@ -3262,7 +3557,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Hypericum berries",
+      "requiredTokens": [
+        "hypericum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Millepertuis (baies décoratives) — Hypericum"
+    }
   },
   {
     "id": "moluccella-laevis",
@@ -3592,7 +3896,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Myrtus communis foliage",
+      "requiredTokens": [
+        "myrtus",
+        "communis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Myrte — Myrtus communis"
+    }
   },
   {
     "id": "vaccinium",
@@ -3619,7 +3933,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Vaccinium branches foliage",
+      "requiredTokens": [
+        "vaccinium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Myrtille (rameaux décoratifs) — Vaccinium"
+    }
   },
   {
     "id": "dianthus",
@@ -4171,7 +4494,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Stachys byzantina leaves",
+      "requiredTokens": [
+        "stachys",
+        "byzantina"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Oreille d’agneau — Stachys byzantina"
+    }
   },
   {
     "id": "sedum-hylotelephium",
@@ -4281,7 +4614,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cortaderia selloana",
+      "requiredTokens": [
+        "cortaderia",
+        "selloana"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pampa — Cortaderia selloana"
+    }
   },
   {
     "id": "pandanus",
@@ -4308,7 +4651,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pandanus leaves",
+      "requiredTokens": [
+        "pandanus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Pandanus — Pandanus"
+    }
   },
   {
     "id": "panicum",
@@ -4339,7 +4691,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Panicum grass",
+      "requiredTokens": [
+        "panicum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Panic — Panicum"
+    }
   },
   {
     "id": "cyperus-papyrus-cyperus-alternifolius",
@@ -4366,7 +4727,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cyperus papyrus",
+      "requiredTokens": [
+        "cyperus",
+        "papyrus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Papyrus — Cyperus papyrus / Cyperus alternifolius"
+    }
   },
   {
     "id": "anigozanthos",
@@ -4618,7 +4989,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pittosporum tenuifolium",
+      "requiredTokens": [
+        "pittosporum",
+        "tenuifolium"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pittosporum — Pittosporum tenuifolium"
+    }
   },
   {
     "id": "paeonia",
@@ -4723,7 +5104,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus setaceus foliage",
+      "requiredTokens": [
+        "asparagus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Plumosus — Asparagus plumosus"
+    }
   },
   {
     "id": "lathyrus-odoratus",
@@ -4822,7 +5212,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Equisetum stems",
+      "requiredTokens": [
+        "equisetum"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Prêle — Equisetum"
+    }
   },
   {
     "id": "protea",
@@ -5018,7 +5417,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rhapis excelsa",
+      "requiredTokens": [
+        "rhapis",
+        "excelsa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Rapsis — Rhapis excelsa"
+    }
   },
   {
     "id": "polygonum-persicaria",
@@ -5045,7 +5454,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Persicaria foliage",
+      "requiredTokens": [
+        "persicaria"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Renouée — Polygonum (Persicaria)"
+    }
   },
   {
     "id": "rosa",
@@ -5072,7 +5490,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Rosa rose flower",
+      "requiredTokens": [
+        "rosa"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Rose — Rosa"
+    }
   },
   {
     "id": "ruscus-hypophyllum-ruscus-aculeatus",
@@ -5103,7 +5530,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ruscus aculeatus foliage",
+      "requiredTokens": [
+        "ruscus",
+        "aculeatus"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Ruscus — Ruscus hypophyllum / Ruscus aculeatus"
+    }
   },
   {
     "id": "cypripedium",
@@ -5130,7 +5567,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cypripedium flower",
+      "requiredTokens": [
+        "cypripedium"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Sabot de Vénus — Cypripedium"
+    }
   },
   {
     "id": "leucadendron-safari-sunset",
@@ -5157,7 +5603,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Leucadendron Safari Sunset",
+      "requiredTokens": [
+        "leucadendron"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Safari — Leucadendron ‘Safari Sunset’"
+    }
   },
   {
     "id": "gaultheria-shallon",
@@ -5184,7 +5639,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Gaultheria shallon foliage",
+      "requiredTokens": [
+        "gaultheria",
+        "shallon"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Sallal — Gaultheria shallon"
+    }
   },
   {
     "id": "sanguisorba-officinalis",
@@ -5211,7 +5676,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Sanguisorba officinalis",
+      "requiredTokens": [
+        "sanguisorba",
+        "officinalis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Sanguisorbe — Sanguisorba officinalis"
+    }
   },
   {
     "id": "skimmia",
@@ -5238,7 +5713,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Skimmia berries",
+      "requiredTokens": [
+        "skimmia"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "Skimmia — Skimmia"
+    }
   },
   {
     "id": "asparagus-sprengeri",
@@ -5265,7 +5749,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus densiflorus sprengeri",
+      "requiredTokens": [
+        "asparagus"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Sprengeri — Asparagus sprengeri"
+    }
   },
   {
     "id": "limonium",
@@ -5378,7 +5871,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Xanthorrhoea australis",
+      "requiredTokens": [
+        "xanthorrhoea",
+        "australis"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Teepee — Chico / Teepee  (Xanthorrhoea australis)"
+    }
   },
   {
     "id": "thlaspi-iberis-thlaspi-green-bell",
@@ -5409,7 +5912,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Thlaspi green bell floristry",
+      "requiredTokens": [
+        "thlaspi"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Thlaspi — Thlaspi (Iberis / Thlaspi green bell)"
+    }
   },
   {
     "id": "helianthus",
@@ -5906,7 +6418,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R05 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron xanadu foliage",
+      "requiredTokens": [
+        "xanadu"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Xanadou — Philodendron xanadu"
+    }
   },
   {
     "id": "alocasia-amazonica",
@@ -5930,7 +6451,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Alocasia amazonica",
+      "requiredTokens": [
+        "alocasia"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Alocasia amazonica — Alocasia amazonica"
+    }
   },
   {
     "id": "alpinia-purpurata",
@@ -5954,7 +6484,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Alpinia purpurata flower",
+      "requiredTokens": [
+        "alpinia",
+        "purpurata"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Alpinia purpurata — Alpinia purpurata"
+    }
   },
   {
     "id": "amaranthus-hypochondriacus",
@@ -5981,7 +6521,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "La fiche 4 décrit Amaranthus caudatus / A. cruentus ; elle n'est pas appliquée à A. hypochondriacus."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Amaranthus hypochondriacus",
+      "requiredTokens": [
+        "amaranthus",
+        "hypochondriacus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Amaranthus hypochondriacus — Amaranthus hypochondriacus"
+    }
   },
   {
     "id": "anemone-coronaria",
@@ -6005,7 +6555,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anemone coronaria flower",
+      "requiredTokens": [
+        "anemone",
+        "coronaria"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Anemone coronaria — Anemone coronaria"
+    }
   },
   {
     "id": "anthurium-andraeanum",
@@ -6029,7 +6589,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Anthurium andraeanum flower",
+      "requiredTokens": [
+        "anthurium",
+        "andraeanum"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Anthurium andraeanum — Anthurium andraeanum"
+    }
   },
   {
     "id": "aralia-sieboldii-aralia-japonica",
@@ -6053,7 +6623,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aralia japonica foliage",
+      "requiredTokens": [
+        "aralia"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Aralia sieboldii (Aralia japonica) — Aralia sieboldii (Aralia japonica)"
+    }
   },
   {
     "id": "areca-palm-dypsis-lutescens",
@@ -6077,7 +6656,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dypsis lutescens",
+      "requiredTokens": [
+        "dypsis",
+        "lutescens"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Areca palm – Dypsis lutescens — Areca palm – Dypsis lutescens"
+    }
   },
   {
     "id": "asparagus-setaceus",
@@ -6104,7 +6693,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Le R05 contient plusieurs Asparagus (densiflorus, plumosus, sprengeri) ; aucune fusion n'est effectuée automatiquement."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Asparagus setaceus foliage",
+      "requiredTokens": [
+        "asparagus",
+        "setaceus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Asparagus setaceus — Asparagus setaceus"
+    }
   },
   {
     "id": "aspidistra-variegata",
@@ -6131,7 +6730,16 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Le R05 contient Aspidistra elatior ; aucune fusion taxonomique n'est effectuée avec Aspidistra variegata."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Aspidistra elatior variegata",
+      "requiredTokens": [
+        "aspidistra"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Aspidistra variegata — Aspidistra variegata"
+    }
   },
   {
     "id": "banksia-speciosa",
@@ -6158,7 +6766,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "La fiche 9 indique « Banksia (plusieurs espèces) » sans citer B. speciosa ; association détaillée laissée à validation humaine."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Banksia speciosa",
+      "requiredTokens": [
+        "banksia",
+        "speciosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Banksia speciosa — Banksia speciosa"
+    }
   },
   {
     "id": "caladium-bicolor",
@@ -6182,7 +6800,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Caladium bicolor",
+      "requiredTokens": [
+        "caladium",
+        "bicolor"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Caladium bicolor — Caladium bicolor"
+    }
   },
   {
     "id": "calathea-lutea-tiges-feuilles-structurelles",
@@ -6206,7 +6834,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Calathea lutea leaves",
+      "requiredTokens": [
+        "calathea",
+        "lutea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Calathea lutea (tiges & feuilles structurelles) — Calathea lutea (tiges & feuilles structurelles)"
+    }
   },
   {
     "id": "zantedeschia-aethiopica",
@@ -6307,7 +6945,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cocculus laurifolius",
+      "requiredTokens": [
+        "cocculus",
+        "laurifolius"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Cocculus laurifolius — Cocculus laurifolius"
+    }
   },
   {
     "id": "cordyline-fruticosa-red-sister",
@@ -6334,7 +6982,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Le R05 contient Cordyline australis ; les deux entrées restent séparées."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Cordyline fruticosa Red Sister",
+      "requiredTokens": [
+        "cordyline",
+        "fruticosa"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Cordyline fruticosa “Red Sister” — Cordyline fruticosa “Red Sister”"
+    }
   },
   {
     "id": "ctenanthe-setosa",
@@ -6358,7 +7016,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ctenanthe setosa",
+      "requiredTokens": [
+        "ctenanthe",
+        "setosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Ctenanthe setosa — Ctenanthe setosa"
+    }
   },
   {
     "id": "curcuma-alismatifolia",
@@ -6382,7 +7050,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Curcuma alismatifolia flower",
+      "requiredTokens": [
+        "curcuma",
+        "alismatifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Curcuma alismatifolia — Curcuma alismatifolia"
+    }
   },
   {
     "id": "dracaena-fragrans-massangeana",
@@ -6406,7 +7084,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dracaena fragrans Massangeana",
+      "requiredTokens": [
+        "dracaena",
+        "fragrans"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Dracaena fragrans “Massangeana” — Dracaena fragrans “Massangeana”"
+    }
   },
   {
     "id": "dracaena-reflexa-song-of-india",
@@ -6430,7 +7118,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Dracaena reflexa Song of India",
+      "requiredTokens": [
+        "dracaena",
+        "reflexa"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Dracaena reflexa “Song of India” — Dracaena reflexa “Song of India”"
+    }
   },
   {
     "id": "eucalyptus-gunnii",
@@ -6457,7 +7155,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "La fiche 22 cite Eucalyptus cinerea, populus et parvifolia, mais pas E. gunnii."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Eucalyptus gunnii foliage",
+      "requiredTokens": [
+        "eucalyptus",
+        "gunnii"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Eucalyptus gunnii — Eucalyptus gunnii"
+    }
   },
   {
     "id": "fatsia-japonica",
@@ -6481,7 +7189,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Fatsia japonica foliage",
+      "requiredTokens": [
+        "fatsia",
+        "japonica"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Fatsia japonica — Fatsia japonica"
+    }
   },
   {
     "id": "eucalyptus-populus",
@@ -6551,7 +7269,16 @@ window.BOTANIC_PLANTS = [
       "Nom latin dans la fiche détaillée : « Eucalyptus (cinerea, populus, parvifolia…) ».",
       "Correspondance retenue car le taxon R35 est explicitement présent dans le nom latin de la fiche détaillée.",
       "Image non attribuée automatiquement : aucune correspondance Wikimedia Commons suffisamment fiable n'a été retenue pour le nom source « Eucalyptus populus ». Le placeholder est conservé plutôt que d'associer une espèce différente."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Eucalyptus foliage florist",
+      "requiredTokens": [
+        "eucalyptus"
+      ],
+      "matchLevel": "genre",
+      "texteAlternatif": "feuillage coupé — Eucalyptus populus"
+    }
   },
   {
     "id": "gladiolus-hortulanus",
@@ -6575,7 +7302,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Gladiolus hortulanus flower",
+      "requiredTokens": [
+        "gladiolus"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Gladiolus hortulanus — Gladiolus hortulanus"
+    }
   },
   {
     "id": "grevillea-robusta",
@@ -6599,7 +7335,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Grevillea robusta foliage",
+      "requiredTokens": [
+        "grevillea",
+        "robusta"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Grevillea robusta — Grevillea robusta"
+    }
   },
   {
     "id": "heliconia-wagneriana",
@@ -6626,7 +7372,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "La fiche 34 décrit Heliconia rostrata / variétés ; elle n'est pas appliquée à H. wagneriana."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Heliconia wagneriana",
+      "requiredTokens": [
+        "heliconia",
+        "wagneriana"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Heliconia wagneriana — Heliconia wagneriana"
+    }
   },
   {
     "id": "hydrangea-paniculata",
@@ -6731,7 +7487,16 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Fiche 41 « Lilium » disponible, mais l'entrée R35 vise spécifiquement les hybrides orientaux : association détaillée non appliquée automatiquement."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "oriental lily Lilium flower",
+      "requiredTokens": [
+        "lilium"
+      ],
+      "matchLevel": "hybride",
+      "texteAlternatif": "Lilium (hybrides orientaux) — Lilium (hybrides orientaux)"
+    }
   },
   {
     "id": "magnolia-grandiflora-feuillage",
@@ -6755,7 +7520,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Magnolia grandiflora leaves",
+      "requiredTokens": [
+        "magnolia",
+        "grandiflora"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Magnolia grandiflora (feuillage) — Magnolia grandiflora (feuillage)"
+    }
   },
   {
     "id": "monstera-deliciosa",
@@ -6795,7 +7570,17 @@ window.BOTANIC_PLANTS = [
     "sourceNotes": [
       "Cette entrée figure dans plusieurs catégories du référentiel source ; les catégories d'origine sont conservées.",
       "Monstera deliciosa apparaît dans le R35 à la fois comme fleur facultative et comme verdure obligatoire ; les deux occurrences sont conservées."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Monstera deliciosa leaf",
+      "requiredTokens": [
+        "monstera",
+        "deliciosa"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Monstera deliciosa — Monstera deliciosa"
+    }
   },
   {
     "id": "nigella-damascena",
@@ -6819,7 +7604,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Nigella damascena flower",
+      "requiredTokens": [
+        "nigella",
+        "damascena"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Nigella damascena — Nigella damascena"
+    }
   },
   {
     "id": "olive-olea-europaea-feuillage",
@@ -6843,7 +7638,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Olea europaea leaves",
+      "requiredTokens": [
+        "olea",
+        "europaea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Olive – Olea europaea (feuillage) — Olive – Olea europaea (feuillage)"
+    }
   },
   {
     "id": "pandanus-variegatus",
@@ -6867,7 +7672,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pandanus variegatus leaves",
+      "requiredTokens": [
+        "pandanus"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Pandanus variegatus — Pandanus variegatus"
+    }
   },
   {
     "id": "philodendron-selloum",
@@ -6894,7 +7708,16 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "Le référentiel contient aussi Philodendron xanadu / P. bipinnatifidum ; l'entrée « selloum » reste séparée faute de correspondance explicite."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron selloum foliage",
+      "requiredTokens": [
+        "philodendron"
+      ],
+      "matchLevel": "source",
+      "texteAlternatif": "Philodendron selloum — Philodendron selloum"
+    }
   },
   {
     "id": "philodendron-xanadu-philodendron-bipinnatifidum",
@@ -6918,7 +7741,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Philodendron bipinnatifidum foliage",
+      "requiredTokens": [
+        "philodendron",
+        "bipinnatifidum"
+      ],
+      "matchLevel": "representatif",
+      "texteAlternatif": "Philodendron xanadu / Philodendron bipinnatifidum — Philodendron xanadu / Philodendron bipinnatifidum"
+    }
   },
   {
     "id": "phoenix-roebelenii",
@@ -6942,7 +7775,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Phoenix roebelenii",
+      "requiredTokens": [
+        "phoenix",
+        "roebelenii"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Phoenix roebelenii — Phoenix roebelenii"
+    }
   },
   {
     "id": "pilea-peperomioides",
@@ -6966,7 +7809,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pilea peperomioides",
+      "requiredTokens": [
+        "pilea",
+        "peperomioides"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Pilea peperomioides — Pilea peperomioides"
+    }
   },
   {
     "id": "pittosporum-tenuifolium-irene-patterson",
@@ -6990,7 +7843,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Pittosporum tenuifolium Irene Patterson",
+      "requiredTokens": [
+        "pittosporum",
+        "tenuifolium"
+      ],
+      "matchLevel": "cultivar",
+      "texteAlternatif": "Pittosporum tenuifolium “Irene Patterson” — Pittosporum tenuifolium “Irene Patterson”"
+    }
   },
   {
     "id": "paeonia-lactiflora",
@@ -7163,7 +8026,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Ranunculus asiaticus flower",
+      "requiredTokens": [
+        "ranunculus",
+        "asiaticus"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Ranunculus asiaticus — Ranunculus asiaticus"
+    }
   },
   {
     "id": "rosa-hybrida-garden-roses",
@@ -7187,7 +8060,16 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "garden rose Rosa hybrida flower",
+      "requiredTokens": [
+        "rosa"
+      ],
+      "matchLevel": "hybride",
+      "texteAlternatif": "Rosa hybrida (garden roses) — Rosa hybrida (garden roses)"
+    }
   },
   {
     "id": "salix-caprea-feuillage-ou-rameaux-doux",
@@ -7211,7 +8093,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Salix caprea branches",
+      "requiredTokens": [
+        "salix",
+        "caprea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Salix caprea (feuillage ou rameaux doux) — Salix caprea (feuillage ou rameaux doux)"
+    }
   },
   {
     "id": "scabiosa-atropurpurea",
@@ -7235,7 +8127,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Fleurs & plantes"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Scabiosa atropurpurea flower",
+      "requiredTokens": [
+        "scabiosa",
+        "atropurpurea"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Scabiosa atropurpurea — Scabiosa atropurpurea"
+    }
   },
   {
     "id": "schefflera-arboricola",
@@ -7259,7 +8161,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Schefflera arboricola foliage",
+      "requiredTokens": [
+        "schefflera",
+        "arboricola"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Schefflera arboricola — Schefflera arboricola"
+    }
   },
   {
     "id": "strelitzia-nicolai",
@@ -7286,7 +8198,17 @@ window.BOTANIC_PLANTS = [
     ],
     "sourceNotes": [
       "La fiche 54 décrit Strelitzia reginae ; elle n'est pas appliquée à Strelitzia nicolai."
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Strelitzia nicolai",
+      "requiredTokens": [
+        "strelitzia",
+        "nicolai"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Strelitzia nicolai — Strelitzia nicolai"
+    }
   },
   {
     "id": "zamioculcas-zamiifolia",
@@ -7310,7 +8232,17 @@ window.BOTANIC_PLANTS = [
         "document": "Liste de fleurs R05 & R35",
         "ficheOuPage": "R35 — Verdures"
       }
-    ]
+    ],
+    "imageLookup": {
+      "provider": "Wikimedia Commons",
+      "query": "Zamioculcas zamiifolia",
+      "requiredTokens": [
+        "zamioculcas",
+        "zamiifolia"
+      ],
+      "matchLevel": "exact",
+      "texteAlternatif": "Zamioculcas zamiifolia — Zamioculcas zamiifolia"
+    }
   },
   {
     "id": "acacia-dealbata",

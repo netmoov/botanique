@@ -81,3 +81,8 @@ La V2 utilise une palette rose/corail et une ergonomie de cartes inspirée des a
 ## Photographies — V4
 
 Cette version ajoute **61 photographies Wikimedia Commons** aux fiches détaillées. Les images sont chargées depuis Wikimedia Commons en largeur optimisée et chaque photo comporte un lien vers sa page source. Voir `image-sources.md` pour l'inventaire. `Eucalyptus populus` reste volontairement en placeholder faute de correspondance Commons suffisamment fiable avec le nom fourni dans le référentiel.
+
+
+## Version V5 — couverture photo complète
+
+Les 61 photos déjà validées restent épinglées dans les données. Les 97 cartes restantes disposent maintenant d’une requête Wikimedia Commons contrôlée par nom latin/source. La première consultation résout une photographie réelle, conserve son URL et sa source dans le cache local du navigateur, puis réutilise cette photo. La fiche complète a également été renforcée afin de ne jamais s’ouvrir vide.
