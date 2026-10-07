@@ -1,0 +1,100 @@
+
+/* V7.1 — affichage mobile compact */
+@media (max-width: 650px) {
+  /* Écran "Choisir comment réviser" */
+  #view-home .section:has(#mode-grid) {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+
+  #view-home .section:has(#mode-grid) .section-heading {
+    margin-bottom: .75rem;
+  }
+
+  #view-home .section:has(#mode-grid) .section-heading h2 {
+    font-size: 1.45rem;
+    margin-bottom: 0;
+  }
+
+  /* 6 modes sur 2 colonnes x 3 lignes */
+  #mode-grid.mode-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .55rem;
+  }
+
+  #mode-grid .mode-card {
+    min-height: 76px;
+    padding: .7rem .65rem;
+    grid-template-columns: 34px minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: .55rem;
+    border-radius: 17px;
+  }
+
+  #mode-grid .mode-card__icon {
+    grid-row: auto;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    font-size: .92rem;
+  }
+
+  #mode-grid .mode-card strong {
+    font-size: .82rem;
+    line-height: 1.12;
+  }
+
+  /* Les descriptions restent visibles sur ordinateur seulement */
+  #mode-grid .mode-card > span:last-child {
+    display: none;
+  }
+
+  /* Écran "Préparer la session" */
+  #setup-mode-options.segmented {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .4rem;
+  }
+
+  #setup-mode-options.segmented button {
+    min-width: 0;
+    padding: .5rem .35rem;
+    font-size: .74rem;
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  #view-setup .section {
+    padding-top: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #view-setup .section-heading {
+    margin-bottom: .8rem;
+  }
+
+  #view-setup .section-heading h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  #view-setup fieldset {
+    margin-bottom: .9rem;
+  }
+}
+
+@media (max-width: 370px) {
+  #mode-grid .mode-card {
+    min-height: 72px;
+    padding: .6rem .55rem;
+  }
+
+  #mode-grid .mode-card strong {
+    font-size: .76rem;
+  }
+
+  #setup-mode-options.segmented {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
