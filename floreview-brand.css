@@ -1,0 +1,46 @@
+
+/* Floreview V8.1 — identité visuelle */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  text-decoration: none;
+}
+
+.brand__logo {
+  display: block;
+  width: clamp(138px, 15vw, 190px);
+  height: auto;
+  max-height: 56px;
+  object-fit: contain;
+}
+
+.brand__tagline {
+  display: block;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.12;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 650px) {
+  .brand {
+    gap: .35rem;
+  }
+
+  .brand__logo {
+    width: 122px;
+    max-height: 44px;
+  }
+
+  .brand__tagline {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand__logo {
+    width: 108px;
+  }
+}
