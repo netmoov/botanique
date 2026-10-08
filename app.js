@@ -44,22 +44,59 @@ function init() {
 
 function bindNavigation() {
   document.addEventListener("click", event => {
+    const anchor = event.target.closest("[data-home-anchor]");
+    if (anchor) {
+      event.preventDefault();
+      navigateToHomeAnchor(anchor.dataset.homeAnchor, true);
+      return;
+    }
+
     const target = event.target.closest("[data-view-target]");
     if (!target) return;
     showView(target.dataset.viewTarget);
   });
+
+  window.addEventListener("hashchange", applyHashRoute);
+
   $("#quick-start").addEventListener("click", () => openSetup("discovery"));
   $("#mode-grid").addEventListener("click", event => {
     const button = event.target.closest("[data-mode]");
     if (button) openSetup(button.dataset.mode);
   });
+
+  requestAnimationFrame(applyHashRoute);
 }
 
 function showView(name) {
   $$(".view").forEach(view => view.classList.toggle("is-active", view.dataset.view === name));
   $$(".nav__button").forEach(button => button.classList.toggle("is-active", button.dataset.viewTarget === name));
+  $$(".nav__link").forEach(link => link.classList.remove("is-active"));
   if (name === "progress") renderProgressPage();
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function navigateToHomeAnchor(anchorId, updateHash = false) {
+  const target = document.getElementById(anchorId);
+  if (!target) return;
+
+  $$(".view").forEach(view => view.classList.toggle("is-active", view.dataset.view === "home"));
+  $$(".nav__button").forEach(button => button.classList.toggle("is-active", button.dataset.viewTarget === "home" && anchorId === "home"));
+  $$(".nav__link").forEach(link => link.classList.toggle("is-active", link.dataset.homeAnchor === anchorId));
+
+  if (updateHash) {
+    history.pushState(null, "", `#${anchorId}`);
+  }
+
+  requestAnimationFrame(() => {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function applyHashRoute() {
+  const anchorId = location.hash.replace("#", "");
+  if (["modes-revision", "collection-floreview", "about-floreview"].includes(anchorId)) {
+    navigateToHomeAnchor(anchorId, false);
+  }
 }
 
 function openSetup(mode) {
@@ -626,12 +663,23 @@ function renderSourceCounters() {
   const flowers=PLANTS.filter(p=>p.floreviewCategorie==="fleurs_coupees");
   const plants=PLANTS.filter(p=>p.floreviewCategorie==="plantes");
   const foliage=PLANTS.filter(p=>p.floreviewCategorie==="feuillage");
-  $("#source-counters").innerHTML=[
-    [PLANTS.length,"végétaux"],
-    [flowers.length,"fleurs coupées"],
-    [plants.length,"plantes"],
-    [foliage.length,"feuillages"]
-  ].map(([v,l])=>`<div class="source-counter"><strong>${v}</strong><span>${escapeHtml(l)}</span></div>`).join("");
+
+  const items=[
+    { count:PLANTS.length, label:"Tous les végétaux", icon:"✿", className:"all" },
+    { count:flowers.length, label:"Fleurs coupées", icon:"❀", className:"flowers" },
+    { count:plants.length, label:"Plantes", icon:"♧", className:"plants" },
+    { count:foliage.length, label:"Feuillage", icon:"❧", className:"foliage" }
+  ];
+
+  $("#source-counters").innerHTML=items.map(item=>`
+    <div class="collection-category collection-category--${item.className}">
+      <span class="collection-category__icon" aria-hidden="true">${item.icon}</span>
+      <div>
+        <strong>${escapeHtml(item.label)}</strong>
+        <span>${item.count} végétaux</span>
+      </div>
+    </div>
+  `).join("");
 }
 
 function categoryLabel(plant) {

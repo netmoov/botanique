@@ -8,12 +8,14 @@
   <title>Floreview · Révision botanique</title>
   <link rel="stylesheet" href="style.css?v=81">
   <link rel="stylesheet" href="mobile-compact.css?v=81">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/floreview-flower-32.png?v=81">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/floreview-flower-192.png?v=81">
-  <link rel="shortcut icon" href="assets/favicon.ico?v=81">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/floreview-flower-180.png?v=81">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/floreview-v9-flower-32.png?v=90">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/floreview-v9-flower-192.png?v=90">
+  <link rel="shortcut icon" href="assets/favicon-v9.ico?v=90">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/floreview-v9-flower-180.png?v=90">
   <link rel="stylesheet" href="floreview-brand.css?v=82">
   <link rel="stylesheet" href="v8-2-theme.css?v=82">
+  <link rel="stylesheet" href="v8-2-1-premium.css?v=821">
+  <link rel="stylesheet" href="v9.css?v=90">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -24,11 +26,11 @@
       <span class="brand__tagline">Révision botanique · Fleuriste</span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
-      <button class="nav__button is-active" type="button" data-view-target="home">⌂ Accueil</button>
-      <a class="nav__link" href="#modes-revision">✎ Réviser</a>
-      <a class="nav__link" href="#collection-floreview">☰ Collection</a>
-      <button class="nav__button" type="button" data-view-target="progress">▥ Progression</button>
-      <a class="nav__link" href="#about-floreview">ⓘ À propos</a>
+      <button class="nav__button is-active" type="button" data-view-target="home"><span class="nav__icon" aria-hidden="true">⌂</span><span class="nav__label">Accueil</span></button>
+      <a class="nav__link" href="#modes-revision" data-home-anchor="modes-revision"><span class="nav__icon" aria-hidden="true">✎</span><span class="nav__label">Réviser</span></a>
+      <a class="nav__link" href="#collection-floreview" data-home-anchor="collection-floreview"><span class="nav__icon" aria-hidden="true">☰</span><span class="nav__label">Collection</span></a>
+      <button class="nav__button" type="button" data-view-target="progress"><span class="nav__icon" aria-hidden="true">▥</span><span class="nav__label">Progression</span></button>
+      <a class="nav__link" href="#about-floreview" data-home-anchor="about-floreview"><span class="nav__icon" aria-hidden="true">ⓘ</span><span class="nav__label">À propos</span></a>
     </nav>
   </header>
 
@@ -87,13 +89,17 @@
         </div>
       </section>
 
-      <section id="collection-floreview" class="shell section source-summary">
-        <div>
-          <p class="eyebrow">Collection Floreview</p>
-          <h2>Fleurs coupées, plantes et feuillages</h2>
-          <p>Tous les végétaux restent accessibles. Les fiches sans informations détaillées restent utilisables pour la reconnaissance visuelle et l’apprentissage des noms.</p>
+      <section id="collection-floreview" class="shell section collection-section">
+        <div class="collection-panel">
+          <div class="section-heading collection-heading">
+            <div>
+              <p class="eyebrow">Collection Floreview</p>
+              <h2>Fleurs coupées, plantes et feuillages</h2>
+              <p>Toute la collection est regroupée par grande famille d’utilisation pour retrouver rapidement ce que vous voulez réviser.</p>
+            </div>
+          </div>
+          <div class="source-counters collection-grid" id="source-counters"></div>
         </div>
-        <div class="source-counters" id="source-counters"></div>
       </section>
 
       <section id="about-floreview" class="shell about-floreview-card">
@@ -213,9 +219,9 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="data/plants.js?v=82"></script>
-  <script src="data/floreview-families.js?v=82"></script>
-  <script src="data/floreview-categories.js?v=82"></script>
-  <script src="app.js?v=82"></script>
+  <script src="data/plants.js?v=90"></script>
+  <script src="data/floreview-families.js?v=90"></script>
+  <script src="data/floreview-categories.js?v=90"></script>
+  <script src="app.js?v=90"></script>
 </body>
 </html>

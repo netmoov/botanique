@@ -1,0 +1,179 @@
+
+/* Floreview V9 */
+
+/* Les liens directs #modes-revision et #collection-floreview arrivent
+   réellement au début de la section, sans être cachés sous le bandeau. */
+#modes-revision,
+#collection-floreview,
+#about-floreview{
+  scroll-margin-top: 7.25rem;
+}
+
+/* Collection : même langage graphique que les autres panneaux */
+.collection-section{
+  max-width:1110px;
+  margin-top:0;
+  padding-top:1.1rem;
+}
+
+.collection-panel{
+  position:relative;
+  overflow:hidden;
+  padding:1.3rem 1.2rem 1.25rem;
+  background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.92));
+  border:1px solid rgba(235,227,231,.92);
+  border-radius:22px;
+  box-shadow:0 24px 62px rgba(79,50,67,.10);
+}
+
+.collection-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at top left, rgba(251,44,95,.10), transparent 32%),
+    linear-gradient(180deg, rgba(255,255,255,.26), transparent 55%);
+}
+
+.collection-heading{
+  position:relative;
+  margin-bottom:1rem;
+}
+
+.collection-heading h2{
+  margin-bottom:.35rem;
+  font-size:1.22rem;
+}
+
+.collection-heading h2::after{
+  content:"";
+  display:block;
+  width:58px;
+  height:3px;
+  margin-top:.5rem;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--brand, #FB2C5F), rgba(251,44,95,.08));
+}
+
+.collection-heading p:last-child{
+  max-width:760px;
+  color:#746b75;
+  line-height:1.55;
+  margin-bottom:0;
+}
+
+.collection-grid.source-counters{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.75rem;
+}
+
+.collection-category{
+  min-height:104px;
+  display:grid;
+  grid-template-columns:54px 1fr;
+  align-items:center;
+  gap:.85rem;
+  padding:1rem;
+  border:1px solid #ebe3e7;
+  border-radius:17px;
+  background:#fff;
+  box-shadow:0 9px 24px rgba(79,50,67,.045);
+}
+
+.collection-category__icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  font-size:1.35rem;
+  font-weight:800;
+}
+
+.collection-category strong{
+  display:block;
+  margin-bottom:.2rem;
+  color:#403741;
+  font-size:1rem;
+}
+
+.collection-category div > span{
+  color:#8a8089;
+  font-size:.88rem;
+}
+
+.collection-category--all .collection-category__icon{
+  color:#e65d80;
+  background:#ffeaf0;
+}
+
+.collection-category--flowers .collection-category__icon{
+  color:#f03f70;
+  background:#ffe5ed;
+}
+
+.collection-category--plants .collection-category__icon{
+  color:#579c60;
+  background:#eaf5e9;
+}
+
+.collection-category--foliage .collection-category__icon{
+  color:#4f8f62;
+  background:#edf6ed;
+}
+
+/* Active anchor nav */
+.nav__link.is-active{
+  color:var(--brand, #FB2C5F);
+}
+
+/* Direct anchor opens should feel like a real page header */
+#modes-revision.home-modes-section{
+  scroll-margin-top:7.25rem;
+}
+
+@media (max-width:650px){
+  #modes-revision,
+  #collection-floreview,
+  #about-floreview{
+    scroll-margin-top:.75rem;
+  }
+
+  .collection-section{
+    padding-top:.7rem;
+  }
+
+  .collection-panel{
+    border-radius:18px;
+    padding:1rem .85rem;
+  }
+
+  .collection-grid.source-counters{
+    grid-template-columns:1fr;
+    gap:.55rem;
+  }
+
+  .collection-category{
+    min-height:82px;
+    grid-template-columns:44px 1fr;
+    padding:.78rem .8rem;
+    border-radius:14px;
+  }
+
+  .collection-category__icon{
+    width:40px;
+    height:40px;
+    font-size:1.1rem;
+  }
+
+  .collection-category strong{
+    font-size:.9rem;
+  }
+
+  .collection-category div > span{
+    font-size:.78rem;
+  }
+}
