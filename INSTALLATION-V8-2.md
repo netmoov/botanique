@@ -1,23 +1,22 @@
-# Floreview V8.2 — nouvelle page d’accueil
+# Floreview V8.2 — refonte visuelle complète
 
-Cette version transforme surtout la page d’accueil pour la rapprocher de la maquette validée :
-- bandeau plus élégant ;
-- navigation horizontale enrichie ;
-- hero centré avec décor floral à gauche et feuillage à droite ;
-- grand bloc blanc « Choisir comment réviser » ;
-- cartes de modes plus premium ;
-- section collection et bloc À propos harmonisés.
+Cette version corrige l’erreur précédente :
+- aucun copier-coller de la capture ;
+- les éléments botaniques gauche/droite sont de nouveaux visuels SVG créés pour le site ;
+- l’accueil est entièrement refondu ;
+- le setup, la session, la progression et la fin de session reçoivent aussi un thème plus premium.
 
 Fichiers à téléverser :
 - index.html
-- v8-2-home.css
-- assets/hero-flower-left.png
-- assets/hero-foliage-right.png
+- v8-2-theme.css
+- assets/hero-left-botanical.svg
+- assets/hero-right-botanical.svg
 
-À conserver tels quels :
-- style.css
+À conserver :
 - app.js
+- style.css
 - mobile-compact.css
 - floreview-brand.css
+- 404.html
 - data/
-- assets/floreview-logo.png et favicon.
+- tous les autres assets existants.

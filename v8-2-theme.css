@@ -1,0 +1,176 @@
+
+/* Floreview V8.2 — refonte visuelle complète */
+:root{
+  --v82-bg:#f7f4f5;
+  --v82-surface:#ffffff;
+  --v82-surface-soft:#f1eded;
+  --v82-text:#38323a;
+  --v82-muted:#746b75;
+  --v82-line:#ebe3e7;
+  --v82-shadow:0 18px 48px rgba(77,55,70,.08);
+  --v82-shadow-soft:0 10px 24px rgba(77,55,70,.05);
+  --v82-radius:24px;
+  --brand:#FB2C5F;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:linear-gradient(180deg,#faf8f9 0%, #f5f1f3 100%);
+  color:var(--v82-text);
+}
+.topbar{
+  position:sticky; top:0; z-index:40;
+  max-width:1180px; margin:0 auto;
+  padding: .9rem 1.15rem;
+  background:rgba(250,248,249,.78);
+  backdrop-filter: blur(12px);
+}
+.nav{gap:.25rem; flex-wrap:wrap;}
+.nav__button,.nav__link{
+  appearance:none; border:none; background:transparent; text-decoration:none;
+  color:var(--v82-muted); font-size:.92rem; font-weight:600;
+  padding:.64rem .8rem; border-radius:999px; display:inline-flex; align-items:center; gap:.45rem;
+  cursor:pointer; transition:.18s ease;
+}
+.nav__button:hover,.nav__link:hover{background:rgba(255,255,255,.82); color:var(--v82-text);}
+.nav__button.is-active,.nav__link.is-active{color:var(--brand); position:relative;}
+.nav__button.is-active::after,.nav__link.is-active::after{content:""; position:absolute; left:.8rem; right:.8rem; bottom:.18rem; height:2px; border-radius:99px; background:var(--brand);}
+.brand__logo{filter:none}
+
+#view-home{padding-top:.2rem;}
+#view-home .hero.shell{
+  max-width:1180px; position:relative; overflow:hidden;
+  display:block; min-height:250px;
+  padding:2rem 1.4rem 5.2rem;
+  background:linear-gradient(180deg,#efebec 0%, #ece8e9 100%);
+  border-radius:26px 26px 0 0;
+}
+#view-home .hero__copy{
+  max-width:650px; margin:0 auto; text-align:center; position:relative; z-index:2;
+}
+#view-home .hero__copy .eyebrow{
+  margin-bottom:.42rem; color:#8b818a; font-size:.9rem; font-weight:600;
+}
+#view-home .hero h1{
+  font-size:clamp(1.9rem, 4vw, 2.85rem);
+  line-height:1.06; letter-spacing:-.03em;
+  margin:.1rem auto .22rem; max-width:620px;
+}
+#view-home .hero__lead{
+  margin:0 auto; max-width:500px; font-size:1rem; color:var(--v82-muted);
+}
+#view-home .hero__actions,#view-home .hero__panel{display:none !important;}
+.hero-botanical{position:absolute; z-index:1; pointer-events:none; opacity:.97;}
+.hero-botanical img{display:block; width:100%; height:auto;}
+.hero-botanical--left{left:-6px; bottom:-10px; width:180px;}
+.hero-botanical--right{right:-6px; top:-12px; width:196px;}
+
+.home-modes-section{
+  position:relative; z-index:3; max-width:1110px; margin:-3rem auto 1.25rem;
+  background:var(--v82-surface); border-radius:22px; box-shadow:var(--v82-shadow);
+  padding:1.2rem 1.12rem 1.18rem;
+}
+.home-modes-section .section-heading{margin-bottom:.8rem;}
+.home-modes-section .section-heading .eyebrow{display:none;}
+.home-modes-section .section-heading h2{margin:0; font-size:1.14rem;}
+#mode-grid.mode-grid{grid-template-columns:repeat(3,minmax(0,1fr)); gap:.72rem;}
+#mode-grid .mode-card{
+  min-height:98px; background:#fff; border:1px solid var(--v82-line);
+  border-radius:16px; box-shadow:none; text-align:left;
+  padding:1rem .95rem;
+  grid-template-columns:44px minmax(0,1fr) 16px;
+  grid-template-areas:"icon title arrow" "icon desc arrow";
+  gap:.16rem .7rem;
+  transition:.18s ease;
+}
+#mode-grid .mode-card:hover{transform:translateY(-2px); border-color:#ecd4dd; box-shadow:var(--v82-shadow-soft);}
+#mode-grid .mode-card::after{content:"›"; grid-area:arrow; align-self:center; color:var(--brand); font-size:1.25rem; font-weight:700;}
+#mode-grid .mode-card__icon{grid-area:icon; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; margin:0; background:#f8f4f6; font-size:1rem; color:#5f5660;}
+#mode-grid .mode-card strong{grid-area:title; font-size:.93rem; align-self:end;}
+#mode-grid .mode-card > span:last-child{grid-area:desc; display:block; color:#8b828b; font-size:.755rem; line-height:1.34;}
+#mode-grid .mode-card[data-mode="discovery"] .mode-card__icon{background:#ffe9ef;color:#ef5a7b;}
+#mode-grid .mode-card[data-mode="identification"] .mode-card__icon{background:#ebf6e8;color:#72a84d;}
+#mode-grid .mode-card[data-mode="latin"] .mode-card__icon{background:#f1eafd;color:#8f68d8;}
+#mode-grid .mode-card[data-mode="common"] .mode-card__icon{background:#fff2df;color:#c68e29;}
+#mode-grid .mode-card[data-mode="conservation"] .mode-card__icon{background:#eaf4ff;color:#4b96d6;}
+#mode-grid .mode-card[data-mode="review"] .mode-card__icon{background:#ffeaf1;color:#ef6388;}
+
+#view-home .source-summary,.about-floreview-card,#view-progress .section,.setup-card,.finish-card,.list-card{
+  background:var(--v82-surface);
+  border-radius:22px;
+  box-shadow:var(--v82-shadow);
+}
+#view-home .source-summary{
+  max-width:1110px; padding:1.2rem; margin-top:0;
+}
+#view-home .source-summary h2{font-size:1.14rem; margin-bottom:.35rem;}
+#view-home .source-summary p{color:var(--v82-muted);}
+.source-counters{gap:.72rem;}
+.source-counter{background:#faf7f8; border:1px solid var(--v82-line); border-radius:16px;}
+.about-floreview-card{max-width:1110px; padding:1.2rem; margin:1rem auto 0;}
+.about-floreview-card h2{margin:0 0 .35rem; font-size:1.08rem;}
+.about-floreview-card p{margin:0; color:var(--v82-muted); line-height:1.6;}
+
+#view-setup .section,
+#view-progress .section{max-width:1110px;}
+#view-setup .section{padding-top:.9rem;}
+.back-link{margin-bottom:.2rem;}
+#view-setup .section-heading h1,
+#view-progress .section-heading h1,
+.finish-card h1{letter-spacing:-.03em;}
+.setup-card{padding:1.2rem; border:1px solid transparent;}
+.segmented{gap:.55rem;}
+.segmented button{border-radius:14px; border:1px solid var(--v82-line); background:#faf7f8; font-weight:700;}
+.segmented button.is-active{background:#fff0f5; border-color:#f5c7d6; color:var(--brand);}
+#view-setup fieldset,
+.setup-grid,
+.check-row,
+.setup-summary{margin-top:.9rem;}
+.setup-grid select{background:#fff; border:1px solid var(--v82-line); border-radius:14px;}
+.check-card{border:1px solid var(--v82-line); border-radius:16px; background:#faf7f8;}
+.button{border-radius:16px;}
+.button--primary{box-shadow:0 14px 28px rgba(251,44,95,.22);}
+
+.session-shell{max-width:1080px;}
+.session-header,.plant-card,.swipe-actions,.inline-details-panel,.finish-card,.progress-stats > *, .list-card{
+  box-shadow:var(--v82-shadow-soft);
+}
+.session-header,.plant-card,.inline-details-panel,.list-card,.finish-card{border:1px solid var(--v82-line);}
+.plant-card{border-radius:24px; overflow:hidden;}
+.plant-card__body{background:#fff;}
+.plant-image{background:#f4eff1;}
+.action-button{border-radius:18px;}
+.inline-details-panel{background:#fff; border-radius:20px;}
+.details-toggle{border-radius:14px;}
+
+#view-progress .section-heading.progress-heading{align-items:flex-start; gap:1rem;}
+.progress-bar-large{background:#efe6ea; border-radius:999px;}
+.progress-bar-large span{background:linear-gradient(90deg,#fb2c5f,#ff7a9b);}
+.progress-stats .stat-card,.progress-stats > div{background:#fff; border:1px solid var(--v82-line); border-radius:18px;}
+.list-card__head{border-bottom:1px solid var(--v82-line);}
+.finish-card{padding:1.6rem 1.3rem;}
+.finish-icon{background:#fff0f5; color:var(--brand);}
+
+@media (max-width: 900px){
+  #mode-grid.mode-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .hero-botanical--left{width:140px}
+  .hero-botanical--right{width:150px}
+}
+@media (max-width: 650px){
+  .topbar{padding:.7rem .92rem .42rem;}
+  #view-home .hero.shell{padding:1.05rem .85rem 4.1rem; min-height:205px; border-radius:22px 22px 0 0;}
+  #view-home .hero__copy .eyebrow{font-size:.77rem;}
+  #view-home .hero h1{font-size:1.62rem; max-width:310px;}
+  #view-home .hero__lead{font-size:.88rem; max-width:280px;}
+  .hero-botanical--left{width:92px; left:-8px; bottom:-6px;}
+  .hero-botanical--right{width:102px; right:-4px; top:-6px;}
+  .home-modes-section{margin:-2.3rem auto 1rem; padding:1rem .82rem; border-radius:18px;}
+  .home-modes-section .section-heading h2{font-size:1rem;}
+  #mode-grid.mode-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:.55rem;}
+  #mode-grid .mode-card{min-height:90px; padding:.8rem .72rem; grid-template-columns:38px minmax(0,1fr) 12px; border-radius:14px;}
+  #mode-grid .mode-card__icon{width:34px; height:34px; font-size:.9rem;}
+  #mode-grid .mode-card strong{font-size:.8rem; line-height:1.16;}
+  #mode-grid .mode-card > span:last-child{font-size:.68rem; line-height:1.28; display:block;}
+  #view-home .source-summary,.about-floreview-card,.setup-card,.finish-card,.list-card{border-radius:18px;}
+  #view-home .source-summary,.about-floreview-card{padding:1rem .92rem;}
+  .source-counters{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
