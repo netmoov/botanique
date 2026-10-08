@@ -1,0 +1,450 @@
+
+/* Floreview V9.1 — page Progression harmonisée */
+
+#view-progress{
+  padding-top:.35rem;
+}
+
+.progress-page{
+  max-width:1110px;
+  padding-top:1rem;
+}
+
+.progress-panel{
+  position:relative;
+  overflow:hidden;
+  padding:1.35rem 1.25rem 1.15rem;
+  background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.93));
+  border:1px solid rgba(235,227,231,.92);
+  border-radius:22px;
+  box-shadow:0 24px 62px rgba(79,50,67,.10);
+}
+
+.progress-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at top left,rgba(251,44,95,.10),transparent 28%),
+    radial-gradient(circle at 95% 10%,rgba(80,150,214,.07),transparent 22%),
+    linear-gradient(180deg,rgba(255,255,255,.32),transparent 52%);
+}
+
+.progress-heading{
+  position:relative;
+  z-index:1;
+  margin-bottom:1rem;
+  align-items:flex-start;
+}
+
+.progress-heading h1{
+  font-size:clamp(1.8rem,3.6vw,2.65rem);
+  margin-bottom:.35rem;
+}
+
+.progress-heading h1::after{
+  content:"";
+  display:block;
+  width:58px;
+  height:3px;
+  margin-top:.52rem;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--brand,#FB2C5F),rgba(251,44,95,.08));
+}
+
+.progress-heading p:last-child{
+  max-width:680px;
+  margin:0;
+  color:#746b75;
+  line-height:1.55;
+}
+
+#reset-progress{
+  flex:0 0 auto;
+  background:#fff;
+  border:1px solid #eadde2;
+  color:#8e6673;
+  box-shadow:0 8px 20px rgba(79,50,67,.04);
+}
+
+#reset-progress:hover{
+  border-color:#e6c7d2;
+  color:#bd4666;
+  background:#fff8fa;
+}
+
+/* Overview */
+.progress-overview{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);
+  gap:.9rem;
+  margin-top:.85rem;
+}
+
+.progress-overview__stats{
+  min-width:0;
+}
+
+.progress-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.7rem;
+  height:100%;
+}
+
+.progress-stat{
+  position:relative;
+  min-height:116px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:1rem;
+  border:1px solid #ebe3e7;
+  border-radius:17px;
+  background:#fff;
+  box-shadow:0 9px 24px rgba(79,50,67,.045);
+  overflow:hidden;
+}
+
+.progress-stat::before{
+  position:absolute;
+  top:.75rem;
+  left:.8rem;
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  font-size:.95rem;
+  font-weight:800;
+}
+
+.progress-stat:nth-child(1)::before{content:"✿";background:#ffeaf0;color:#e65d80;}
+.progress-stat:nth-child(2)::before{content:"◉";background:#eef3ff;color:#6987c7;}
+.progress-stat:nth-child(3)::before{content:"✓";background:#eaf5e9;color:#579c60;}
+.progress-stat:nth-child(4)::before{content:"↻";background:#fff0f4;color:#e05b80;}
+.progress-stat:nth-child(5)::before{content:"★";background:#fff5df;color:#c8942f;}
+
+.progress-stat strong{
+  display:block;
+  font-size:1.55rem;
+  line-height:1;
+  color:#403741;
+  margin-bottom:.28rem;
+}
+
+.progress-stat span{
+  color:#8a8089;
+  font-size:.8rem;
+  line-height:1.2;
+}
+
+/* Fifth stat occupies a visually stronger slot */
+.progress-stat:nth-child(5){
+  background:linear-gradient(135deg,#fff7df,#fff);
+}
+
+/* Mastery card */
+.progress-mastery{
+  min-height:100%;
+  padding:1.05rem 1rem;
+  border:1px solid #eadfe3;
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 90% 5%,rgba(251,44,95,.10),transparent 25%),
+    linear-gradient(135deg,#fff8fa,#fff);
+  box-shadow:0 10px 26px rgba(79,50,67,.05);
+}
+
+.progress-mastery__head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+
+.progress-mastery__head strong{
+  display:block;
+  font-size:1rem;
+  color:#423943;
+}
+
+.progress-mastery__eyebrow{
+  display:block;
+  margin-bottom:.2rem;
+  color:#a37784;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.progress-mastery__flower{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#ffe7ef;
+  color:var(--brand,#FB2C5F);
+  font-size:1.2rem;
+}
+
+.progress-bar-large{
+  height:13px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#f0e6ea;
+  box-shadow:inset 0 1px 2px rgba(79,50,67,.08);
+}
+
+.progress-bar-large span{
+  display:block;
+  height:100%;
+  min-width:0;
+  border-radius:inherit;
+  background:linear-gradient(90deg,#FB2C5F,#ff8aaa);
+  box-shadow:0 4px 12px rgba(251,44,95,.18);
+}
+
+.progress-mastery p{
+  margin:.8rem 0 0;
+  color:#817780;
+  font-size:.8rem;
+  line-height:1.45;
+}
+
+/* Main action */
+.progress-actions{
+  position:relative;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  margin:1rem 0;
+}
+
+#progress-review-start{
+  min-width:min(100%,340px);
+}
+
+/* Lists */
+.progress-columns{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.9rem;
+}
+
+.list-card{
+  overflow:hidden;
+  border:1px solid #ebe3e7;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(79,50,67,.05);
+}
+
+.list-card__head{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:.9rem 1rem;
+  border-bottom:1px solid #eee6e9;
+  background:linear-gradient(180deg,#fff,#fdf9fb);
+}
+
+.list-card__title{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+}
+
+.list-card__icon{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  font-size:1rem;
+  font-weight:900;
+}
+
+.list-card--review .list-card__icon{
+  color:#e05b80;
+  background:#ffeaf0;
+}
+
+.list-card--known .list-card__icon{
+  color:#579c60;
+  background:#eaf5e9;
+}
+
+.list-card__kicker{
+  display:block;
+  margin-bottom:.05rem;
+  color:#9a8d96;
+  font-size:.66rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.list-card__head h2{
+  margin:0;
+  font-size:1rem;
+}
+
+#review-count-badge,
+#known-count-badge{
+  min-width:32px;
+  height:32px;
+  display:grid;
+  place-items:center;
+  padding:0 .5rem;
+  border-radius:999px;
+  font-size:.78rem;
+  font-weight:900;
+}
+
+#review-count-badge{
+  color:#cc4569;
+  background:#fff0f4;
+}
+
+#known-count-badge{
+  color:#4e8e5b;
+  background:#edf7ec;
+}
+
+.plant-list{
+  max-height:430px;
+  overflow:auto;
+  padding:.35rem;
+}
+
+.plant-list-item{
+  margin:.35rem;
+  padding:.82rem .85rem;
+  border:1px solid transparent;
+  border-radius:14px;
+  background:#faf8f9;
+  transition:.16s ease;
+}
+
+.plant-list-item:hover{
+  border-color:#eadde2;
+  background:#fff;
+  transform:translateY(-1px);
+}
+
+.plant-list-item strong{
+  color:#433a44;
+}
+
+.plant-list-item em{
+  color:#928790;
+}
+
+.empty-list{
+  margin:.7rem;
+  padding:1rem;
+  border:1px dashed #eadce2;
+  border-radius:14px;
+  background:#fdf9fb;
+  color:#8a8089;
+  text-align:center;
+}
+
+.progress-privacy{
+  position:relative;
+  z-index:1;
+  margin:1rem 0 .1rem;
+  color:#978c95;
+  font-size:.74rem;
+  text-align:center;
+}
+
+@media (max-width:900px){
+  .progress-overview{
+    grid-template-columns:1fr;
+  }
+
+  .progress-stats{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+  }
+
+  .progress-stat{
+    min-height:105px;
+  }
+}
+
+@media (max-width:650px){
+  #view-progress{
+    padding-top:0;
+  }
+
+  .progress-page{
+    padding-top:.65rem;
+  }
+
+  .progress-panel{
+    padding:1rem .82rem;
+    border-radius:18px;
+  }
+
+  .progress-heading{
+    gap:.7rem;
+    margin-bottom:.7rem;
+  }
+
+  .progress-heading h1{
+    font-size:1.65rem;
+  }
+
+  #reset-progress{
+    width:100%;
+  }
+
+  .progress-stats{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:.55rem;
+  }
+
+  .progress-stat{
+    min-height:104px;
+    border-radius:14px;
+    padding:.8rem;
+  }
+
+  .progress-stat:nth-child(5){
+    grid-column:1 / -1;
+    min-height:88px;
+  }
+
+  .progress-mastery{
+    border-radius:15px;
+  }
+
+  .progress-columns{
+    grid-template-columns:1fr;
+    gap:.65rem;
+  }
+
+  .list-card{
+    border-radius:15px;
+  }
+
+  .plant-list{
+    max-height:340px;
+  }
+
+  #progress-review-start{
+    width:100%;
+  }
+}

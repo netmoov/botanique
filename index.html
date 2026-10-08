@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="v8-2-theme.css?v=82">
   <link rel="stylesheet" href="v8-2-1-premium.css?v=821">
   <link rel="stylesheet" href="v9.css?v=90">
+  <link rel="stylesheet" href="v9-1-progress.css?v=91">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -199,20 +200,65 @@
     </section>
 
     <section id="view-progress" class="view" data-view="progress">
-      <div class="shell section">
-        <div class="section-heading progress-heading">
-          <div><p class="eyebrow">Suivi personnel</p><h1>Progression</h1><p>Les données sont enregistrées uniquement dans ce navigateur.</p></div>
-          <button id="reset-progress" class="button button--danger-ghost" type="button">Réinitialiser ma progression</button>
-        </div>
-        <div id="progress-stats" class="progress-stats"></div>
-        <div class="progress-bar-large"><span id="progress-bar-large"></span></div>
-        <div class="progress-actions">
-          <button id="progress-review-start" class="button button--primary" type="button">Réviser uniquement « À revoir »</button>
-        </div>
-        <div class="progress-columns">
-          <section class="list-card"><div class="list-card__head"><h2>À revoir</h2><span id="review-count-badge"></span></div><div id="review-list" class="plant-list"></div></section>
-          <section class="list-card"><div class="list-card__head"><h2>Connues</h2><span id="known-count-badge"></span></div><div id="known-list" class="plant-list"></div></section>
-        </div>
+      <div class="shell section progress-page">
+        <section class="progress-panel">
+          <div class="section-heading progress-heading">
+            <div>
+              <p class="eyebrow">Suivi personnel</p>
+              <h1>Progression</h1>
+              <p>Visualisez votre avancement et retrouvez immédiatement les végétaux à retravailler.</p>
+            </div>
+            <button id="reset-progress" class="button button--danger-ghost" type="button">Réinitialiser ma progression</button>
+          </div>
+
+          <div class="progress-overview">
+            <div class="progress-overview__stats">
+              <div id="progress-stats" class="progress-stats"></div>
+            </div>
+
+            <div class="progress-mastery">
+              <div class="progress-mastery__head">
+                <div>
+                  <span class="progress-mastery__eyebrow">Maîtrise globale</span>
+                  <strong>Votre progression</strong>
+                </div>
+                <span class="progress-mastery__flower" aria-hidden="true">✿</span>
+              </div>
+              <div class="progress-bar-large"><span id="progress-bar-large"></span></div>
+              <p>Plus vous classez de végétaux comme connus, plus votre niveau de maîtrise augmente.</p>
+            </div>
+          </div>
+
+          <div class="progress-actions">
+            <button id="progress-review-start" class="button button--primary" type="button">Réviser uniquement « À revoir »</button>
+          </div>
+
+          <div class="progress-columns">
+            <section class="list-card list-card--review">
+              <div class="list-card__head">
+                <div class="list-card__title">
+                  <span class="list-card__icon" aria-hidden="true">↻</span>
+                  <div><span class="list-card__kicker">Priorité</span><h2>À revoir</h2></div>
+                </div>
+                <span id="review-count-badge"></span>
+              </div>
+              <div id="review-list" class="plant-list"></div>
+            </section>
+
+            <section class="list-card list-card--known">
+              <div class="list-card__head">
+                <div class="list-card__title">
+                  <span class="list-card__icon" aria-hidden="true">✓</span>
+                  <div><span class="list-card__kicker">Acquis</span><h2>Connues</h2></div>
+                </div>
+                <span id="known-count-badge"></span>
+              </div>
+              <div id="known-list" class="plant-list"></div>
+            </section>
+          </div>
+
+          <p class="progress-privacy">La progression est enregistrée uniquement dans ce navigateur.</p>
+        </section>
       </div>
     </section>
   </main>
@@ -222,6 +268,6 @@
   <script src="data/plants.js?v=90"></script>
   <script src="data/floreview-families.js?v=90"></script>
   <script src="data/floreview-categories.js?v=90"></script>
-  <script src="app.js?v=90"></script>
+  <script src="app.js?v=92"></script>
 </body>
 </html>

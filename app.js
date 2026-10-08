@@ -285,6 +285,13 @@ function renderCurrentCard() {
   updateSessionHeader();
   syncAnswerButtons();
   card.focus({ preventScroll: true });
+
+  // À chaque nouveau végétal, revenir automatiquement en haut de la page.
+  // Cela garantit que la photo et le début de la carte sont immédiatement visibles,
+  // notamment après avoir consulté une fiche complète plus bas dans la page.
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  });
 }
 
 function renderImage(plant) {
