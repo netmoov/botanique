@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="v8-2-1-premium.css?v=821">
   <link rel="stylesheet" href="v9.css?v=90">
   <link rel="stylesheet" href="v9-1-progress.css?v=91">
+  <link rel="stylesheet" href="swipe-tinder.css?v=93">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -155,7 +156,10 @@
           <span id="session-streak" class="streak-chip">0 série</span>
         </header>
 
-        <div class="swipe-stage">
+        <div class="swipe-stage" id="swipe-stage">
+          <div class="swipe-under-card" id="swipe-under-card" aria-hidden="true"></div>
+          <span class="swipe-direction-cue swipe-direction-cue--review" aria-hidden="true">↶ À revoir</span>
+          <span class="swipe-direction-cue swipe-direction-cue--known" aria-hidden="true">Je connais ↷</span>
           <article id="plant-card" class="plant-card" tabindex="0" aria-live="polite">
             <div class="swipe-stamp swipe-stamp--review" aria-hidden="true">À REVOIR</div>
             <div class="swipe-stamp swipe-stamp--known" aria-hidden="true">JE CONNAIS</div>
@@ -181,7 +185,7 @@
           <div id="plant-details" class="plant-details inline-details-content" hidden></div>
         </section>
 
-        <p class="swipe-help">Sur mobile : glisser la carte à gauche ou à droite. Sur ordinateur : boutons ou touches ← / →.</p>
+        <p class="swipe-help"><span class="swipe-help__left">← À revoir</span><span class="swipe-help__center">Glisse la carte avec ton doigt</span><span class="swipe-help__right">Je connais →</span></p>
       </div>
     </section>
 
@@ -268,6 +272,6 @@
   <script src="data/plants.js?v=90"></script>
   <script src="data/floreview-families.js?v=90"></script>
   <script src="data/floreview-categories.js?v=90"></script>
-  <script src="app.js?v=92"></script>
+  <script src="app.js?v=93"></script>
 </body>
 </html>

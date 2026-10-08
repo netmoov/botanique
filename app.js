@@ -19,7 +19,8 @@ const state = {
   setupMode: "discovery",
   session: null,
   toastTimer: null,
-  pointer: null
+  pointer: null,
+  isAdvancing: false
 };
 
 const $ = selector => document.querySelector(selector);
@@ -225,6 +226,8 @@ function bindSession() {
   $("#exit-session").addEventListener("click", () => {
     if (state.session && state.session.index > 0 && !window.confirm("Quitter cette session en cours ? La progression déjà enregistrée sera conservée.")) return;
     state.session = null;
+    state.isAdvancing = false;
+    state.pointer = null;
     showView("home");
   });
   $("#reveal-answer").addEventListener("pointerdown", event => {
@@ -245,7 +248,8 @@ function bindSession() {
   card.addEventListener("pointerup", onPointerUp);
   card.addEventListener("pointercancel", onPointerCancel);
   card.addEventListener("keydown", event => {
-    if (!state.session) return;
+    if (!state.session || state.isAdvancing) return;
+    if (event.target.closest("button, a, input, select, textarea")) return;
     if (event.key === "ArrowLeft") { event.preventDefault(); answerCurrent("review"); }
     if (event.key === "ArrowRight") { event.preventDefault(); answerCurrent("known"); }
     if (event.key === "Enter" && MODES[state.session.mode].reveal && !state.session.revealed) revealAnswer();
@@ -271,9 +275,15 @@ function renderCurrentCard() {
 
   session.revealed = !MODES[session.mode].reveal;
   const card = $("#plant-card");
+  state.pointer = null;
+  state.isAdvancing = false;
   card.className = "plant-card";
   card.style.transform = "";
   card.style.opacity = "";
+  $("#swipe-stage").classList.remove("is-swiping", "direction-known", "direction-review", "is-advancing");
+  $("#swipe-stage").style.removeProperty("--swipe-progress");
+  clearStamps();
+  renderNextCardPreview();
   renderImage(plant);
   renderBadges(plant);
   renderQuestionAndAnswer(plant);
@@ -292,6 +302,18 @@ function renderCurrentCard() {
   requestAnimationFrame(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   });
+}
+
+function renderNextCardPreview() {
+  const next = state.session?.queue[state.session.index + 1];
+  const preview = $("#swipe-under-card");
+  if (!preview) return;
+  const url = next?.image?.url;
+  const localImage = typeof url === "string" && url.startsWith("assets/images/");
+  preview.innerHTML = localImage
+    ? `<img src="${escapeAttr(url)}" alt="" loading="eager"><span class="swipe-under-card__veil" aria-hidden="true"></span>`
+    : `<span class="swipe-under-card__pattern" aria-hidden="true">${next ? "✿" : "✓"}</span>`;
+  preview.classList.toggle("is-last", !next);
 }
 
 function renderImage(plant) {
@@ -503,13 +525,14 @@ function syncAnswerButtons() {
 }
 
 function answerCurrent(outcome, fromSwipe=false) {
-  if (!state.session) return;
+  if (!state.session || state.isAdvancing) return;
   if (MODES[state.session.mode].reveal && !state.session.revealed) {
     showToast("Révèle d’abord la réponse avant de classer la plante.");
     return resetCardTransform();
   }
   const plant=currentPlant();
   if (!plant) return;
+  state.isAdvancing = true;
   updatePlantProgress(plant.id,outcome);
   state.session.answeredIds.push(plant.id);
   if (outcome === "known") {
@@ -542,14 +565,44 @@ function updatePlantProgress(id,outcome) {
   state.progress[id]=next;
 }
 
-function animateAndAdvance(outcome) {
-  const card=$("#plant-card");
-  card.classList.add(outcome === "known" ? "fly-right" : "fly-left");
+function animateAndAdvance(outcome, fromSwipe=false) {
+  const card = $("#plant-card");
+  const stage = $("#swipe-stage");
+  const side = outcome === "known" ? 1 : -1;
+  const reduced = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+  const offset = Math.max(window.innerWidth || 380, card.offsetWidth || 320) * 1.25;
+
+  // Afficher le verdict aussi quand le choix se fait par un bouton.
+  stage.classList.add("is-swiping", "is-advancing");
+  stage.classList.toggle("direction-known", side > 0);
+  stage.classList.toggle("direction-review", side < 0);
+  stage.style.setProperty("--swipe-progress", "1");
+  $(side > 0 ? ".swipe-stamp--known" : ".swipe-stamp--review").style.opacity = "1";
+
+  card.classList.remove("is-dragging");
+  card.classList.add("is-flying");
+  if (reduced) {
+    card.style.transform = `translate3d(${side * offset}px, 0, 0) rotate(${side * 17}deg)`;
+    card.style.opacity = "0";
+  } else {
+    // Forcer l'état courant avant de commencer la transition, même après un drag.
+    void card.offsetWidth;
+    requestAnimationFrame(() => {
+      card.style.transform = `translate3d(${side * offset}px, -24px, 0) rotate(${side * 17}deg)`;
+      card.style.opacity = "0";
+    });
+  }
+
   window.setTimeout(() => {
+    if (!state.session) {
+      state.isAdvancing = false;
+      return;
+    }
     state.session.index++;
+    state.isAdvancing = false;
     if (state.session.index >= state.session.queue.length) finishSession();
     else renderCurrentCard();
-  }, 220);
+  }, reduced ? 30 : 310);
 }
 
 function updateSessionHeader() {
@@ -571,45 +624,105 @@ function finishSession() {
   ].map(([v,l])=>`<div class="finish-stat"><strong>${escapeHtml(String(v))}</strong><span>${escapeHtml(l)}</span></div>`).join("");
   $("#finish-review").disabled = !Object.values(state.progress).some(p=>p.status==="review");
   state.session=null;
+  state.pointer=null;
+  state.isAdvancing=false;
   showView("finish");
 }
 
-function onPointerDown(event) {
-  if (!state.session || event.pointerType === "mouse" && event.button !== 0) return;
+const SWIPE_DEADZONE = 9;
+const SWIPE_VELOCITY = 0.53; // px/ms
 
-  // Ne jamais capturer le pointeur lorsqu'un élément interactif est cliqué.
-  // Sinon la carte de swipe vole le clic au bouton « Afficher la réponse ».
-  if (event.target.closest("button, a, input, select, textarea, label, [role='button']")) {
-    state.pointer = null;
-    return;
+function onPointerDown(event) {
+  if (!state.session || state.isAdvancing || (event.pointerType === "mouse" && event.button !== 0) || event.isPrimary === false) return;
+  // Boutons/liens : jamais de capture du pointeur, pour éviter les clics perdus.
+  if (event.target.closest("button, a, input, select, textarea, label, [role='button'], [contenteditable]")) return;
+  state.pointer = {
+    id: event.pointerId, startX: event.clientX, startY: event.clientY,
+    currentX: event.clientX, currentY: event.clientY,
+    startedAt: performance.now(), dragging: false, vertical: false
+  };
+}
+
+function onPointerMove(event) {
+  const p = state.pointer;
+  if (!p || p.id !== event.pointerId || state.isAdvancing) return;
+  p.currentX = event.clientX;
+  p.currentY = event.clientY;
+  const dx = p.currentX - p.startX;
+  const dy = p.currentY - p.startY;
+
+  // Le défilement vertical de la page doit rester naturel sur téléphone.
+  if (!p.dragging) {
+    if (p.vertical) return;
+    if (Math.abs(dy) > SWIPE_DEADZONE && Math.abs(dy) > Math.abs(dx)) {
+      p.vertical = true;
+      return;
+    }
+    if (Math.abs(dx) <= SWIPE_DEADZONE || Math.abs(dx) < Math.abs(dy) * 1.25) return;
+    p.dragging = true;
+    const card = $("#plant-card");
+    try { card.setPointerCapture?.(event.pointerId); } catch (_) { /* pointer lost: continue gracefully */ }
+    card.classList.add("is-dragging");
   }
 
-  state.pointer={id:event.pointerId,startX:event.clientX,currentX:event.clientX};
-  event.currentTarget.setPointerCapture?.(event.pointerId);
-  event.currentTarget.classList.add("is-dragging");
+  const card = $("#plant-card");
+  const stage = $("#swipe-stage");
+  const width = Math.max(260, card.offsetWidth || 320);
+  const x = Math.max(-width * 1.15, Math.min(width * 1.15, dx));
+  const rotation = Math.max(-14, Math.min(14, (x / width) * 21));
+  const shiftY = Math.max(-12, Math.min(12, dy * .12));
+  const progress = Math.min(1, Math.abs(x) / Math.max(90, width * .27));
+  card.style.transform = `translate3d(${x}px, ${shiftY}px, 0) rotate(${rotation}deg)`;
+  stage.style.setProperty("--swipe-progress", progress.toFixed(3));
+  stage.classList.add("is-swiping");
+  stage.classList.toggle("direction-known", x > 0);
+  stage.classList.toggle("direction-review", x < 0);
+  $(".swipe-stamp--known").style.opacity = x > 0 ? String(progress) : "0";
+  $(".swipe-stamp--review").style.opacity = x < 0 ? String(progress) : "0";
 }
-function onPointerMove(event) {
-  if (!state.pointer || state.pointer.id !== event.pointerId) return;
-  state.pointer.currentX=event.clientX;
-  const dx=event.clientX-state.pointer.startX;
-  const card=$("#plant-card");
-  card.style.transform=`translateX(${dx}px) rotate(${dx/24}deg)`;
-  const intensity=Math.min(1,Math.abs(dx)/120);
-  $(".swipe-stamp--known").style.opacity=dx>0?String(intensity):"0";
-  $(".swipe-stamp--review").style.opacity=dx<0?String(intensity):"0";
-}
+
 function onPointerUp(event) {
-  if (!state.pointer || state.pointer.id !== event.pointerId) return;
-  const dx=state.pointer.currentX-state.pointer.startX;
-  state.pointer=null;
-  $("#plant-card").classList.remove("is-dragging");
-  clearStamps();
-  if (Math.abs(dx) >= 105) answerCurrent(dx>0?"known":"review",true);
-  else resetCardTransform();
+  const p = state.pointer;
+  if (!p || p.id !== event.pointerId) return;
+  state.pointer = null;
+  const card = $("#plant-card");
+  card.classList.remove("is-dragging");
+  if (!p.dragging || p.vertical) return resetCardTransform();
+  const dx = p.currentX - p.startX;
+  const elapsed = Math.max(1, performance.now() - p.startedAt);
+  const speed = Math.abs(dx) / elapsed;
+  const width = Math.max(260, card.offsetWidth || 320);
+  const accepted = Math.abs(dx) >= Math.max(78, Math.min(132, width * .27))
+    || (Math.abs(dx) > 44 && speed > SWIPE_VELOCITY);
+  if (!accepted) return resetCardTransform();
+  // Si la question n'est pas encore révélée, revenir en place sans l'évaluer.
+  if (MODES[state.session.mode].reveal && !state.session.revealed) {
+    showToast("Affiche d’abord la réponse avant de classer ce végétal.");
+    return resetCardTransform();
+  }
+  answerCurrent(dx > 0 ? "known" : "review", true);
 }
-function onPointerCancel() { state.pointer=null; clearStamps(); resetCardTransform(); }
-function resetCardTransform() { const c=$("#plant-card"); c.style.transform=""; c.classList.remove("is-dragging"); clearStamps(); }
-function clearStamps() { $$(".swipe-stamp").forEach(x=>x.style.opacity="0"); }
+
+function onPointerCancel(event) {
+  if (state.pointer && event?.pointerId !== undefined && state.pointer.id !== event.pointerId) return;
+  state.pointer = null;
+  resetCardTransform();
+}
+
+function resetCardTransform() {
+  const card = $("#plant-card");
+  const stage = $("#swipe-stage");
+  card.classList.remove("is-dragging", "is-flying");
+  card.style.transform = "";
+  card.style.opacity = "";
+  stage.classList.remove("is-swiping", "direction-known", "direction-review", "is-advancing");
+  stage.style.removeProperty("--swipe-progress");
+  clearStamps();
+}
+
+function clearStamps() {
+  $$(".swipe-stamp").forEach(x => { x.style.opacity = "0"; });
+}
 
 function bindProgress() {
   $("#reset-progress").addEventListener("click", () => {
