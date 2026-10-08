@@ -44,3 +44,52 @@
     width: 108px;
   }
 }
+
+
+/* V8.1 correction titre — 20 % plus petit */
+.hero h1 {
+  font-size: clamp(1.76rem, 4.8vw, 3.84rem);
+}
+
+@media (max-width: 650px) {
+  .hero h1 {
+    font-size: clamp(1.96rem, 9.6vw, 3.2rem);
+  }
+}
+
+
+/* V8.1.2 — espacements supérieurs resserrés */
+
+/* Accueil : rapproche "Je vois · j’identifie..." du bandeau */
+#view-home .hero {
+  padding-top: clamp(1.35rem, 3vw, 2.1rem);
+}
+
+/* Préparation : rapproche "← Retour" et le titre du bandeau */
+#view-setup .section {
+  padding-top: 1.15rem;
+}
+
+/* Garde le bloc Retour / Préparer la session visuellement compact */
+#view-setup .back-link {
+  margin-bottom: .3rem;
+}
+
+#view-setup .section-heading {
+  margin-top: 0;
+}
+
+/* Ajustement téléphone */
+@media (max-width: 650px) {
+  #view-home .hero {
+    padding-top: .85rem;
+  }
+
+  #view-setup .section {
+    padding-top: .65rem;
+  }
+
+  #view-setup .back-link {
+    margin-bottom: .2rem;
+  }
+}
