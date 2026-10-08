@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Compagnon de révision botanique IFAPME pour fleuristes : identification, noms latins, conservation et progression.">
+  <meta name="description" content="Floreview, compagnon de révision botanique pour fleuristes : identification, noms latins, conservation et progression.">
   <meta name="theme-color" content="#FD267A">
-  <title>Botanique BOF · Révision IFAPME</title>
-  <link rel="stylesheet" href="style.css?v=70">
-  <link rel="stylesheet" href="mobile-compact.css?v=71">
+  <title>Floreview · Révision botanique</title>
+  <link rel="stylesheet" href="style.css?v=80">
+  <link rel="stylesheet" href="mobile-compact.css?v=80">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Botanique BOF - Accueil">
+    <a class="brand" href="#home" aria-label="Floreview - Accueil">
       <span class="brand__mark" aria-hidden="true">✿</span>
-      <span><strong>Botanique BOF</strong><small>Révision fleuriste · IFAPME</small></span>
+      <span><strong>Floreview</strong><small>Révision botanique · Fleuriste</small></span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
       <button class="nav__button is-active" type="button" data-view-target="home">Accueil</button>
@@ -29,7 +29,7 @@
         <div class="hero__copy">
           <p class="eyebrow">Je vois · j’identifie · je vérifie · je swipe · je progresse</p>
           <h1>Réviser les végétaux sans transformer le cours en catalogue.</h1>
-          <p class="hero__lead">Une carte à la fois, avec les référentiels R05/R35, les fiches de conservation disponibles et une répétition plus fréquente des végétaux difficiles.</p>
+          <p class="hero__lead">Une carte à la fois pour reconnaître les fleurs coupées, les plantes et les feuillages, avec les fiches de conservation disponibles et une répétition plus fréquente des végétaux difficiles.</p>
           <div class="hero__actions">
             <button id="quick-start" class="button button--primary" type="button">Commencer une session</button>
             <button class="button button--ghost" type="button" data-view-target="progress">Voir ma progression</button>
@@ -78,9 +78,9 @@
 
       <section class="shell section source-summary">
         <div>
-          <p class="eyebrow">Base intégrée</p>
-          <h2>Référentiels et fiches détaillées</h2>
-          <p>La base conserve les noms et statuts des documents fournis. Les fiches sans informations détaillées restent utilisables pour les modes de reconnaissance et de noms.</p>
+          <p class="eyebrow">Collection Floreview</p>
+          <h2>Fleurs coupées, plantes et feuillages</h2>
+          <p>Tous les végétaux restent accessibles. Les fiches sans informations détaillées restent utilisables pour la reconnaissance visuelle et l’apprentissage des noms.</p>
         </div>
         <div class="source-counters" id="source-counters"></div>
       </section>
@@ -97,21 +97,13 @@
             <legend>Mode</legend>
             <div id="setup-mode-options" class="segmented"></div>
           </fieldset>
-          <div class="setup-grid">
-            <label>Référentiel
-              <select id="filter-reference">
-                <option value="all">Tous les végétaux</option>
-                <option value="R05">R05 uniquement</option>
-                <option value="R35">R35 uniquement</option>
-                <option value="R35-obligatoire">R35 obligatoires uniquement</option>
-                <option value="R35-facultatif">R35 facultatifs uniquement</option>
-              </select>
-            </label>
+          <div class="setup-grid floreview-setup-grid">
             <label>Catégorie
               <select id="filter-category">
-                <option value="all">Toutes les catégories</option>
-                <option value="fleur_plante">Fleurs et plantes</option>
-                <option value="verdure">Verdures</option>
+                <option value="all">Tous les végétaux</option>
+                <option value="fleurs_coupees">Fleurs coupées</option>
+                <option value="plantes">Plantes</option>
+                <option value="feuillage">Feuillage</option>
               </select>
             </label>
             <label>Nombre de cartes
@@ -123,9 +115,8 @@
               </select>
             </label>
           </div>
-          <div class="check-row">
+          <div class="check-row floreview-check-row">
             <label class="check-card"><input id="filter-detailed" type="checkbox"><span><strong>Fiches détaillées seulement</strong><small>Utile pour le mode Conservation.</small></span></label>
-            <label class="check-card"><input id="filter-complementary" type="checkbox"><span><strong>Inclure les fiches hors référentiel</strong><small>Désactivé par défaut.</small></span></label>
           </div>
           <div class="setup-summary" id="setup-summary" aria-live="polite"></div>
           <button class="button button--primary button--wide" type="submit">Lancer la session</button>
@@ -206,8 +197,9 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="data/plants.js?v=70"></script>
-  <script src="data/families-2026.js?v=70"></script>
-  <script src="app.js?v=70"></script>
+  <script src="data/plants.js?v=80"></script>
+  <script src="data/floreview-families.js?v=80"></script>
+  <script src="data/floreview-categories.js?v=80"></script>
+  <script src="app.js?v=80"></script>
 </body>
 </html>

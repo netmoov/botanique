@@ -1,10 +1,8 @@
 "use strict";
 
 const PLANTS = Array.isArray(window.BOTANIC_PLANTS) ? window.BOTANIC_PLANTS : [];
-const STORAGE_KEY = "ifapmeBotaniqueProgressV1";
-const SETTINGS_KEY = "ifapmeBotaniqueSettingsV1";
-const IMAGE_CACHE_KEY = "ifapmeBotaniqueImageCacheV2";
-const imageCache = loadJson(IMAGE_CACHE_KEY, {});
+const STORAGE_KEY = "floreviewProgressV1";
+const SETTINGS_KEY = "floreviewSettingsV1";
 
 const MODES = {
   discovery: { label: "Découverte", reveal: false },
@@ -102,7 +100,7 @@ function syncModeConstraints() {
 }
 
 function bindSetup() {
-  ["#filter-reference", "#filter-category", "#session-size", "#filter-detailed", "#filter-complementary"].forEach(selector => {
+  ["#filter-category", "#session-size", "#filter-detailed"].forEach(selector => {
     $(selector).addEventListener("change", updateSetupSummary);
   });
   $("#session-form").addEventListener("submit", event => {
@@ -113,28 +111,18 @@ function bindSetup() {
 
 function getSetupFilters() {
   return {
-    reference: $("#filter-reference").value,
     category: $("#filter-category").value,
     detailed: $("#filter-detailed").checked || MODES[state.setupMode].detailedOnly,
-    complementary: $("#filter-complementary").checked,
     size: $("#session-size").value
   };
 }
 
 function plantMatchesFilters(plant, filters, mode = state.setupMode) {
-  const refs = plant.referentiels || [];
   const progress = getPlantProgress(plant.id);
-  if (!filters.complementary && plant.horsReferentiel) return false;
   if (mode === "review" && progress.status !== "review") return false;
   if (filters.detailed && plant.niveauInformation === "referentiel_uniquement") return false;
   if (mode === "conservation" && !plant.tenueConservation) return false;
-
-  if (filters.reference === "R05" && !refs.some(r => r.code === "R05")) return false;
-  if (filters.reference === "R35" && !refs.some(r => r.code === "R35")) return false;
-  if (filters.reference === "R35-obligatoire" && !refs.some(r => r.code === "R35" && r.statut === "obligatoire")) return false;
-  if (filters.reference === "R35-facultatif" && !refs.some(r => r.code === "R35" && r.statut === "facultatif")) return false;
-
-  if (filters.category !== "all" && !(plant.categories || []).includes(filters.category)) return false;
+  if (filters.category !== "all" && plant.floreviewCategorie !== filters.category) return false;
   return true;
 }
 
@@ -287,14 +275,7 @@ function placeholderHtml(name, reason = "Image indisponible") {
 
 function renderBadges(plant) {
   const badges=[];
-  const refs=plant.referentiels || [];
-  if ((plant.categories || []).includes("fleur_plante")) badges.push('<span class="badge">Fleur / plante</span>');
-  if ((plant.categories || []).includes("verdure")) badges.push('<span class="badge">Verdure</span>');
-  if (plant.horsReferentiel) badges.push('<span class="badge badge--rose">Hors référentiel</span>');
-  if (refs.some(r => r.code === "R05")) badges.push('<span class="badge badge--gold">R05</span>');
-  if (refs.some(r => r.code === "R35")) badges.push('<span class="badge badge--gold">R35</span>');
-  if (refs.some(r => r.code === "R35" && r.statut === "obligatoire")) badges.push('<span class="badge">Obligatoire</span>');
-  if (refs.some(r => r.code === "R35" && r.statut === "facultatif")) badges.push('<span class="badge">Facultatif</span>');
+  badges.push(`<span class="badge">${escapeHtml(categoryLabel(plant))}</span>`);
   const p=getPlantProgress(plant.id);
   if (p.status === "known") badges.push('<span class="badge">Connue</span>');
   if (p.status === "review") badges.push('<span class="badge badge--rose">À revoir</span>');
@@ -387,7 +368,7 @@ function buildDetailsHtml(plant) {
   addDetail(idItems,"Nom commun principal",plant.nomCommunPrincipal || "Non indiqué dans le référentiel");
   if (plant.autresNomsCommuns?.length) addDetail(idItems,"Autres noms",plant.autresNomsCommuns.join(" · "));
   if (plant.nomFleuristerie) addDetail(idItems,"Nom utilisé en fleuristerie",plant.nomFleuristerie);
-  addDetail(idItems,"Catégorie",(plant.categories || []).map(c => c === "verdure" ? "Verdure" : "Fleur / plante").join(" · "));
+  addDetail(idItems,"Catégorie Floreview",categoryLabel(plant));
   addDetail(idItems,"Famille",id.famille);
   addDetail(idItems,"Couleurs",id.couleurs?.join(", "));
   addDetail(idItems,"Saison / disponibilité",id.saisonDisponibilite);
@@ -416,16 +397,13 @@ function buildDetailsHtml(plant) {
   addDetail(ppItems,"Mise en eau / hydratation",pp.miseEnEauHydratation);
   if (ppItems.length) sections.push(detailSection("Préparation & précautions",ppItems));
 
-  const refs=(plant.referentiels || []).map(r => `${r.code}${r.statut ? ` · ${capitalize(r.statut)}` : ""} · ${r.categorie === "verdure" ? "Verdure" : "Fleur / plante"}${r.nomLatinSource && r.nomLatinSource !== plant.nomLatinPrincipal ? ` · ${r.nomLatinSource}` : ""}`);
-  if (refs.length) sections.push(`<section class="detail-section"><h3>Référentiel IFAPME</h3><ul class="retain-list">${refs.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
-  else if (plant.horsReferentiel) sections.push('<section class="detail-section"><h3>Référentiel IFAPME</h3><p class="no-details">Fiche complémentaire hors référentiel. Elle est exclue des sessions par défaut.</p></section>');
 
   if (plant.resumePedagogique?.length) sections.push(`<section class="detail-section"><h3>À retenir</h3><ul class="retain-list">${plant.resumePedagogique.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
   if (plant.sources?.length) {
     const sourceLabels = [...new Set(
       plant.sources
         .map(source => [source.document, source.ficheOuPage].filter(Boolean).join(" — "))
-        .filter(Boolean)
+        .filter(label => label && !/(R05|R35|IFAPME)/i.test(label))
     )];
     if (sourceLabels.length) {
       sections.push(`<section class="detail-section"><h3>Sources documentaires</h3><ul class="retain-list">${sourceLabels.map(label=>`<li>${escapeHtml(label)}</li>`).join("")}</ul></section>`);
@@ -436,7 +414,8 @@ function buildDetailsHtml(plant) {
   if (plant.image?.sourceUrl) {
     sections.push(`<section class="detail-section"><h3>Photographie</h3><p class="photo-source-detail"><a href="${escapeAttr(plant.image.sourceUrl)}" target="_blank" rel="noopener noreferrer">Source et licence Wikimedia Commons ↗</a>${plant.image.author ? `<br><small>Auteur : ${escapeHtml(plant.image.author)}</small>` : ""}${plant.image.license ? `<br><small>Licence : ${escapeHtml(plant.image.license)}</small>` : ""}</p></section>`);
   }
-  if (plant.sourceNotes?.length) sections.push(`<section class="detail-section"><h3>Notes source</h3><ul class="retain-list">${plant.sourceNotes.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
+  const visibleNotes=(plant.sourceNotes || []).filter(note => !/(R05|R35|IFAPME|référentiel)/i.test(String(note)));
+  if (visibleNotes.length) sections.push(`<section class="detail-section"><h3>Notes source</h3><ul class="retain-list">${visibleNotes.map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul></section>`);
   return sections.join("") || '<p class="no-details">Aucune information disponible pour cette fiche.</p>';
 }
 
@@ -601,15 +580,15 @@ function bindProgress() {
 }
 
 function progressSummary() {
-  const official=PLANTS.filter(p=>!p.horsReferentiel);
+  const collection=PLANTS;
   let seen=0,known=0,review=0;
-  official.forEach(plant=>{
+  collection.forEach(plant=>{
     const p=getPlantProgress(plant.id);
     if ((p.seenCount||0)>0) seen++;
     if (p.status==="known") known++;
     if (p.status==="review") review++;
   });
-  return { total:official.length,seen,known,review,mastery:official.length?Math.round(known/official.length*100):0 };
+  return { total:collection.length,seen,known,review,mastery:collection.length?Math.round(known/collection.length*100):0 };
 }
 
 function renderProgressEverywhere() {
@@ -644,13 +623,23 @@ function renderPlantList(plants,emptyText) {
 }
 
 function renderSourceCounters() {
-  const official=PLANTS.filter(p=>!p.horsReferentiel);
-  const detailed=PLANTS.filter(p=>p.niveauInformation!=="referentiel_uniquement");
-  const r05=official.filter(p=>(p.referentiels||[]).some(r=>r.code==="R05"));
-  const r35=official.filter(p=>(p.referentiels||[]).some(r=>r.code==="R35"));
+  const flowers=PLANTS.filter(p=>p.floreviewCategorie==="fleurs_coupees");
+  const plants=PLANTS.filter(p=>p.floreviewCategorie==="plantes");
+  const foliage=PLANTS.filter(p=>p.floreviewCategorie==="feuillage");
   $("#source-counters").innerHTML=[
-    [official.length,"fiches officielles"],[r05.length,"entrées/carte R05"],[r35.length,"entrées/carte R35"],[detailed.length,"cartes enrichies"]
+    [PLANTS.length,"végétaux"],
+    [flowers.length,"fleurs coupées"],
+    [plants.length,"plantes"],
+    [foliage.length,"feuillages"]
   ].map(([v,l])=>`<div class="source-counter"><strong>${v}</strong><span>${escapeHtml(l)}</span></div>`).join("");
+}
+
+function categoryLabel(plant) {
+  return ({
+    fleurs_coupees: "Fleur coupée",
+    plantes: "Plante",
+    feuillage: "Feuillage"
+  })[plant.floreviewCategorie] || "Végétal";
 }
 
 function getPlantProgress(id) {
@@ -658,7 +647,6 @@ function getPlantProgress(id) {
 }
 function displayName(plant) { return plant.nomCommunPrincipal || plant.nomLatinPrincipal || "Végétal sans nom"; }
 function sortByName(a,b) { return displayName(a).localeCompare(displayName(b),"fr",{sensitivity:"base"}); }
-function capitalize(s) { return s ? s.charAt(0).toUpperCase()+s.slice(1) : ""; }
 
 function showToast(message) {
   const toast=$("#toast");
