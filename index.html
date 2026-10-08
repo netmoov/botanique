@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="v8-2-1-premium.css?v=821">
   <link rel="stylesheet" href="v9.css?v=90">
   <link rel="stylesheet" href="v9-1-progress.css?v=91">
-  <link rel="stylesheet" href="swipe-tinder.css?v=93">
+  <link rel="stylesheet" href="swipe-tinder.css?v=94">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -156,6 +156,14 @@
           <span id="session-streak" class="streak-chip">0 série</span>
         </header>
 
+        <div class="swipe-guide" aria-label="Sens du glissement de la carte">
+          <span class="swipe-guide__label swipe-guide__label--review"><span aria-hidden="true">←</span> À revoir</span>
+          <button id="swipe-show-help" class="swipe-guide__help" type="button" aria-label="Revoir comment glisser une carte" title="Voir l'animation du geste">
+            <span aria-hidden="true">☝</span> Glisse <span aria-hidden="true">↔</span> <span class="swipe-guide__question" aria-hidden="true">?</span>
+          </button>
+          <span class="swipe-guide__label swipe-guide__label--known">Je connais <span aria-hidden="true">→</span></span>
+        </div>
+
         <div class="swipe-stage" id="swipe-stage">
           <div class="swipe-under-card" id="swipe-under-card" aria-hidden="true"></div>
           <span class="swipe-direction-cue swipe-direction-cue--review" aria-hidden="true">↶ À revoir</span>
@@ -185,7 +193,7 @@
           <div id="plant-details" class="plant-details inline-details-content" hidden></div>
         </section>
 
-        <p class="swipe-help"><span class="swipe-help__left">← À revoir</span><span class="swipe-help__center">Glisse la carte avec ton doigt</span><span class="swipe-help__right">Je connais →</span></p>
+
       </div>
     </section>
 
@@ -272,6 +280,6 @@
   <script src="data/plants.js?v=90"></script>
   <script src="data/floreview-families.js?v=90"></script>
   <script src="data/floreview-categories.js?v=90"></script>
-  <script src="app.js?v=93"></script>
+  <script src="app.js?v=94"></script>
 </body>
 </html>

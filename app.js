@@ -20,7 +20,11 @@ const state = {
   session: null,
   toastTimer: null,
   pointer: null,
-  isAdvancing: false
+  isAdvancing: false,
+  swipeGuideSeen: (() => {
+    try { return localStorage.getItem("floreviewSwipeGuideSeenV1") === "1"; }
+    catch (_) { return false; }
+  })()
 };
 
 const $ = selector => document.querySelector(selector);
@@ -238,6 +242,7 @@ function bindSession() {
     event.stopPropagation();
     revealAnswer();
   });
+  $("#swipe-show-help").addEventListener("click", () => renderSwipeGuide(true));
   $("#toggle-details").addEventListener("click", toggleDetails);
   $("#mark-review").addEventListener("click", () => answerCurrent("review"));
   $("#mark-known").addEventListener("click", () => answerCurrent("known"));
@@ -285,6 +290,7 @@ function renderCurrentCard() {
   clearStamps();
   renderNextCardPreview();
   renderImage(plant);
+  renderSwipeGuide();
   renderBadges(plant);
   renderQuestionAndAnswer(plant);
   renderInlineDetails(plant);
@@ -316,6 +322,34 @@ function renderNextCardPreview() {
   preview.classList.toggle("is-last", !next);
 }
 
+// Guide visible dès la première carte ; un bouton permet de le revoir ensuite.
+function renderSwipeGuide(force = false) {
+  const photo = $("#plant-image");
+  if (!photo) return;
+  photo.querySelector("#swipe-onboarding")?.remove();
+  if (!state.session || (!force && state.swipeGuideSeen)) return;
+
+  photo.insertAdjacentHTML("beforeend", `
+    <div id="swipe-onboarding" class="swipe-onboarding" aria-hidden="true">
+      <strong>Glisse la carte</strong>
+      <div class="swipe-onboarding__motion">
+        <span class="swipe-onboarding__arrow swipe-onboarding__arrow--left">←</span>
+        <span class="swipe-onboarding__hand">☝</span>
+        <span class="swipe-onboarding__arrow swipe-onboarding__arrow--right">→</span>
+      </div>
+      <small>À revoir à gauche · Je connais à droite</small>
+    </div>
+  `);
+}
+
+function completeSwipeGuide() {
+  $("#swipe-onboarding")?.remove();
+  if (state.swipeGuideSeen) return;
+  state.swipeGuideSeen = true;
+  try { localStorage.setItem("floreviewSwipeGuideSeenV1", "1"); }
+  catch (_) { /* Site utilisable même en navigation privée. */ }
+}
+
 function renderImage(plant) {
   const container = $("#plant-image");
   const name = displayName(plant);
@@ -332,6 +366,7 @@ function renderImage(plant) {
   const img = container.querySelector("img");
   img.addEventListener("error", () => {
     container.innerHTML = placeholderHtml(name, "Photo locale introuvable");
+    renderSwipeGuide();
   }, { once: true });
 }
 
@@ -533,6 +568,7 @@ function answerCurrent(outcome, fromSwipe=false) {
   const plant=currentPlant();
   if (!plant) return;
   state.isAdvancing = true;
+  completeSwipeGuide();
   updatePlantProgress(plant.id,outcome);
   state.session.answeredIds.push(plant.id);
   if (outcome === "known") {
@@ -660,6 +696,7 @@ function onPointerMove(event) {
     }
     if (Math.abs(dx) <= SWIPE_DEADZONE || Math.abs(dx) < Math.abs(dy) * 1.25) return;
     p.dragging = true;
+    $("#swipe-onboarding")?.classList.add("is-gesturing");
     const card = $("#plant-card");
     try { card.setPointerCapture?.(event.pointerId); } catch (_) { /* pointer lost: continue gracefully */ }
     card.classList.add("is-dragging");
@@ -710,6 +747,7 @@ function onPointerCancel(event) {
 }
 
 function resetCardTransform() {
+  $("#swipe-onboarding")?.classList.remove("is-gesturing");
   const card = $("#plant-card");
   const stage = $("#swipe-stage");
   card.classList.remove("is-dragging", "is-flying");

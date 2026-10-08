@@ -117,3 +117,92 @@
 @media (prefers-reduced-motion:reduce) {
   #plant-card, #plant-card.is-flying, .swipe-under-card, .swipe-direction-cue, .swipe-stage::before { transition:none!important; }
 }
+
+
+/* V9.4 — guidance de swipe visible dès le haut de la session */
+.swipe-guide {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  align-items: center;
+  gap: .5rem;
+  margin: .65rem 0 .7rem;
+  padding: .52rem .7rem;
+  border: 1px solid #eee1e7;
+  border-radius: 18px;
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 8px 26px rgba(68,40,56,.07);
+}
+.swipe-guide__label { font-size: .77rem; font-weight: 850; white-space: nowrap; }
+.swipe-guide__label--review { color:#d63868; text-align:left; }
+.swipe-guide__label--known { color:#168b5a; text-align:right; }
+.swipe-guide__help {
+  display: inline-flex; align-items:center; justify-content:center; gap:.3rem;
+  min-height: 35px; padding:.3rem .6rem; border-radius: 999px;
+  border: 1px solid #f0e1e7; background:#fff7fa; color:#6d5260;
+  font:inherit; font-size:.75rem; font-weight:800; cursor:pointer;
+}
+.swipe-guide__help:hover, .swipe-guide__help:focus-visible {
+  color:#c32e61; background:#ffecf3; border-color:#e8b8c8;
+}
+.swipe-guide__question {
+  display:grid; place-items:center; width:18px; height:18px;
+  border-radius:50%; background:#fce3eb; color:#bf486e; font-size:.72rem;
+}
+
+/* Tutorial over the photograph, not at the bottom of the webpage */
+#plant-image .swipe-onboarding {
+  position:absolute; left:50%; bottom:4.4rem; z-index:6;
+  transform:translateX(-50%);
+  width:max-content; max-width:calc(100% - 1.5rem);
+  padding:.65rem .85rem .75rem;
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:19px;
+  text-align:center;
+  color:#fff;
+  background:rgba(34,33,42,.82);
+  box-shadow:0 14px 40px rgba(15,13,22,.22);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  pointer-events:none; user-select:none;
+  transition:opacity .15s ease;
+}
+#plant-image .swipe-onboarding.is-gesturing { opacity:0; }
+.swipe-onboarding strong { display:block; font-size:.86rem; letter-spacing:.01em; }
+.swipe-onboarding small { display:block; font-size:.66rem; white-space:normal; opacity:.96; }
+.swipe-onboarding__motion {
+  display:flex; justify-content:space-between; align-items:center;
+  width:136px; height:52px; margin:.08rem auto;
+}
+.swipe-onboarding__arrow { font-size:1.55rem; font-weight:900; }
+.swipe-onboarding__arrow--left { color:#ff81a2; }
+.swipe-onboarding__arrow--right { color:#64d9a7; }
+.swipe-onboarding__hand {
+  display:inline-block; font-size:1.85rem; line-height:1;
+  transform:translateX(0) rotate(-5deg);
+  filter:drop-shadow(0 3px 5px rgba(0,0,0,.3));
+  animation:floreview-swipe-demo 3.5s ease-in-out infinite;
+}
+@keyframes floreview-swipe-demo {
+  0%, 12%, 100% { transform:translateX(0) rotate(-5deg); }
+  29% { transform:translateX(-30px) rotate(-20deg); }
+  47% { transform:translateX(0) rotate(-5deg); }
+  67% { transform:translateX(30px) rotate(18deg); }
+  84% { transform:translateX(0) rotate(-5deg); }
+}
+
+@media (max-width:650px) {
+  .swipe-guide { margin:.35rem 0 .55rem; padding:.4rem .5rem; gap:.25rem; border-radius:14px; }
+  .swipe-guide__label { font-size:.69rem; }
+  .swipe-guide__help { min-height:34px; padding:.24rem .37rem; font-size:.68rem; }
+  #plant-image .swipe-onboarding { bottom:3.7rem; padding:.57rem .7rem .62rem; border-radius:16px; }
+  .swipe-onboarding__motion { height:44px; }
+}
+@media (max-width:370px) {
+  .swipe-guide__label { font-size:.62rem; }
+  .swipe-guide__help { font-size:.62rem; gap:.2rem; padding:.2rem .28rem; }
+  .swipe-guide__question { width:15px; height:15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .swipe-onboarding__hand { animation:none !important; }
+  #plant-image .swipe-onboarding { transition:none !important; }
+}
