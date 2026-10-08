@@ -12,7 +12,8 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/floreview-flower-192.png?v=81">
   <link rel="shortcut icon" href="assets/favicon.ico?v=81">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/floreview-flower-180.png?v=81">
-  <link rel="stylesheet" href="floreview-brand.css?v=812">
+  <link rel="stylesheet" href="floreview-brand.css?v=82">
+  <link rel="stylesheet" href="v8-2-home.css?v=82">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -23,18 +24,23 @@
       <span class="brand__tagline">Révision botanique · Fleuriste</span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
-      <button class="nav__button is-active" type="button" data-view-target="home">Accueil</button>
-      <button class="nav__button" type="button" data-view-target="progress">Progression</button>
+      <button class="nav__button is-active" type="button" data-view-target="home">⌂ Accueil</button>
+      <a class="nav__link" href="#modes-revision">✎ Réviser</a>
+      <a class="nav__link" href="#collection-floreview">☰ Collection</a>
+      <button class="nav__button" type="button" data-view-target="progress">▥ Progression</button>
+      <a class="nav__link" href="#about-floreview">ⓘ À propos</a>
     </nav>
   </header>
 
   <main id="main">
     <section id="view-home" class="view is-active" data-view="home">
       <div class="hero shell">
+        <div class="hero__decor hero__decor--left" aria-hidden="true"><img src="assets/hero-flower-left.png?v=82" alt=""></div>
+        <div class="hero__decor hero__decor--right" aria-hidden="true"><img src="assets/hero-foliage-right.png?v=82" alt=""></div>
         <div class="hero__copy">
           <p class="eyebrow">Je vois · j’identifie · je vérifie · je swipe · je progresse</p>
-          <h1>Réviser les végétaux sans transformer le cours en catalogue.</h1>
-          <p class="hero__lead">Une carte à la fois pour reconnaître les fleurs coupées, les plantes et les feuillages, avec les fiches de conservation disponibles et une répétition plus fréquente des végétaux difficiles.</p>
+          <h1>Réviser les végétaux</h1>
+          <p class="hero__lead">Sans transformer le cours en catalogue.</p>
           <div class="hero__actions">
             <button id="quick-start" class="button button--primary" type="button">Commencer une session</button>
             <button class="button button--ghost" type="button" data-view-target="progress">Voir ma progression</button>
@@ -52,11 +58,11 @@
         </aside>
       </div>
 
-      <section class="shell section">
+      <section id="modes-revision" class="shell section home-modes-section">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Choisir comment réviser</p>
-            <h2>Modes de révision</h2>
+            <h2>Choisir comment réviser</h2>
           </div>
         </div>
         <div class="mode-grid" id="mode-grid">
@@ -81,13 +87,18 @@
         </div>
       </section>
 
-      <section class="shell section source-summary">
+      <section id="collection-floreview" class="shell section source-summary">
         <div>
           <p class="eyebrow">Collection Floreview</p>
           <h2>Fleurs coupées, plantes et feuillages</h2>
           <p>Tous les végétaux restent accessibles. Les fiches sans informations détaillées restent utilisables pour la reconnaissance visuelle et l’apprentissage des noms.</p>
         </div>
         <div class="source-counters" id="source-counters"></div>
+      </section>
+
+      <section id="about-floreview" class="shell about-floreview-card">
+        <h2>À propos</h2>
+        <p>Floreview aide à mémoriser les fleurs coupées, les plantes et les feuillages avec une interface claire, une progression locale et des fiches détaillées lorsqu’elles sont disponibles.</p>
       </section>
     </section>
 
@@ -202,9 +213,9 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="data/plants.js?v=81"></script>
-  <script src="data/floreview-families.js?v=81"></script>
-  <script src="data/floreview-categories.js?v=81"></script>
-  <script src="app.js?v=81"></script>
+  <script src="data/plants.js?v=82"></script>
+  <script src="data/floreview-families.js?v=82"></script>
+  <script src="data/floreview-categories.js?v=82"></script>
+  <script src="app.js?v=82"></script>
 </body>
 </html>
